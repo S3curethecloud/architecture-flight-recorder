@@ -2,7 +2,9 @@
 
 ## Status
 
-Accepted architecture direction.
+Accepted architecture direction, effective only upon canonical merge.
+
+Before canonical merge, this ADR remains proposed and creates no authority.
 
 Implementation deferred.
 

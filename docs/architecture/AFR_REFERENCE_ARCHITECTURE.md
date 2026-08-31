@@ -13,12 +13,17 @@ runtime construction.
 
 ## 2. Architectural Objective
 
-AFR must transform two independently authoritative inputs:
+AFR must transform two independently sourced input classes:
 
-1. approved architecture truth;
-2. attributable observations of deployed reality;
+1. approved architecture truth from an authorized architecture authority;
+2. attributable observations of deployed reality.
 
-into a deterministic, reproducible, time-bound conformance result.
+These input classes do not carry equivalent authority. Architecture truth
+defines the approved expectation. Observations describe bounded operational
+state and must pass evidence-eligibility validation before evaluation.
+
+Together, eligible inputs are transformed into a deterministic, reproducible,
+time-bound conformance result.
 
 The architecture must preserve the separation between truth, observation,
 evidence eligibility, evaluation, enforcement, and presentation.

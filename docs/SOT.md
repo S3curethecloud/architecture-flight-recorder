@@ -207,3 +207,32 @@ without contradiction:
 > authority.
 
 Closing Phase 0 does not automatically activate Phase 1.
+
+## 9. Phase 1 Planning-Authority Proposal
+
+Phase 0 is complete. Phase 1 remains inactive.
+
+A bounded Phase 1 planning-authority proposal may be reviewed through
+`docs/phase-1/PHASE_1_PLANNING_AUTHORITY_PROPOSAL.md`.
+
+Before that proposal reaches its defined effective point:
+
+- Phase 1 planning authority: `NONE`;
+- Phase 1 implementation authority: `NONE`;
+- Phase 2 authority: `NONE`.
+
+If and only if the proposal is independently reviewed, merged to canonical
+`main`, and its required post-merge verification succeeds:
+
+- Phase 1 planning authority:
+  `BOUNDED_CONTRACT_AND_EVALUATION_SEMANTICS_PLANNING_ONLY`;
+- Phase 1 implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 2 authority: `NONE`.
+
+The proposal authorizes only its exact future planning-artifact boundary. It
+does not authorize source code, executable schemas, tests, provider collection,
+NEXUS integration, evaluation execution, certificates, or production access.

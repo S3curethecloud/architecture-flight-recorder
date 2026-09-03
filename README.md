@@ -23,10 +23,22 @@ Humanize  = presents approved evidence and conformance narratives
 
 ## Current Status
 
-Phase 0 — Doctrine and System Boundary is in planning.
+The Phase 0 doctrine and system-boundary package was reviewed, amended, and
+merged through PR #1.
+
+Canonical package identity:
+
+- merge commit: `5d453729fa2505ef09ddb8ef30daa6e1303c05e9`;
+- merge tree: `229a2694d5fc093e1cfaf4a266efa3c6df0e7398`;
+- initial package commit: `b1bb95b04db0b2d9d17276e64d80af6df9afce32`;
+- review-amendment commit: `dc885d1632af8b2777974ce90233c6c8f82b8106`.
+
+Phase 0 becomes canonically complete only when the bounded post-merge closure
+reconciliation is independently reviewed, merged to canonical `main`, and its
+identity and integrity are verified.
 
 No runtime, provider integration, evidence collection, conformance evaluation,
-certificate generation, persistence, deployment, or production authority has
-been granted.
+certificate generation, persistence, deployment, production, or Phase 1
+authority has been granted.
 
-The canonical program status will be maintained in [`docs/SOT.md`](docs/SOT.md).
+The canonical program status is maintained in [`docs/SOT.md`](docs/SOT.md).

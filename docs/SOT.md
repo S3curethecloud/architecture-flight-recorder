@@ -95,20 +95,75 @@ No Humanize integration is authorized during Phase 0.
 
 ## 5. Current Program Stage
 
-- Phase: `0`
-- Phase name: `DOCTRINE_AND_SYSTEM_BOUNDARY`
-- Status: `PLANNING`
-- Phase 0 planning authority:
-  `BOUNDED_DOCTRINE_AND_SYSTEM_BOUNDARY_ONLY`
-- Phase 0 implementation authority: `NONE`
-- Runtime authority: `NONE`
-- Provider integration authority: `NONE`
-- NEXUS integration authority: `NONE`
-- ATA integration authority: `NONE`
-- PAA integration authority: `NONE`
-- Humanize integration authority: `NONE`
-- Persistence authority: `NONE`
-- Deployment authority: `NONE`
+### Phase 0 Canonical Package
+
+The Phase 0 doctrine and system-boundary package was independently reviewed,
+amended, and merged through PR #1.
+
+Canonical package identity:
+
+- initial baseline:
+  `8d5465dbb52ccb030db3cd4be56c67f5805c8352`;
+- initial package commit:
+  `b1bb95b04db0b2d9d17276e64d80af6df9afce32`;
+- review-amendment commit:
+  `dc885d1632af8b2777974ce90233c6c8f82b8106`;
+- canonical merge:
+  `5d453729fa2505ef09ddb8ef30daa6e1303c05e9`;
+- canonical merge tree:
+  `229a2694d5fc093e1cfaf4a266efa3c6df0e7398`.
+
+Validated evidence includes:
+
+- exact eight-file package boundary;
+- architecture and acceptance review;
+- NEXUS non-duplication review;
+- authority-boundary review;
+- security and fail-closed review;
+- two-file review-amendment resolution;
+- merge parentage and tree verification;
+- local canonical-main synchronization.
+
+### Phase 0 Closure Effective Point
+
+Before the bounded closure reconciliation becomes effective:
+
+- Phase: `0`;
+- Phase name: `DOCTRINE_AND_SYSTEM_BOUNDARY`;
+- status: `MERGED_REVIEW_ACCEPTED_CLOSURE_PENDING`;
+- Phase 0 planning authority: `CONSUMED_PENDING_CLOSURE`;
+- Phase 0 implementation authority: `NONE`;
+- Phase 1 authority: `NONE`.
+
+The closure effective point requires all of the following:
+
+1. the closure reconciliation remains limited to `README.md`, `docs/SOT.md`,
+   and `docs/phase-0/PHASE_0_ACCEPTANCE_CRITERIA.md`;
+2. the closure reconciliation is independently reviewed;
+3. the closure reconciliation is merged to canonical `main`;
+4. post-merge identity, parentage, tree, and content integrity are verified;
+5. the local canonical `main` checkout is synchronized and clean.
+
+After that effective point:
+
+- Phase: `0`;
+- Phase name: `DOCTRINE_AND_SYSTEM_BOUNDARY`;
+- status: `COMPLETE`;
+- Phase 0 planning authority: `CONSUMED_CLOSED`;
+- Phase 0 implementation authority: `NONE`;
+- Phase 1 planning authority: `NONE`;
+- Phase 1 implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- ATA integration authority: `NONE`;
+- PAA integration authority: `NONE`;
+- Humanize integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`.
+
+Opening, approving, or marking the closure PR ready does not satisfy the
+closure effective point.
 
 ## 6. Authorized Phase 0 Planning Artifacts
 

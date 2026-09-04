@@ -237,3 +237,48 @@ verification succeeds:
 The proposal authorizes only its exact future planning-artifact boundary. It
 does not authorize source code, executable schemas, tests, provider collection,
 NEXUS integration, evaluation execution, certificates, or production access.
+
+## 10. Phase 1 Active Planning Record
+
+The Phase 1 planning-authority proposal was independently reviewed, amended,
+merged through PR #3, and verified against canonical `main`.
+
+Canonical planning-authority identity:
+
+- activation merge:
+  `0d5ba457f9a5a81a8f80e2b5e72146a5fb190478`;
+- activation tree:
+  `4ada09c773c88eb2482d519a16c4b7a20f61ca95`;
+- proposal commit:
+  `4239129868ec35eb38ebe4ef14292a8a43f8c43d`;
+- review-amendment commit:
+  `acbcdb865c7e3e04ff95c8d2b7801272dd41f9b3`.
+
+Current Phase 1 state:
+
+- Phase: `1`;
+- phase name: `CANONICAL_CONTRACTS_AND_EVALUATION_SEMANTICS`;
+- status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
+- planning authority:
+  `BOUNDED_CONTRACT_AND_EVALUATION_SEMANTICS_PLANNING_ONLY`;
+- planning acceptance effective point:
+  `PENDING_CANONICAL_MERGE_AND_VERIFICATION`;
+- implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 2 authority: `NONE`.
+
+The exact authorized Phase 1 planning package remains:
+
+1. `docs/SOT.md`
+2. `docs/phase-1/PHASE_1_PLAN.md`
+3. `docs/phase-1/PHASE_1_ACCEPTANCE_CRITERIA.md`
+4. `docs/contracts/AFR_CANONICAL_INFORMATION_MODEL.md`
+5. `docs/contracts/AFR_EVALUATION_SEMANTICS.md`
+6. `docs/security/AFR_PHASE_1_TRUST_INVARIANTS.md`
+
+Phase 1 planning does not authorize implementation, executable schemas,
+provider collection, NEXUS integration, evaluation execution, certificate
+issuance, persistence, deployment, production access, or Phase 2.

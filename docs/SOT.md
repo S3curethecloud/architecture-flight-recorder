@@ -221,8 +221,9 @@ Before that proposal reaches its defined effective point:
 - Phase 1 implementation authority: `NONE`;
 - Phase 2 authority: `NONE`.
 
-If and only if the proposal is independently reviewed, merged to canonical
-`main`, and its required post-merge verification succeeds:
+If and only if the proposal is independently reviewed, all review findings
+are resolved, it is merged to canonical `main`, and its required post-merge
+verification succeeds:
 
 - Phase 1 planning authority:
   `BOUNDED_CONTRACT_AND_EVALUATION_SEMANTICS_PLANNING_ONLY`;

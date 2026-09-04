@@ -558,3 +558,45 @@ certificate issuance, deployment, production access, remediation, or Phase 3.
 
 Any implementation or Phase 3 activity requires a separately defined,
 reviewed, merged, and verified authority activation.
+
+## 16. Phase 3 Planning-Authority Proposal
+
+Phase 2 is complete. Its planning authority is consumed and closed.
+
+A bounded Phase 3 planning-authority proposal may be reviewed through
+`docs/phase-3/PHASE_3_PLANNING_AUTHORITY_PROPOSAL.md`.
+
+Before that proposal reaches its effective point:
+
+- Phase 3 planning authority: `NONE`;
+- Phase 3 implementation authority: `NONE`;
+- runtime evaluation authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- persistence authority: `NONE`;
+- certificate authority: `NONE`;
+- deployment authority: `NONE`;
+- production authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+If and only if the proposal is independently reviewed, all review findings
+are resolved, it is merged to canonical `main`, and its required post-merge
+identity, parentage, tree, content, and clean-synchronization verification
+succeeds:
+
+- Phase 3 planning authority:
+  `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`;
+- Phase 3 implementation authority: `NONE`;
+- runtime evaluation authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- persistence authority: `NONE`;
+- certificate authority: `NONE`;
+- deployment authority: `NONE`;
+- production authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+The proposal creates no authority for source code, executable schemas, tests,
+fixtures, packages, APIs, services, provider adapters, live evidence
+collection, NEXUS integration, evaluation execution, persistence, certificate
+issuance, deployment, production access, remediation, or Phase 4.

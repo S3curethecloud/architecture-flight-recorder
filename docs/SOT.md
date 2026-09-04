@@ -385,3 +385,110 @@ The proposal creates no authority for source code, executable schemas, tests,
 provider adapters, live evidence collection, NEXUS integration, evaluation
 execution, persistence, certificate issuance, deployment, production access,
 or Phase 3.
+
+## 13. Phase 2 Active Planning Record
+
+The Phase 2 planning-authority proposal was independently reviewed, merged
+through PR #6, and verified against canonical `main`.
+
+Canonical planning-authority identity:
+
+- activation merge:
+  `8a9e5a0f7255c45187f59266221a718f63f58f89`;
+- activation tree:
+  `db5ae21e274850a708fda343a80b74f708c76992`;
+- proposal commit:
+  `9d150d5379c82c73cb437a8c72d56254ad9aa29e`;
+- planning authority:
+  `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`.
+
+Current Phase 2 state:
+
+- Phase: `2`;
+- phase name: `DETERMINISTIC_CONFORMANCE_KERNEL`;
+- status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
+- planning authority:
+  `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`;
+- planning acceptance effective point:
+  `PENDING_CANONICAL_MERGE_AND_VERIFICATION`;
+- implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+The exact authorized Phase 2 planning package is:
+
+1. `docs/SOT.md`
+2. `docs/phase-2/PHASE_2_PLAN.md`
+3. `docs/phase-2/PHASE_2_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_DETERMINISTIC_KERNEL_ARCHITECTURE.md`
+5. `docs/contracts/AFR_KERNEL_EXECUTION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_2_KERNEL_TRUST_BOUNDARY.md`
+
+Phase 2 planning does not authorize source code, executable schemas, tests,
+provider collection, NEXUS integration, evaluation execution, persistence,
+certificate issuance, deployment, production access, or Phase 3.
+
+## 14. Phase 2 Independent Planning Review
+
+The unstaged six-file Phase 2 planning package was independently reviewed as
+one bounded candidate.
+
+Review disposition:
+
+- `AFR_PHASE_2_ARCHITECTURE_REVIEW = PASS`;
+- `AFR_PHASE_2_DETERMINISTIC_SEMANTICS_REVIEW = PASS`;
+- `AFR_PHASE_2_EXECUTION_CONTRACT_REVIEW = PASS`;
+- `AFR_PHASE_2_SECURITY_REVIEW = PASS`;
+- `AFR_PHASE_2_NEXUS_NON_DUPLICATION_REVIEW = PASS`;
+- `AFR_PHASE_2_ATA_AUTHORITY_REVIEW = PASS`;
+- `AFR_PHASE_2_AUTHORITY_LEAKAGE_REVIEW = PASS`;
+- `AFR_PHASE_2_REVIEW_FINDING_001 = RESOLVED`;
+- `AFR_PHASE_2_BLOCKING_FINDINGS = NONE`.
+
+Validated properties include:
+
+- exact six-file planning boundary;
+- all 54 acceptance criteria satisfied;
+- deterministic, ordered, and fail-closed kernel stages;
+- preservation of Phase 1 outcome semantics;
+- explicit invocation, truth, scope, version, evidence, rule, claim,
+  aggregation, fingerprint, result, and failure boundaries;
+- tenant, subject, identity, provenance, integrity, freshness, and trusted-time
+  protections;
+- preservation of NEXUS architecture-truth authority;
+- preservation of ATA consequential runtime commit authority;
+- exclusion of implementation, integration, persistence, evaluation execution,
+  certificates, deployment, production, remediation, and Phase 3 authority.
+
+### Planning-Acceptance Effective Point
+
+Before the effective point:
+
+- Phase 2 status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
+- Phase 2 planning authority:
+  `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`;
+- Phase 2 implementation authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+Phase 2 planning acceptance becomes canonical only when:
+
+1. the package remains limited to the authorized six files;
+2. the reviewed content and hashes remain unchanged;
+3. the package is staged and committed exactly;
+4. branch and pull-request identities are verified;
+5. the pull request receives independent acceptance review;
+6. all review findings are resolved;
+7. the package is merged to canonical `main`;
+8. post-merge identity, parentage, tree, and content are verified;
+9. local and remote canonical `main` converge cleanly.
+
+Opening, approving, or marking the planning PR ready does not satisfy this
+effective point.
+
+Canonical Phase 2 planning acceptance does not authorize implementation,
+integration, persistence, evaluation execution, certificates, deployment,
+production access, remediation, or Phase 3.

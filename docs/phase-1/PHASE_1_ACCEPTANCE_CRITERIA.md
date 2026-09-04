@@ -145,3 +145,39 @@ effective point.
 Canonical Phase 1 planning acceptance does not authorize implementation,
 integration, persistence, evaluation execution, certificates, deployment,
 production access, or Phase 2.
+
+## Post-Merge Closure Reconciliation
+
+The Phase 1 planning-acceptance effective point has been verified against:
+
+- planning-package commit:
+  `b09b283eb5df28ed2892370efe5f0a1a09a1a703`;
+- canonical merge:
+  `0368630f8b21cb239885bff0186be5812e21b157`;
+- canonical tree:
+  `fb20d88e1a4032bf53d20fbf2303f90ef338a6c3`;
+- pull request: `#4`;
+- exact six-file content hashes;
+- clean local and remote canonical synchronization.
+
+All 45 acceptance criteria remain satisfied.
+
+This record is a closure candidate until it is independently reviewed, all
+findings are resolved, it is merged to canonical `main`, and its post-merge
+identity, parentage, tree, content, and clean synchronization are verified.
+
+Before that effective point:
+
+- `AFR_PHASE_1_STATUS = PLANNING_ACCEPTED_CLOSURE_PENDING`
+- `AFR_PHASE_1_PLANNING_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+- `AFR_PHASE_1_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_2_AUTHORITY = NONE`
+
+After and only after that effective point:
+
+- `AFR_PHASE_1_STATUS = COMPLETE`
+- `AFR_PHASE_1_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_1_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_2_AUTHORITY = NONE`
+
+Closure acceptance does not authorize implementation or Phase 2.

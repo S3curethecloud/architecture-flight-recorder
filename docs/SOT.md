@@ -347,3 +347,41 @@ certificate issuance, deployment, production access, or Phase 2.
 
 Any implementation or Phase 2 activity requires a separately defined,
 reviewed, merged, and verified authority activation.
+
+## 12. Phase 2 Planning-Authority Proposal
+
+Phase 1 is complete. Phase 1 planning authority is consumed and closed.
+
+A bounded Phase 2 planning-authority proposal may be reviewed through
+`docs/phase-2/PHASE_2_PLANNING_AUTHORITY_PROPOSAL.md`.
+
+Before that proposal reaches its effective point:
+
+- Phase 2 planning authority: `NONE`;
+- Phase 2 implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+If and only if the proposal is independently reviewed, all review findings
+are resolved, it is merged to canonical `main`, and its required post-merge
+identity, parentage, tree, content, and clean-synchronization verification
+succeeds:
+
+- Phase 2 planning authority:
+  `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`;
+- Phase 2 implementation authority: `NONE`;
+- runtime authority: `NONE`;
+- provider integration authority: `NONE`;
+- NEXUS integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+The proposal creates no authority for source code, executable schemas, tests,
+provider adapters, live evidence collection, NEXUS integration, evaluation
+execution, persistence, certificate issuance, deployment, production access,
+or Phase 3.

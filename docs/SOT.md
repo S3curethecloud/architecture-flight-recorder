@@ -402,15 +402,24 @@ Canonical planning-authority identity:
 - planning authority:
   `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`.
 
-Current Phase 2 state:
+Canonical Phase 2 planning-package identity:
+
+- planning-package commit:
+  `84b19a373d73624300296508dd98492e6c9ead74`;
+- planning-package merge:
+  `8de190c438d150434b1e48ffd638181686add757`;
+- planning-package tree:
+  `b398572d6e02c24ce8b845eb9d5eb43ee13eaa37`;
+- pull request: `#7`;
+- canonical acceptance:
+  `AFR_PHASE_2_PLANNING_ACCEPTANCE = PASS`.
+
+Phase 2 closure state before the closure effective point:
 
 - Phase: `2`;
 - phase name: `DETERMINISTIC_CONFORMANCE_KERNEL`;
-- status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
-- planning authority:
-  `BOUNDED_DETERMINISTIC_CONFORMANCE_KERNEL_PLANNING_ONLY`;
-- planning acceptance effective point:
-  `PENDING_CANONICAL_MERGE_AND_VERIFICATION`;
+- status: `PLANNING_ACCEPTED_CLOSURE_PENDING`;
+- planning authority: `CONSUMED_PENDING_CLOSURE`;
 - implementation authority: `NONE`;
 - runtime authority: `NONE`;
 - provider integration authority: `NONE`;
@@ -492,3 +501,60 @@ effective point.
 Canonical Phase 2 planning acceptance does not authorize implementation,
 integration, persistence, evaluation execution, certificates, deployment,
 production access, remediation, or Phase 3.
+
+## 14. Phase 2 Post-Merge Closure Reconciliation
+
+The Phase 2 planning package completed its canonical planning-acceptance
+effective point.
+
+Verified canonical evidence:
+
+- PR #7 was independently reviewed and merged;
+- planning-package commit:
+  `84b19a373d73624300296508dd98492e6c9ead74`;
+- canonical merge:
+  `8de190c438d150434b1e48ffd638181686add757`;
+- canonical tree:
+  `b398572d6e02c24ce8b845eb9d5eb43ee13eaa37`;
+- merge identity, parentage, tree, file boundary, and all six content hashes
+  passed;
+- local and remote canonical `main` are synchronized;
+- the canonical worktree is clean;
+- all 54 Phase 2 acceptance criteria remain satisfied.
+
+The Phase 2 planning authority has been exercised completely and is pending
+terminal consumption through this separately governed closure reconciliation.
+
+### Closure Effective Point
+
+Before this closure reconciliation reaches its effective point:
+
+- Phase 2 status: `PLANNING_ACCEPTED_CLOSURE_PENDING`;
+- Phase 2 planning authority: `CONSUMED_PENDING_CLOSURE`;
+- Phase 2 implementation authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+Phase 2 becomes terminally closed if and only if:
+
+1. the closure change remains limited to `docs/SOT.md` and
+   `docs/phase-2/PHASE_2_ACCEPTANCE_CRITERIA.md`;
+2. the closure candidate is independently reviewed;
+3. all closure-review findings are resolved;
+4. the reviewed closure candidate is merged to canonical `main`;
+5. post-merge identity, parentage, tree, and content verification passes;
+6. local and remote canonical `main` converge on the verified merge;
+7. the local canonical checkout is clean.
+
+After and only after that effective point:
+
+- Phase 2 status: `COMPLETE`;
+- Phase 2 planning authority: `CONSUMED_CLOSED`;
+- Phase 2 implementation authority: `NONE`;
+- Phase 3 authority: `NONE`.
+
+Phase 2 closure does not authorize source code, executable schemas, tests,
+provider collection, NEXUS integration, evaluation execution, persistence,
+certificate issuance, deployment, production access, remediation, or Phase 3.
+
+Any implementation or Phase 3 activity requires a separately defined,
+reviewed, merged, and verified authority activation.

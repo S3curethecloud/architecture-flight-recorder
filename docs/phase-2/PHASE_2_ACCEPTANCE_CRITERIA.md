@@ -150,3 +150,43 @@ Phase 2 planning acceptance becomes canonical only when:
 Canonical acceptance does not authorize implementation, integration,
 persistence, evaluation execution, certificates, deployment, production
 access, remediation, or Phase 3.
+
+## Post-Merge Closure Reconciliation
+
+The Phase 2 planning-acceptance effective point has been verified against:
+
+- planning-package commit:
+  `84b19a373d73624300296508dd98492e6c9ead74`;
+- canonical merge:
+  `8de190c438d150434b1e48ffd638181686add757`;
+- canonical tree:
+  `b398572d6e02c24ce8b845eb9d5eb43ee13eaa37`;
+- pull request: `#7`;
+- exact six-file content hashes;
+- exact six-file merge boundary;
+- clean local and remote canonical synchronization.
+
+All 54 Phase 2 acceptance criteria remain satisfied.
+
+This record remains a closure candidate until it is independently reviewed,
+all findings are resolved, it is merged to canonical `main`, and its
+post-merge identity, parentage, tree, content, and clean synchronization are
+verified.
+
+Before that effective point:
+
+- `AFR_PHASE_2_STATUS = PLANNING_ACCEPTED_CLOSURE_PENDING`
+- `AFR_PHASE_2_PLANNING_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+- `AFR_PHASE_2_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_AUTHORITY = NONE`
+
+After and only after that effective point:
+
+- `AFR_PHASE_2_STATUS = COMPLETE`
+- `AFR_PHASE_2_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_2_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_AUTHORITY = NONE`
+
+Closure acceptance does not authorize implementation, integration,
+persistence, evaluation execution, certificates, deployment, production
+access, remediation, or Phase 3.

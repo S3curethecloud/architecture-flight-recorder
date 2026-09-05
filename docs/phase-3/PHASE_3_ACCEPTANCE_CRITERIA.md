@@ -168,3 +168,46 @@ reconciliation.
 Acceptance and closure do not authorize implementation, integration,
 persistence, runtime evaluation, certificates, deployment, production access,
 enforcement, remediation, or Phase 4.
+
+## Post-Merge Closure Reconciliation
+
+The Phase 3 planning-acceptance effective point has been verified against:
+
+- planning-package commit:
+  `7bd9b3b387606765202a8ba8a7c0fe22c5759e2d`;
+- canonical merge:
+  `45512c2d4ea2c6d6fd46f33ac312f6624513cdb9`;
+- canonical tree:
+  `65c5be068614ab3724becb86df8ea4e29c9e7244`;
+- pull request: `#10`;
+- exact six-document content hashes;
+- exact six-document merge boundary;
+- clean local and remote canonical synchronization.
+
+All 63 Phase 3 acceptance criteria remain satisfied, and
+`AFR_PHASE_3_REVIEW_FINDING_001` remains resolved.
+
+This record remains a closure candidate until it is independently reviewed,
+all findings are resolved, it is committed and pushed exactly, its pull
+request is verified and explicitly authorized for merge, it is merged to
+canonical `main`, and its post-merge identity, parentage, tree, file boundary,
+content, and clean synchronization are verified.
+
+Before that effective point:
+
+- `AFR_PHASE_3_STATUS = PLANNING_ACCEPTED_CLOSURE_PENDING`
+- `AFR_PHASE_3_PLANNING_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+- `AFR_PHASE_3_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_4_AUTHORITY = NONE`
+
+After and only after that effective point:
+
+- `AFR_PHASE_3_STATUS = COMPLETE`
+- `AFR_PHASE_3_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_3_IMPLEMENTATION_AUTHORITY = NONE`
+- `AFR_PHASE_4_AUTHORITY = NONE`
+
+Closure acceptance does not authorize code, executable schemas, tests,
+fixtures, dependencies, integration, persistence, runtime evaluation,
+certificates, deployment, production access, enforcement, remediation, or
+Phase 4. The proposed first implementation slice remains inactive.

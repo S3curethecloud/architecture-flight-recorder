@@ -618,17 +618,24 @@ Canonical planning-authority identity:
 - planning authority:
   `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`.
 
-Current Phase 3 state:
+Canonical Phase 3 planning-package identity:
+
+- planning-package commit:
+  `7bd9b3b387606765202a8ba8a7c0fe22c5759e2d`;
+- planning-package merge:
+  `45512c2d4ea2c6d6fd46f33ac312f6624513cdb9`;
+- planning-package tree:
+  `65c5be068614ab3724becb86df8ea4e29c9e7244`;
+- pull request: `#10`;
+- canonical acceptance:
+  `AFR_PHASE_3_PLANNING_ACCEPTANCE = PASS`.
+
+Phase 3 closure state before the closure effective point:
 
 - Phase: `3`;
 - phase name: `DETERMINISTIC_KERNEL_IMPLEMENTATION_READINESS`;
-- status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
-- planning authority:
-  `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`;
-- planning-acceptance effective point:
-  `PENDING_CANONICAL_MERGE_AND_VERIFICATION`;
-- terminal closure:
-  `PENDING_SEPARATELY_GOVERNED_CLOSURE_RECONCILIATION`;
+- status: `PLANNING_ACCEPTED_CLOSURE_PENDING`;
+- planning authority: `CONSUMED_PENDING_CLOSURE`;
 - implementation authority: `NONE`;
 - executable-schema authority: `NONE`;
 - test-execution authority: `NONE`;
@@ -742,3 +749,68 @@ proposed implementation slice.
 Any implementation requires a separate authority proposal, exact source and
 test boundary, independent review, explicit merge authorization, canonical
 merge, and successful post-merge verification.
+
+## 19. Phase 3 Post-Merge Closure Reconciliation
+
+The Phase 3 implementation-readiness planning package completed its canonical
+planning-acceptance effective point.
+
+Verified canonical evidence:
+
+- PR #10 was independently reviewed and merged;
+- planning-package commit:
+  `7bd9b3b387606765202a8ba8a7c0fe22c5759e2d`;
+- canonical merge:
+  `45512c2d4ea2c6d6fd46f33ac312f6624513cdb9`;
+- canonical tree:
+  `65c5be068614ab3724becb86df8ea4e29c9e7244`;
+- merge identity, parentage, tree, exact six-document boundary, and all six
+  content hashes passed;
+- local and remote canonical `main` are synchronized;
+- the canonical worktree is clean;
+- all 63 Phase 3 acceptance criteria remain satisfied;
+- `AFR_PHASE_3_REVIEW_FINDING_001` remains resolved.
+
+The Phase 3 planning authority has been exercised completely and is pending
+terminal consumption through this separately governed closure reconciliation.
+
+### Closure Effective Point
+
+Before this closure reconciliation reaches its effective point:
+
+- Phase 3 status: `PLANNING_ACCEPTED_CLOSURE_PENDING`;
+- Phase 3 planning authority: `CONSUMED_PENDING_CLOSURE`;
+- Phase 3 implementation authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+Phase 3 becomes terminally closed if and only if:
+
+1. the closure change remains limited to `docs/SOT.md` and
+   `docs/phase-3/PHASE_3_ACCEPTANCE_CRITERIA.md`;
+2. the closure candidate is independently reviewed;
+3. all closure-review findings are resolved;
+4. the reviewed closure candidate is committed and pushed exactly;
+5. its pull request is verified against the reviewed identity and content;
+6. explicit closure merge authorization is granted;
+7. the reviewed closure candidate is merged to canonical `main`;
+8. post-merge identity, parentage, tree, file-boundary, and content
+   verification passes;
+9. local and remote canonical `main` converge on the verified merge;
+10. the local canonical checkout is clean.
+
+After and only after that effective point:
+
+- Phase 3 status: `COMPLETE`;
+- Phase 3 planning authority: `CONSUMED_CLOSED`;
+- Phase 3 implementation authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+Phase 3 closure does not authorize source code, executable schemas, tests,
+fixtures, dependencies, APIs, services, provider adapters, live evidence
+collection, NEXUS integration, evaluation execution, persistence, certificate
+issuance, deployment, production access, enforcement, remediation, or
+Phase 4.
+
+The proposed first implementation slice remains inactive. Any implementation
+or Phase 4 activity requires a separately defined, independently reviewed,
+merged, and verified authority activation.

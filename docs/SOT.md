@@ -600,3 +600,145 @@ The proposal creates no authority for source code, executable schemas, tests,
 fixtures, packages, APIs, services, provider adapters, live evidence
 collection, NEXUS integration, evaluation execution, persistence, certificate
 issuance, deployment, production access, remediation, or Phase 4.
+
+## 17. Phase 3 Active Planning Record
+
+The Phase 3 planning-authority proposal was independently reviewed, merged
+through PR #9, and verified against canonical `main`.
+
+Canonical planning-authority identity:
+
+- activation merge:
+  `56948d09e0afee682b9baeda3c3fdf92a8382c39`;
+- activation tree:
+  `cb67270b52fa4f29596a65e3346da3d9592d8e35`;
+- proposal commit:
+  `c2032c7df1b9badfd22cf47f5cf33d6fbc0f3224`;
+- pull request: `#9`;
+- planning authority:
+  `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`.
+
+Current Phase 3 state:
+
+- Phase: `3`;
+- phase name: `DETERMINISTIC_KERNEL_IMPLEMENTATION_READINESS`;
+- status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
+- planning authority:
+  `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`;
+- planning-acceptance effective point:
+  `PENDING_CANONICAL_MERGE_AND_VERIFICATION`;
+- terminal closure:
+  `PENDING_SEPARATELY_GOVERNED_CLOSURE_RECONCILIATION`;
+- implementation authority: `NONE`;
+- executable-schema authority: `NONE`;
+- test-execution authority: `NONE`;
+- runtime-evaluation authority: `NONE`;
+- provider-integration authority: `NONE`;
+- NEXUS-integration authority: `NONE`;
+- persistence authority: `NONE`;
+- certificate authority: `NONE`;
+- deployment authority: `NONE`;
+- production authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+The exact authorized Phase 3 planning package is:
+
+1. `docs/SOT.md`
+2. `docs/phase-3/PHASE_3_PLAN.md`
+3. `docs/phase-3/PHASE_3_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_KERNEL_IMPLEMENTATION_BLUEPRINT.md`
+5. `docs/contracts/AFR_EXECUTABLE_CONTRACT_MAPPING.md`
+6. `docs/security/AFR_PHASE_3_IMPLEMENTATION_SAFETY_PLAN.md`
+
+Phase 3 planning may define a proposed future first implementation slice, but
+it cannot activate that slice.
+
+Phase 3 planning does not authorize source code, executable schemas, tests,
+fixtures, dependencies, APIs, services, provider adapters, live evidence
+collection, NEXUS integration, evaluation execution, persistence, certificate
+issuance, deployment, production access, enforcement, remediation, or
+Phase 4.
+
+## 18. Phase 3 Independent Planning Review
+
+The complete unstaged six-document Phase 3 planning package was reviewed as
+one bounded candidate.
+
+Review disposition:
+
+- `AFR_PHASE_3_ARCHITECTURE_REVIEW = PASS`
+- `AFR_PHASE_3_CANONICAL_SEMANTIC_PRESERVATION_REVIEW = PASS`
+- `AFR_PHASE_3_DETERMINISTIC_CANONICALIZATION_REVIEW = PASS`
+- `AFR_PHASE_3_FINGERPRINT_REQUIREMENTS_REVIEW = PASS`
+- `AFR_PHASE_3_CONTRACT_MAPPING_REVIEW = PASS`
+- `AFR_PHASE_3_SECURITY_REVIEW = PASS`
+- `AFR_PHASE_3_TENANT_ISOLATION_REVIEW = PASS`
+- `AFR_PHASE_3_SUPPLY_CHAIN_REVIEW = PASS`
+- `AFR_PHASE_3_FIRST_SLICE_BOUNDARY_REVIEW = PASS`
+- `AFR_PHASE_3_NEXUS_NON_DUPLICATION_REVIEW = PASS`
+- `AFR_PHASE_3_ATA_AUTHORITY_REVIEW = PASS`
+- `AFR_PHASE_3_AUTHORITY_LEAKAGE_REVIEW = PASS`
+- `AFR_PHASE_3_REVIEW_FINDING_001 = RESOLVED`
+- `AFR_PHASE_3_BLOCKING_FINDINGS = NONE`
+
+Validated properties include:
+
+- exact six-document planning boundary;
+- preservation of canonical Phase 1 and Phase 2 semantics;
+- deterministic and fail-closed canonicalization requirements;
+- complete material-input fingerprint requirements;
+- typed mapping and singular validation ownership;
+- separation of processing failures from conformance outcomes;
+- tenant, subject, identity, immutability, and trusted-time boundaries;
+- dependency, supply-chain, resource, and prohibited-side-effect controls;
+- exact convergence of the proposed future six-file implementation boundary;
+- preservation of NEXUS architecture-truth authority;
+- preservation of ATA consequential runtime commit authority;
+- exclusion of model output from authoritative decisions;
+- exclusion of implementation, integration, persistence, runtime evaluation,
+  certificate, deployment, production, remediation, and Phase 4 authority.
+
+All 63 Phase 3 acceptance criteria are satisfied by the reviewed planning
+candidate.
+
+### Planning-Acceptance Effective Point
+
+Before the planning-acceptance effective point:
+
+- Phase 3 status: `PLANNING_REVIEW_ACCEPTED_CANDIDATE`;
+- Phase 3 planning authority:
+  `BOUNDED_KERNEL_IMPLEMENTATION_READINESS_PLANNING_ONLY`;
+- Phase 3 implementation authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+Phase 3 planning acceptance becomes canonical only when:
+
+1. the package remains limited to the authorized six documents;
+2. the reviewed content and six hashes remain unchanged;
+3. the exact package is staged and committed;
+4. the branch and pull-request identities are verified;
+5. the pull request receives independent acceptance review;
+6. all review findings remain resolved;
+7. explicit merge authorization is granted;
+8. the package is merged to canonical `main`;
+9. post-merge identity, parentage, tree, file-boundary, and content
+   verification passes;
+10. local and remote canonical `main` converge cleanly.
+
+After and only after that effective point:
+
+- Phase 3 status: `PLANNING_ACCEPTED_CLOSURE_PENDING`;
+- Phase 3 planning authority: `CONSUMED_PENDING_CLOSURE`;
+- Phase 3 implementation authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+Terminal Phase 3 completion additionally requires a separately governed
+post-merge closure reconciliation, independent closure review, explicit merge
+authorization, canonical merge, and successful post-merge verification.
+
+Neither canonical planning acceptance nor terminal closure authorizes the
+proposed implementation slice.
+
+Any implementation requires a separate authority proposal, exact source and
+test boundary, independent review, explicit merge authorization, canonical
+merge, and successful post-merge verification.

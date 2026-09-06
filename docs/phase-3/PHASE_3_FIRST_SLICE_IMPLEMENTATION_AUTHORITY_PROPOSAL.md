@@ -314,3 +314,103 @@ files.
 
 It would not itself create, validate, accept, merge, deploy, or execute the
 implementation.
+
+## 18. Post-Merge Implementation Closure Reconciliation
+
+The exact six-file implementation authorized by this proposal was independently
+reviewed, committed, pushed, reviewed through PR #13, explicitly authorized for
+merge, merged, and verified against canonical `main`.
+
+Canonical implementation evidence:
+
+- activation baseline:
+  `9f2da0bec9a67551f20c83546dffd0da764732eb`;
+- reviewed implementation commit:
+  `f821d1a6d91113c1bbcecd780ad348064105b312`;
+- reviewed implementation tree:
+  `5ba6638f8df57671e738df686e7978352ab1b7df`;
+- canonical merge:
+  `d29b426d2709cc4e8c51a875d87d5386219a9e3b`;
+- canonical merge tree:
+  `5ba6638f8df57671e738df686e7978352ab1b7df`;
+- canonical merge parents:
+  `9f2da0bec9a67551f20c83546dffd0da764732eb`
+  and `f821d1a6d91113c1bbcecd780ad348064105b312`;
+- pull request: `#13`;
+- exact changed-file count: `6`;
+- canonical test reproduction: `32 PASS`;
+- canonical acceptance:
+  `AFR_PHASE_3_FIRST_SLICE_CANONICAL_ACCEPTANCE = PASS`.
+
+Canonical file hashes:
+
+1. `e3af3ce22ae6fa2afc198e027ae1b15c380e27a858c2d44aa9719796a9b19b20`
+   — `src/afr/kernel/contracts.py`
+2. `4e665d03f65be659b489fb27fd09dad84b1f581cf77bd05f6878af66be5cb449`
+   — `src/afr/kernel/canonicalization.py`
+3. `61116106e93930f4c2ce94e8f6eb83cbca517dcc5a54aaa8f201c10b4b91f547`
+   — `src/afr/kernel/fingerprints.py`
+4. `a24fff80a3ab466511a68409414ec686dc9e8a43138925927d54d2c6b6564e3a`
+   — `tests/unit/kernel/test_canonicalization.py`
+5. `b477bac4a9562445de8a04f1a267f9e9a26fdc052705824a6eaf0c5c6d5b4fec`
+   — `tests/unit/kernel/test_fingerprints.py`
+6. `2b9d9b3ab0486757e720ddc3c60533bd9a1eda055e5718c29c69c7928ce539f8`
+   — `tests/vectors/kernel/canonicalization-v1.json`
+
+The activated authority has been fully exercised within the exact six-file
+boundary and is pending terminal closure.
+
+### Closure Effective Point
+
+Before the closure effective point:
+
+- `AFR_PHASE_3_STATUS = COMPLETE`
+- `AFR_PHASE_3_FIRST_SLICE_IMPLEMENTATION_STATUS =
+  CANONICALLY_ACCEPTED`
+- `AFR_PHASE_3_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_3_IMPLEMENTATION_AUTHORITY =
+  CONSUMED_PENDING_CLOSURE`
+- `AFR_PHASE_3_RUNTIME_EVALUATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_NEXUS_INTEGRATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_PERSISTENCE_AUTHORITY = NONE`
+- `AFR_PHASE_3_DEPLOYMENT_AUTHORITY = NONE`
+- `AFR_PHASE_4_AUTHORITY = NONE`
+
+Closure becomes effective if and only if:
+
+1. the closure reconciliation remains limited to `docs/SOT.md` and this
+   document;
+2. both closure documents are frozen and independently reviewed;
+3. all closure-review findings are resolved;
+4. the exact reviewed candidate is staged, committed, and pushed;
+5. the closure pull request preserves the reviewed commit, tree, exact
+   two-file boundary, and both content hashes;
+6. the pull request receives independent acceptance review;
+7. the pull request is explicitly transitioned from draft to ready;
+8. explicit closure merge authorization is granted;
+9. the reviewed closure candidate is merged to canonical `main`;
+10. post-merge identity, both parents, tree, exact file boundary, and content
+    verification pass;
+11. local and remote canonical `main` converge cleanly;
+12. the canonical worktree and index are clean.
+
+A draft pull request, review, approval, readiness transition, or merge without
+successful post-merge verification does not satisfy this effective point.
+
+After and only after the closure effective point:
+
+- `AFR_PHASE_3_STATUS = COMPLETE`
+- `AFR_PHASE_3_FIRST_SLICE_IMPLEMENTATION_STATUS = COMPLETE`
+- `AFR_PHASE_3_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_3_IMPLEMENTATION_AUTHORITY = CONSUMED_CLOSED`
+- `AFR_PHASE_3_RUNTIME_EVALUATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_NEXUS_INTEGRATION_AUTHORITY = NONE`
+- `AFR_PHASE_3_PERSISTENCE_AUTHORITY = NONE`
+- `AFR_PHASE_3_DEPLOYMENT_AUTHORITY = NONE`
+- `AFR_PHASE_4_AUTHORITY = NONE`
+
+This closure cannot authorize another implementation slice, runtime evaluation,
+provider or NEXUS integration, ATA runtime action, persistence, deployment,
+production use, enforcement, remediation, or Phase 4.

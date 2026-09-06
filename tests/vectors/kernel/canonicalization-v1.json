@@ -1,0 +1,35 @@
+{
+  "canonicalization_vectors": [
+    {
+      "canonical_utf8": "{\"a\":1,\"b\":2}",
+      "input": {
+        "a": 1,
+        "b": 2
+      },
+      "input_byte_length": 16,
+      "name": "mapping-order"
+    }
+  ],
+  "canonicalization_version": "1.0.0",
+  "fingerprint_vector": {
+    "canonical_utf8": "{\"a\":1,\"b\":\"stable\"}",
+    "canonicalization_version": "1.0.0",
+    "fingerprint_version": "1.0.0",
+    "sha256": "db70458decb611221ee031e739c9002a997bb3a2daa81940f944d733e348a496"
+  },
+  "malformed_vector": "{\"canonicalization_version\":\"1.0.0\",\"canonicalization_vectors\":[",
+  "negative_vectors": [
+    {
+      "failure_code": "INVALID_TYPE",
+      "kind": "unsupported-float",
+      "name": "unsupported-float",
+      "value": 1.5
+    },
+    {
+      "failure_code": "INVALID_VERSION",
+      "kind": "unsupported-version",
+      "name": "unsupported-canonicalization-version",
+      "version": "999.0.0"
+    }
+  ]
+}

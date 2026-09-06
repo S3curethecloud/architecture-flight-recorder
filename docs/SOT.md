@@ -814,3 +814,72 @@ Phase 4.
 The proposed first implementation slice remains inactive. Any implementation
 or Phase 4 activity requires a separately defined, independently reviewed,
 merged, and verified authority activation.
+
+## 20. Phase 3 First-Slice Implementation-Authority Proposal
+
+Phase 3 implementation-readiness planning is complete, and its planning
+authority is consumed and closed.
+
+A separately governed proposal may be reviewed to activate narrowly bounded
+implementation authority for the first deterministic-kernel slice.
+
+Before that proposal reaches its effective point:
+
+- Phase 3 status: `COMPLETE`;
+- Phase 3 planning authority: `CONSUMED_CLOSED`;
+- Phase 3 implementation-authority proposal:
+  `DRAFT_REVIEW_CANDIDATE`;
+- Phase 3 implementation authority: `NONE`;
+- runtime-evaluation authority: `NONE`;
+- integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- production authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+The exact proposed future implementation boundary is:
+
+1. `src/afr/kernel/contracts.py`
+2. `src/afr/kernel/canonicalization.py`
+3. `src/afr/kernel/fingerprints.py`
+4. `tests/unit/kernel/test_canonicalization.py`
+5. `tests/unit/kernel/test_fingerprints.py`
+6. `tests/vectors/kernel/canonicalization-v1.json`
+
+The proposed authority is:
+
+`BOUNDED_PHASE_3_FIRST_SLICE_IMPLEMENTATION_ONLY`
+
+The proposal does not itself activate that authority. Activation requires
+independent architecture, deterministic-semantics, security, test-design,
+supply-chain, NEXUS-boundary, ATA-boundary, and authority-leakage review; all
+findings resolved; exact proposal commit and pull-request verification;
+explicit merge authorization; canonical merge; and successful post-merge
+identity, parentage, tree, content, and clean-synchronization verification.
+
+After and only after that effective point:
+
+- Phase 3 status remains `COMPLETE`;
+- Phase 3 planning authority remains `CONSUMED_CLOSED`;
+- Phase 3 implementation authority:
+  `BOUNDED_PHASE_3_FIRST_SLICE_IMPLEMENTATION_ONLY`;
+- runtime-evaluation authority remains `NONE`;
+- provider-integration authority remains `NONE`;
+- NEXUS-integration authority remains `NONE`;
+- persistence authority remains `NONE`;
+- certificate authority remains `NONE`;
+- deployment authority remains `NONE`;
+- production authority remains `NONE`;
+- enforcement authority remains `NONE`;
+- remediation authority remains `NONE`;
+- Phase 4 authority remains `NONE`.
+
+Even after activation, authority would be limited to pure, deterministic,
+side-effect-free typed contracts, canonicalization, fingerprint construction,
+unit tests, and deterministic test vectors within the six named paths.
+
+No dependency addition, executable external schema, provider adapter, network
+access, filesystem or database persistence, live evidence collection, NEXUS
+integration, ATA integration, runtime conformance evaluation, certificate
+issuance, deployment, production access, enforcement, remediation, or Phase 4
+activity is proposed.

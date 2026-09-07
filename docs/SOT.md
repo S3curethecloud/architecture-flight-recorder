@@ -883,3 +883,127 @@ access, filesystem or database persistence, live evidence collection, NEXUS
 integration, ATA integration, runtime conformance evaluation, certificate
 issuance, deployment, production access, enforcement, remediation, or Phase 4
 activity is proposed.
+
+## 21. Phase 3 First-Slice Post-Merge Implementation Closure Reconciliation
+
+The bounded Phase 3 deterministic-kernel first implementation slice completed
+its canonical implementation-acceptance effective point through PR #13.
+
+Canonical implementation identity:
+
+- activation baseline:
+  `9f2da0bec9a67551f20c83546dffd0da764732eb`;
+- reviewed implementation commit:
+  `f821d1a6d91113c1bbcecd780ad348064105b312`;
+- reviewed implementation tree:
+  `5ba6638f8df57671e738df686e7978352ab1b7df`;
+- canonical merge:
+  `d29b426d2709cc4e8c51a875d87d5386219a9e3b`;
+- canonical merge tree:
+  `5ba6638f8df57671e738df686e7978352ab1b7df`;
+- canonical merge parents:
+  `9f2da0bec9a67551f20c83546dffd0da764732eb`
+  and `f821d1a6d91113c1bbcecd780ad348064105b312`;
+- pull request: `#13`;
+- canonical acceptance:
+  `AFR_PHASE_3_FIRST_SLICE_CANONICAL_ACCEPTANCE = PASS`.
+
+The exact canonical implementation boundary is:
+
+1. `src/afr/kernel/contracts.py`
+2. `src/afr/kernel/canonicalization.py`
+3. `src/afr/kernel/fingerprints.py`
+4. `tests/unit/kernel/test_canonicalization.py`
+5. `tests/unit/kernel/test_fingerprints.py`
+6. `tests/vectors/kernel/canonicalization-v1.json`
+
+Frozen canonical content hashes:
+
+- `e3af3ce22ae6fa2afc198e027ae1b15c380e27a858c2d44aa9719796a9b19b20`
+  — `src/afr/kernel/contracts.py`;
+- `4e665d03f65be659b489fb27fd09dad84b1f581cf77bd05f6878af66be5cb449`
+  — `src/afr/kernel/canonicalization.py`;
+- `61116106e93930f4c2ce94e8f6eb83cbca517dcc5a54aaa8f201c10b4b91f547`
+  — `src/afr/kernel/fingerprints.py`;
+- `a24fff80a3ab466511a68409414ec686dc9e8a43138925927d54d2c6b6564e3a`
+  — `tests/unit/kernel/test_canonicalization.py`;
+- `b477bac4a9562445de8a04f1a267f9e9a26fdc052705824a6eaf0c5c6d5b4fec`
+  — `tests/unit/kernel/test_fingerprints.py`;
+- `2b9d9b3ab0486757e720ddc3c60533bd9a1eda055e5718c29c69c7928ce539f8`
+  — `tests/vectors/kernel/canonicalization-v1.json`.
+
+Post-merge verification confirmed:
+
+- exact merge identity and both parents;
+- merge-tree convergence with the reviewed implementation tree;
+- the exact six-file boundary;
+- all six frozen content hashes;
+- successful reproduction of all 32 tests from canonical content;
+- absence of bytecode, dependency, configuration, or seventh artifacts;
+- clean local and remote canonical `main` convergence.
+
+The implementation authority has been exercised completely and is pending
+terminal consumption through this separately governed closure reconciliation.
+
+### First-Slice Closure Effective Point
+
+Before this closure reconciliation reaches its effective point:
+
+- Phase 3 status: `COMPLETE`;
+- first-slice implementation status: `CANONICALLY_ACCEPTED`;
+- Phase 3 planning authority: `CONSUMED_CLOSED`;
+- Phase 3 implementation authority: `CONSUMED_PENDING_CLOSURE`;
+- runtime-evaluation authority: `NONE`;
+- provider-integration authority: `NONE`;
+- NEXUS-integration authority: `NONE`;
+- persistence authority: `NONE`;
+- deployment authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+The first implementation slice becomes terminally closed if and only if:
+
+1. the closure change remains limited to `docs/SOT.md` and
+   `docs/phase-3/PHASE_3_FIRST_SLICE_IMPLEMENTATION_AUTHORITY_PROPOSAL.md`;
+2. the two closure documents are frozen by exact content hash;
+3. the complete closure candidate is independently reviewed;
+4. all closure-review findings are resolved;
+5. the reviewed candidate is staged and committed exactly;
+6. the closure branch and draft pull request preserve the reviewed commit,
+   tree, two-file boundary, and content hashes;
+7. the pull request receives independent acceptance review;
+8. the pull request is explicitly transitioned from draft to ready;
+9. explicit closure merge authorization is granted;
+10. the reviewed closure candidate is merged to canonical `main`;
+11. post-merge identity, both parents, tree, exact two-file boundary, and both
+    content hashes are verified;
+12. local and remote canonical `main` converge on that verified merge;
+13. the canonical worktree and index are clean.
+
+Opening, reviewing, approving, or marking the closure pull request ready does
+not satisfy this effective point. Merge without successful post-merge
+verification also does not satisfy it.
+
+After and only after that effective point:
+
+- Phase 3 status remains `COMPLETE`;
+- first-slice implementation status: `COMPLETE`;
+- Phase 3 planning authority remains `CONSUMED_CLOSED`;
+- Phase 3 implementation authority: `CONSUMED_CLOSED`;
+- runtime-evaluation authority remains `NONE`;
+- provider-integration authority remains `NONE`;
+- NEXUS-integration authority remains `NONE`;
+- persistence authority remains `NONE`;
+- deployment authority remains `NONE`;
+- production authority remains `NONE`;
+- enforcement authority remains `NONE`;
+- remediation authority remains `NONE`;
+- Phase 4 authority remains `NONE`.
+
+This closure does not authorize another implementation slice, runtime
+conformance evaluation, provider or NEXUS integration, ATA runtime action,
+persistence, deployment, production access, enforcement, remediation, or
+Phase 4 activity.
+
+Any such activity requires separately defined authority, independent review,
+explicit merge authorization, canonical merge, and successful post-merge
+verification.

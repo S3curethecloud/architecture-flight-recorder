@@ -1007,3 +1007,202 @@ Phase 4 activity.
 Any such activity requires separately defined authority, independent review,
 explicit merge authorization, canonical merge, and successful post-merge
 verification.
+
+## 22. Phase 4 Planning-Authority Proposal
+
+Phase 3 and its first bounded implementation slice are canonically complete
+and terminally closed.
+
+Canonical Phase 3 closure identity:
+
+- canonical `main`:
+  `5d289f7cdcd52224502ad70e5fef5c99c958dd1a`;
+- canonical tree:
+  `e120886e59a9fdb615fd76763444af2b997a075b`;
+- Phase 3 planning authority: `CONSUMED_CLOSED`;
+- Phase 3 implementation authority: `CONSUMED_CLOSED`;
+- additional Phase 3 implementation authority: `NONE`.
+
+Read-only canonical discovery identified the next capability candidate as:
+
+`OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING`
+
+Its bounded mission is to define how supplied operational observations may
+become eligible, immutable, attributable, tenant-bound evidence before
+handoff to the deterministic AFR kernel.
+
+Canonical discovery selected:
+
+`DISPOSITION_A =
+PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+NEXUS Phase 19 and ARCP therefore remain reserved upstream dependencies
+only. This proposal creates no ARCP, NEXUS integration, or
+architecture-truth contract authority.
+
+The exact proposal-change boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_PLANNING_AUTHORITY_PROPOSAL.md`
+
+If and only if this proposal reaches its complete effective point, the
+exact future Phase 4 planning-package boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_PLAN.md`
+3. `docs/phase-4/PHASE_4_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_OPERATIONAL_EVIDENCE_INTAKE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_EVIDENCE_ELIGIBILITY_CONTRACT.md`
+6. `docs/security/AFR_PHASE_4_EVIDENCE_TRUST_BOUNDARY.md`
+
+These are future documentation paths only. This proposal does not create
+them, authorize their creation before its effective point, or authorize any
+source, test, vector, schema, dependency, or configuration artifact.
+
+The proposal requests conditional authority to plan only:
+
+- observation ingress envelopes;
+- evidence identity, source, provenance, integrity, freshness, tenant,
+  subject, environment, scope, and version bindings;
+- deterministic eligibility, ineligibility, quarantine, and processing
+  failure semantics;
+- replay, duplication, conflict, partial-evidence, ordering, and
+  resource-bound behavior;
+- adapter-neutral handoff into the already accepted deterministic kernel;
+- security, privacy, auditability, and supply-chain constraints.
+
+Current Phase 4 state:
+
+- capability candidate:
+  `OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING`;
+- planning-authority proposal: `DRAFT_REVIEW_CANDIDATE`;
+- planning authority: `NONE`;
+- implementation authority: `NONE`;
+- live evidence collection authority: `NONE`;
+- provider-integration authority: `NONE`;
+- NEXUS-integration authority: `NONE`;
+- ARCP authority: `NONE`;
+- runtime-evaluation authority: `NONE`;
+- persistence authority: `NONE`;
+- certificate authority: `NONE`;
+- deployment authority: `NONE`;
+- enforcement authority: `NONE`;
+- remediation authority: `NONE`.
+
+Phase 4 planning authority becomes effective if and only if:
+
+1. this proposal remains limited to the exact two-document boundary;
+2. both documents are frozen by exact content hash;
+3. the whole proposal is independently reviewed;
+4. all review findings are resolved;
+5. the exact reviewed proposal is staged and committed;
+6. the proposal branch and draft pull request preserve the reviewed commit,
+   tree, boundary, and hashes;
+7. the pull request receives independent acceptance review;
+8. the pull request is explicitly transitioned from draft to ready;
+9. explicit merge authorization is granted;
+10. the reviewed proposal is merged to canonical `main`;
+11. post-merge identity, both parents, tree, exact boundary, and content
+    verification pass;
+12. local and remote canonical `main` converge cleanly;
+13. the canonical worktree and index are clean.
+
+Before that effective point:
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = NONE`
+
+After and only after that effective point:
+
+`AFR_PHASE_4_PLANNING_AUTHORITY =
+BOUNDED_OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING_ONLY`
+
+Even after activation, implementation, collection, integrations, runtime
+evaluation, persistence, certificates, deployment, enforcement,
+remediation, and production authority remain `NONE`.
+
+### Cross-Program Addendum Reconciliation
+
+The Phase 4 proposal records two separate non-canonical custodian inputs:
+
+- original cross-program non-drift custodian directive:
+  SHA-256
+  `1350851c7c82be0e1feb724dee31fc3823cd18ef9b167f0caa8839657ed9c0c5`;
+- bounded custodian addendum:
+  SHA-256
+  `786e63267665ccbd44389a08cc4f1046eb357fc93cf448b5a45fc00109630a95`.
+
+Neither custodian input is canonical AFR, NEXUS, ARCP, or ATA evidence and
+neither creates planning, implementation, integration, runtime, persistence,
+certificate, deployment, enforcement, remediation, or Phase 4 authority.
+Custodian input must not be treated as canonical evidence.
+
+Cross-program names and ownership remain unresolved as follows:
+
+`ARCP_WORKING_LABEL = ARCP`
+
+`ARCP_CANONICAL_NAME =
+UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`
+
+`ARCP_CANONICAL_SEMANTICS =
+UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`
+
+`NEXUS_PHASE_19_DIRECTION =
+RESERVED_UPSTREAM_ARCHITECTURE_DIRECTION`
+
+`NEXUS_PHASE_19_CANONICAL_CAPABILITY_NAME =
+MUST_BE_VERIFIED_FROM_CANONICAL_NEXUS_STATE`
+
+AFR cannot independently expand, rename, define, or canonicalize ARCP or the
+NEXUS Phase 19 capability.
+
+Every AFR semantic relied upon by this proposal must be classified as exactly
+one of:
+
+- `EXISTING_CANONICAL`;
+- `RESERVED_FUTURE`;
+- `NOT_ESTABLISHED`.
+
+Any AFR semantic not proven from canonical Phase 0 through Phase 3 evidence
+must not be classified as `EXISTING_CANONICAL`. If canonical evidence is
+absent, ambiguous, incomplete, or insufficient, the semantic must be
+classified as `RESERVED_FUTURE` or `NOT_ESTABLISHED`, as applicable.
+Canonical status must not be inferred from either custodian input.
+
+`RESERVED_FUTURE` and `NOT_ESTABLISHED` semantics must not be represented as
+implemented, activated, current, or authoritative existing capability.
+
+The following authority states are distinct and none implies the next:
+
+`DEPENDENCY_RECOGNITION`
+
+`INTEGRATION_PLANNING`
+
+`INTEGRATION_IMPLEMENTATION`
+
+`RUNTIME_USE`
+
+Specifically:
+
+`DEPENDENCY_RECOGNITION != INTEGRATION_PLANNING_AUTHORITY`
+
+`INTEGRATION_PLANNING_AUTHORITY !=
+INTEGRATION_IMPLEMENTATION_AUTHORITY`
+
+`INTEGRATION_IMPLEMENTATION_AUTHORITY != RUNTIME_AUTHORITY`
+
+`FUTURE_NEXUS_TO_AFR_ARCHITECTURE_TRUTH_CONSUMER_CONTRACT` is retained only
+as a non-canonical placeholder description. It is not a canonical ARCP name,
+canonical contract name, schema, API, adapter, implementation, or active
+integration authority.
+
+The following upstream authorities remain absent:
+
+`NEXUS_PHASE_19_IMPLEMENTATION_AUTHORITY = NONE`
+
+`ARCP_IMPLEMENTATION_AUTHORITY = NONE`
+
+`ARCP_RUNTIME_AUTHORITY = NONE`
+
+This reconciliation does not change the established Phase 4 capability
+candidate, Disposition A, future six-document boundary, effective point,
+scope boundary, non-drift boundary, or non-authorization constraints.

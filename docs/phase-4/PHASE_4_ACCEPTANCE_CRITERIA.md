@@ -464,3 +464,81 @@ The authority state remains:
 `AFR_PHASE_4_REMEDIATION_AUTHORITY = NONE`
 
 `AFR_PHASE_4_AUTHORITY = BOUNDED_PLANNING_ONLY`
+
+
+## 25. Post-Merge Closure Reconciliation
+
+The Phase 4 planning package is canonically accepted through PR #16 at merge
+commit `e754e75bca0cd11b56f7721f61f5aa94f193af1c`, tree
+`330777770678166fb34463df2584461c4a03e809`, with ordered parents
+`25deed93df00d1db044a24164b9e46ca5a9e759d` and
+`60a1b78569307d774680c2c265efb8476727fa9c`.
+
+Closure acceptance requires all of the following:
+
+- the closure is append-only and limited exactly to `docs/SOT.md` and this
+  acceptance-criteria document;
+- both closure documents match their independently reviewed content hashes;
+- PR #16's merge identity, ordered parents, tree, exact six-document boundary,
+  and six canonical hashes are recorded exactly;
+- the independent package and pull-request acceptance evidence is preserved;
+- Phase 3 implementation artifacts remain byte-identical;
+- eligibility remains pre-conformance and Phase 4 planning cannot invoke the
+  deterministic kernel;
+- Disposition A and NEXUS Phase 19, ARCP, and ATA non-drift boundaries remain
+  unchanged;
+- closure activation remains conditional and fail-closed;
+- the reviewed closure commit, tree, two-file boundary, and hashes are
+  preserved through its remote branch and pull request;
+- independent closure PR acceptance, explicit readiness transition, and
+  explicit merge authorization occur as separate gates;
+- the closure is merged to canonical `main`;
+- post-merge identity, both parents, tree, boundary, hashes, local and remote
+  convergence, worktree cleanliness, and artifact absence all pass.
+
+Before every closure condition passes:
+
+`AFR_PHASE_4_PLANNING_STATUS =
+CANONICALLY_ACCEPTED_CLOSURE_PENDING`
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_AUTHORITY = BOUNDED_PLANNING_ONLY`
+
+After and only after every closure condition passes:
+
+`AFR_PHASE_4_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_LIVE_EVIDENCE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_4_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_AUTHORITY = NONE`
+
+Closure completion creates no implementation, collection, integration,
+runtime, persistence, certificate, deployment, enforcement, remediation, or
+subsequent-phase authority.

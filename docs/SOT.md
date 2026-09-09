@@ -1324,3 +1324,126 @@ BOUNDED_OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING_ONLY`
 `AFR_PHASE_4_REMEDIATION_AUTHORITY = NONE`
 
 `AFR_PHASE_4_AUTHORITY = BOUNDED_PLANNING_ONLY`
+
+
+## 24. Phase 4 Post-Merge Closure Reconciliation
+
+The Phase 4 operational-evidence intake and eligibility planning package has
+reached canonical acceptance and remains pending terminal closure.
+
+Canonical PR #16 evidence:
+
+- pre-merge canonical `main`:
+  `25deed93df00d1db044a24164b9e46ca5a9e759d`;
+- reviewed planning commit:
+  `60a1b78569307d774680c2c265efb8476727fa9c`;
+- canonical merge commit:
+  `e754e75bca0cd11b56f7721f61f5aa94f193af1c`;
+- canonical merge tree:
+  `330777770678166fb34463df2584461c4a03e809`;
+- ordered merge parents:
+  `25deed93df00d1db044a24164b9e46ca5a9e759d`
+  and `60a1b78569307d774680c2c265efb8476727fa9c`;
+- exact pull request: `#16`;
+- exact changed-file count: `6`;
+- exact additions: `1407`;
+- exact deletions: `0`.
+
+The canonically accepted six-document boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_PLAN.md`
+3. `docs/phase-4/PHASE_4_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_OPERATIONAL_EVIDENCE_INTAKE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_EVIDENCE_ELIGIBILITY_CONTRACT.md`
+6. `docs/security/AFR_PHASE_4_EVIDENCE_TRUST_BOUNDARY.md`
+
+Canonical content identities at the planning acceptance point:
+
+- `docs/SOT.md`:
+  `41fa3af461fb672a0ab253277df0e42712bd27e2b16e850606b60a118f2febf9`;
+- `docs/phase-4/PHASE_4_PLAN.md`:
+  `b68654ef1c9097122100b1357e6feea19a4296c6ecafd526441b8673fce88673`;
+- `docs/phase-4/PHASE_4_ACCEPTANCE_CRITERIA.md`:
+  `d6a95c8baaca7c77b3b7ae48a9de2030a2ef37a985ac45345fca7645471797f2`;
+- `docs/architecture/AFR_OPERATIONAL_EVIDENCE_INTAKE_ARCHITECTURE.md`:
+  `9aee23f83bbb304478313a6ee368cd4a4cb5bc6e862506da0d1d2f44f62653a9`;
+- `docs/contracts/AFR_EVIDENCE_ELIGIBILITY_CONTRACT.md`:
+  `6e55a2a32a02ca6aed93faf6b881f596e918f6c71c3ef94388a0f60e0a4d169f`;
+- `docs/security/AFR_PHASE_4_EVIDENCE_TRUST_BOUNDARY.md`:
+  `a954533d710b79e682a0843d7d1153d98d858f05a2582ad1e88155497c54077f`.
+
+Acceptance evidence confirms that the exact package passed whole-package
+architecture, contract, semantic, deterministic-resource, security,
+cross-program non-drift, and authority-leakage review with no blocking
+finding. PR #16 then passed independent acceptance review at the frozen
+identity, was explicitly transitioned from draft to ready, received explicit
+merge authorization, and was merged without changing the reviewed head.
+
+Post-merge verification confirmed the merge identity, both ordered parents,
+tree, exact six-document boundary, all six hashes, Phase 3 implementation
+immutability, local and remote canonical convergence, clean worktree and
+index, and absence of a seventh or bytecode artifact.
+
+The controlling cross-program disposition remains:
+
+`DISPOSITION_A =
+PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+NEXUS Phase 19 remains the reserved upstream architecture direction. ARCP
+canonical naming and semantics remain
+`UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`. This closure creates no
+NEXUS, ARCP, ATA, architecture-truth, integration, or runtime authority.
+
+Before the closure effective point:
+
+- Phase 4 planning status: `CANONICALLY_ACCEPTED_CLOSURE_PENDING`;
+- Phase 4 planning authority: `CONSUMED_PENDING_CLOSURE`;
+- Phase 4 implementation authority: `NONE`;
+- Phase 4 runtime-evaluation authority: `NONE`;
+- Phase 4 authority: `BOUNDED_PLANNING_ONLY`.
+
+This closure becomes effective if and only if:
+
+1. the closure remains limited to `docs/SOT.md` and
+   `docs/phase-4/PHASE_4_ACCEPTANCE_CRITERIA.md`;
+2. both closure documents are frozen by exact content hash;
+3. the complete closure candidate passes independent review;
+4. every blocking closure finding is resolved;
+5. the exact reviewed closure objects are staged and verified;
+6. the closure commit preserves the canonical parent, exact two-document
+   boundary, tree, and frozen hashes;
+7. the remote closure branch preserves the reviewed commit and tree;
+8. a draft pull request into `main` preserves the reviewed identity;
+9. the pull request receives independent acceptance review;
+10. the pull request is explicitly transitioned from draft to ready;
+11. explicit merge authorization is granted;
+12. the reviewed closure is merged to canonical `main`;
+13. post-merge identity, both parents, tree, exact boundary, hashes, local and
+    remote convergence, and repository cleanliness are verified.
+
+No earlier gate implies or authorizes a later gate. Draft creation, review,
+readiness, or merge alone does not establish terminal closure.
+
+After and only after the closure effective point:
+
+- Phase 4 planning status: `COMPLETE`;
+- Phase 4 planning authority: `CONSUMED_CLOSED`;
+- Phase 4 implementation authority: `NONE`;
+- live evidence collection authority: `NONE`;
+- provider-integration authority: `NONE`;
+- NEXUS-integration authority: `NONE`;
+- ARCP authority: `NONE`;
+- runtime-evaluation authority: `NONE`;
+- persistence authority: `NONE`;
+- certificate authority: `NONE`;
+- deployment authority: `NONE`;
+- enforcement authority: `NONE`;
+- remediation authority: `NONE`;
+- Phase 4 authority: `NONE`.
+
+Phase 4 planning closure does not authorize implementation, executable
+schemas, source, tests, vectors, adapters, collection, integration, runtime
+evaluation, persistence, certificates, deployment, enforcement, remediation,
+or a subsequent phase. Any further work requires separately governed and
+canonically accepted authority.

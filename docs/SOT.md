@@ -1206,3 +1206,121 @@ The following upstream authorities remain absent:
 This reconciliation does not change the established Phase 4 capability
 candidate, Disposition A, future six-document boundary, effective point,
 scope boundary, non-drift boundary, or non-authorization constraints.
+
+## 23. Phase 4 Operational Evidence Intake and Eligibility Planning Record
+
+Phase 4 planning was activated from canonical `main`
+`25deed93df00d1db044a24164b9e46ca5a9e759d` with tree
+`19ce8d96fe36052ef072635393a170bdca2d7ce0`.
+
+The bounded capability remains:
+
+`OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING`
+
+Its mission remains:
+
+`DEFINE_BOUNDED_OBSERVATION_TO_ELIGIBLE_EVIDENCE_SEMANTICS`
+
+Its architectural position remains:
+
+`BETWEEN_EXTERNAL_OBSERVATIONS_AND_THE_DETERMINISTIC_KERNEL`
+
+The exact Phase 4 planning candidate contains:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_PLAN.md`
+3. `docs/phase-4/PHASE_4_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_OPERATIONAL_EVIDENCE_INTAKE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_EVIDENCE_ELIGIBILITY_CONTRACT.md`
+6. `docs/security/AFR_PHASE_4_EVIDENCE_TRUST_BOUNDARY.md`
+
+The five newly materialized planning-document identities are:
+
+- Phase 4 plan SHA-256:
+  `b68654ef1c9097122100b1357e6feea19a4296c6ecafd526441b8673fce88673`;
+- Phase 4 acceptance criteria SHA-256:
+  `d6a95c8baaca7c77b3b7ae48a9de2030a2ef37a985ac45345fca7645471797f2`;
+- operational-evidence intake architecture SHA-256:
+  `9aee23f83bbb304478313a6ee368cd4a4cb5bc6e862506da0d1d2f44f62653a9`;
+- evidence-eligibility contract SHA-256:
+  `6e55a2a32a02ca6aed93faf6b881f596e918f6c71c3ef94388a0f60e0a4d169f`;
+- Phase 4 evidence trust-boundary SHA-256:
+  `a954533d710b79e682a0843d7d1153d98d858f05a2582ad1e88155497c54077f`.
+
+These documents define observation envelopes, evidence identity and trust
+bindings, deterministic eligibility decisions, replay and conflict behavior,
+partial-evidence handling, resource limits, structured failures,
+adapter-neutrality, and the future kernel-handoff boundary.
+
+Eligibility remains pre-conformance. `ELIGIBLE`, `INELIGIBLE`,
+`QUARANTINED`, `UNSUPPORTED`, and `PROCESSING_FAILURE` do not constitute
+`CONFORMANT`, `NON_CONFORMANT`, `INCONCLUSIVE`, `STALE`, or another
+conformance outcome. Phase 4 planning cannot invoke the deterministic kernel.
+
+The controlling disposition remains:
+
+`DISPOSITION_A =
+PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+ARCP canonical naming and semantics remain
+`UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`. NEXUS Phase 19 remains the
+reserved upstream architecture direction. AFR creates no NEXUS, ARCP, ATA,
+or architecture-truth authority.
+
+The planning package remains a pre-acceptance candidate. Materialization,
+individual document review, or SOT reconciliation does not establish
+canonical planning completion and does not authorize staging, commitment,
+remote publication, readiness, merge, implementation, integration, runtime
+use, persistence, deployment, enforcement, or remediation.
+
+Planning becomes canonically accepted only if:
+
+1. all six documents remain the exact candidate boundary;
+2. every document is frozen by exact content hash;
+3. the whole six-document package passes independent architecture, contract,
+   semantic, deterministic-resource, security, non-drift, and
+   authority-leakage review;
+4. every blocking finding is resolved;
+5. the exact reviewed candidate is staged and its Git objects are verified;
+6. the exact candidate is committed with verified parent, tree, boundary, and
+   content identities;
+7. the remote branch and draft pull request preserve that identity;
+8. the pull request receives independent acceptance review;
+9. the pull request is explicitly transitioned from draft to ready;
+10. explicit merge authorization is granted;
+11. the reviewed package is merged to canonical `main`;
+12. post-merge identity, both parents, tree, boundary, hashes, and local and
+    remote convergence are verified;
+13. a separately governed post-merge closure becomes effective.
+
+No gate implies a later gate. Merge without successful post-merge verification
+and closure does not establish planning completion.
+
+Current authority remains:
+
+`AFR_PHASE_4_PLANNING_AUTHORITY =
+BOUNDED_OPERATIONAL_EVIDENCE_INTAKE_AND_ELIGIBILITY_PLANNING_ONLY`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_LIVE_EVIDENCE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_4_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_AUTHORITY = BOUNDED_PLANNING_ONLY`

@@ -535,3 +535,176 @@ No gate implies the next.
 ## 19. No Implicit Progression
 
 No gate implies the next.
+
+## 20. State-3 Canonical Closure Reconciliation
+
+The bounded normalized-evidence-bytes semantic-amendment authority has
+completed its separately governed semantic clarification and is now fully
+exercised within the exact authorized documentation-only boundary.
+
+The accepted clarification effective-point evidence is exactly:
+
+- pre-clarification canonical base:
+  `d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`;
+- reviewed clarification commit:
+  `328c0a4821f121e61a28ad6ee1e50eb65e78053d`;
+- canonical clarification merge:
+  `6f513a31100774a4db71a07b83696b56a02c675f`;
+- canonical clarification merge tree:
+  `73bbd0b90bd4019afec136f1037d04141fe6e0e4`;
+- ordered clarification merge parents:
+  `d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`
+  and `328c0a4821f121e61a28ad6ee1e50eb65e78053d`;
+- pull request: `#19`;
+- exact clarification changed-file count: `2`;
+- exact clarification additions: `973`;
+- exact clarification deletions: `0`;
+- canonical `docs/SOT.md` blob:
+  `011bcf05448be5ea4001f24db09e73e9a96435c4`;
+- canonical authority-proposal blob:
+  `6180467b700bd0a2bf7f9999cdbb065ddd86d664`;
+- canonical clarification blob:
+  `19ebb8df57d6fa4292b53394b611f8e76bc2743b`.
+
+Independent post-merge verification accepted the clarification merge identity,
+ordered parents, tree, exact boundary, and content. Local and remote canonical
+`main` then converged cleanly on the verified merge.
+
+The State-2 effective point has been independently accepted.
+
+`STATE_2 = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+The accepted canonical measurement remains exactly:
+
+`NORMALIZED_EVIDENCE_BYTES_CANONICAL_MEASUREMENT = BYTE_LENGTH_OF_CANONICAL_PRE_CONSTRUCTION_NORMALIZED_EVIDENCE_PROJECTION`
+
+The semantic clarification remains prospective and bounded. It does not
+retroactively rewrite historical Phase 4 evidence, redefine Phase 3, expand
+the Phase 4 trust boundary, or create NEXUS, ARCP, ATA, implementation, or
+runtime authority.
+
+State 3 remains separately governed.
+
+`STATE_3 = NOT_ESTABLISHED`
+
+`STATE_2_TO_STATE_3_REQUIRES = SEPARATELY_GOVERNED_CANONICAL_CLOSURE`
+
+The exact State-3 closure reconciliation boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY_PROPOSAL.md`
+
+No third canonical repository path is authorized for this closure.
+
+The canonical semantic clarification is not a closure-edit target:
+
+`STATE_3_CLOSURE_CLARIFICATION_DOCUMENT_MUTATION = PROHIBITED`
+
+The frozen closure base is exactly:
+
+`STATE_3_CLOSURE_FROZEN_BASE = 6f513a31100774a4db71a07b83696b56a02c675f`
+
+`STATE_3_CLOSURE_FROZEN_BASE_TREE = 73bbd0b90bd4019afec136f1037d04141fe6e0e4`
+
+If canonical `main` moves before the complete closure effective point:
+
+`STATE_3_CLOSURE_BASE_MOVED = STOP`
+
+`STATE_3_CLOSURE_SILENT_REBASE = PROHIBITED`
+
+`STATE_3_CLOSURE_SILENT_BASE_SUBSTITUTION = PROHIBITED`
+
+Before the closure effective point:
+
+`STATE_2 = CONSUMED_PENDING_CLOSURE`
+
+`STATE_3 = NOT_ESTABLISHED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`IMPLEMENTATION_AUTHORITY = NONE`
+
+`RUNTIME_AUTHORITY = NONE`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+State 3 becomes effective if and only if all of the following occur under
+separately governed gates:
+
+1. the complete closure candidate remains exactly the two-document boundary
+   and both complete future repository-file preimages are established against
+   the exact frozen closure base;
+2. the complete candidate passes independent closure review;
+3. all blocking findings are resolved in a fresh exact accepted candidate;
+4. both accepted preimages are frozen by separately governed exact-content and
+   identity controls;
+5. the exact frozen objects are materialized and staged without a third path;
+6. the exact reviewed closure commit is separately authorized and created with
+   verified parent, tree, two-document boundary, and frozen identities, and
+   the remote closure branch preserves that exact reviewed commit and tree;
+7. a draft pull request into canonical `main` preserves the reviewed identity
+   and receives independent acceptance review;
+8. the pull request is explicitly transitioned from draft to ready;
+9. explicit closure merge authorization is granted for the exact Ready
+   identity;
+10. the reviewed closure candidate is merged to canonical `main` using the
+    required two-parent topology;
+11. independent post-merge identity, ordered-parent, tree, exact-boundary, and
+    frozen-content verification passes;
+12. local and remote canonical `main` converge on the verified closure merge;
+    and
+13. the canonical checkout, worktree, and index are clean.
+
+No earlier event establishes State 3.
+
+The required future closure merge topology is:
+
+`STATE_3_CLOSURE_MERGE_PARENT_COUNT = 2`
+
+`STATE_3_CLOSURE_MERGE_PARENT_1 = STATE_3_CLOSURE_FROZEN_BASE`
+
+`STATE_3_CLOSURE_MERGE_PARENT_2 = VERIFIED_STATE_3_CLOSURE_HEAD`
+
+`STATE_3_CLOSURE_MERGE_TREE = VERIFIED_STATE_3_CLOSURE_HEAD_TREE`
+
+`STATE_3_CLOSURE_SQUASH_MERGE = PROHIBITED`
+
+`STATE_3_CLOSURE_REBASE_MERGE = PROHIBITED`
+
+`STATE_3_CLOSURE_FAST_FORWARD_SUBSTITUTION = PROHIBITED`
+
+`STATE_3_CLOSURE_CHANGED_HEAD = PROHIBITED`
+
+`STATE_3_CLOSURE_CHANGED_TREE = PROHIBITED`
+
+After and only after the complete closure effective point:
+
+`STATE_3 = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_CLOSED`
+
+The accepted normalized-evidence-bytes canonical measurement remains
+unchanged.
+
+This terminal authority closure does not itself create or authorize a fresh
+Phase 4 implementation candidate.
+
+A fresh Phase 4 implementation candidate and separately governed
+implementation-authority path remain required before executable work.
+
+Phase 5 remains unauthorized unless and until Phase 4 implementation and its
+required closure are separately completed and a Phase 5 authority path is
+established.
+
+This closure creates no live evidence collection, provider integration, NEXUS
+integration, ARCP, ATA, runtime evaluation, persistence, certificate,
+deployment, production, enforcement, remediation, or other cross-program
+authority.
+
+Historical canonical artifacts remain immutable. Prior failed read-only review
+attempts remain historical review evidence and are not retroactively rewritten
+as passes.
+
+No gate implies the next.

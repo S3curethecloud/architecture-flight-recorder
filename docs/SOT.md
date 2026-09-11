@@ -1962,3 +1962,173 @@ Canonical semantic clarification does not authorize implementation,
 integration, runtime behavior, or Phase 5.
 
 No gate implies the next.
+
+## 27. Phase 4 Normalized-Evidence-Bytes Semantic-Amendment State-3 Closure Reconciliation
+
+The bounded post-closure Phase 4 normalized-evidence-bytes semantic amendment
+has reached its complete clarification effective point and is in State 2
+pending separately governed terminal closure.
+
+Canonical clarification evidence is exactly:
+
+- pre-clarification canonical base:
+  `d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`;
+- reviewed clarification commit:
+  `328c0a4821f121e61a28ad6ee1e50eb65e78053d`;
+- canonical clarification merge:
+  `6f513a31100774a4db71a07b83696b56a02c675f`;
+- canonical clarification merge tree:
+  `73bbd0b90bd4019afec136f1037d04141fe6e0e4`;
+- ordered canonical clarification parents:
+  `d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`
+  and `328c0a4821f121e61a28ad6ee1e50eb65e78053d`;
+- pull request: `#19`;
+- exact clarification changed-file count: `2`;
+- exact clarification additions: `973`;
+- exact clarification deletions: `0`;
+- canonical `docs/SOT.md` blob:
+  `011bcf05448be5ea4001f24db09e73e9a96435c4`;
+- canonical semantic-amendment authority-proposal blob:
+  `6180467b700bd0a2bf7f9999cdbb065ddd86d664`;
+- canonical semantic-clarification blob:
+  `19ebb8df57d6fa4292b53394b611f8e76bc2743b`.
+
+Independent post-merge verification accepted the exact merge identity, ordered
+parents, tree, two-document clarification boundary, canonical blobs, and frozen
+clarification content. Local `main`, local `origin/main`, remote `main`, and
+the canonical checkout then converged on the verified merge with a clean index
+and worktree.
+
+The complete clarification effective point is accepted.
+
+`STATE_2 = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+The canonical measurement remains exactly:
+
+`NORMALIZED_EVIDENCE_BYTES_CANONICAL_MEASUREMENT = BYTE_LENGTH_OF_CANONICAL_PRE_CONSTRUCTION_NORMALIZED_EVIDENCE_PROJECTION`
+
+This closure reconciliation does not reinterpret, broaden, or replace the
+accepted normalized-evidence-bytes semantics. The canonical clarification
+document remains immutable for this closure.
+
+The exact State-3 closure boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY_PROPOSAL.md`
+
+No third path is part of this closure.
+
+`docs/phase-4/PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_CLARIFICATION.md`
+is canonical semantic evidence and is not a closure-edit target.
+
+The State-3 closure base is exactly:
+
+`STATE_3_CLOSURE_FROZEN_BASE = 6f513a31100774a4db71a07b83696b56a02c675f`
+
+`STATE_3_CLOSURE_FROZEN_BASE_TREE = 73bbd0b90bd4019afec136f1037d04141fe6e0e4`
+
+If canonical `main` moves before the closure reaches its complete effective
+point:
+
+`STATE_3_CLOSURE_BASE_MOVED = STOP`
+
+`STATE_3_CLOSURE_SILENT_REBASE = PROHIBITED`
+
+`STATE_3_CLOSURE_SILENT_BASE_SUBSTITUTION = PROHIBITED`
+
+Before the State-3 closure effective point:
+
+`STATE_2 = CONSUMED_PENDING_CLOSURE`
+
+`STATE_3 = NOT_ESTABLISHED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`IMPLEMENTATION_AUTHORITY = NONE`
+
+`RUNTIME_AUTHORITY = NONE`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+State 3 becomes effective if and only if every one of the following separately
+governed closure gates completes successfully:
+
+1. exactly these two complete future repository-file preimages are prepared
+   against the exact frozen closure base;
+2. the complete two-document closure candidate passes independent review;
+3. every blocking closure-review finding is resolved in a fresh exact accepted
+   candidate;
+4. both complete closure preimages receive separately governed exact-content
+   and identity freeze;
+5. exactly the frozen closure objects are materialized and staged;
+6. the exact closure commit is separately authorized and created with the
+   verified parent, tree, two-document boundary, and frozen identities, and
+   the remote closure branch preserves that exact reviewed commit and tree;
+7. a draft closure pull request into canonical `main` preserves the exact
+   reviewed identity and receives independent acceptance review;
+8. the closure pull request is explicitly transitioned from draft to ready;
+9. explicit closure merge authorization is granted for that exact Ready
+   identity;
+10. the exact reviewed closure candidate is merged using the required
+    two-parent topology;
+11. independent post-merge identity, ordered-parent, tree, exact-boundary, and
+    frozen-content verification passes;
+12. local and remote canonical `main` converge on the verified closure merge;
+    and
+13. the canonical worktree and index are clean.
+
+No earlier closure event establishes State 3. Candidate preparation, review,
+freeze, materialization, staging, commit, publication, draft-PR creation,
+pull-request review, Ready transition, merge authorization, or merge alone is
+insufficient.
+
+For the future canonical State-3 closure merge:
+
+`STATE_3_CLOSURE_MERGE_PARENT_COUNT = 2`
+
+`STATE_3_CLOSURE_MERGE_PARENT_1 = STATE_3_CLOSURE_FROZEN_BASE`
+
+`STATE_3_CLOSURE_MERGE_PARENT_2 = VERIFIED_STATE_3_CLOSURE_HEAD`
+
+`STATE_3_CLOSURE_MERGE_TREE = VERIFIED_STATE_3_CLOSURE_HEAD_TREE`
+
+`STATE_3_CLOSURE_SQUASH_MERGE = PROHIBITED`
+
+`STATE_3_CLOSURE_REBASE_MERGE = PROHIBITED`
+
+`STATE_3_CLOSURE_FAST_FORWARD_SUBSTITUTION = PROHIBITED`
+
+`STATE_3_CLOSURE_CHANGED_HEAD = PROHIBITED`
+
+`STATE_3_CLOSURE_CHANGED_TREE = PROHIBITED`
+
+After and only after the complete State-3 closure effective point:
+
+`STATE_3 = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_CLOSED`
+
+The normalized-evidence-bytes canonical measurement remains unchanged.
+
+Phase 4 operational-evidence intake and eligibility planning remains
+canonically complete and terminally closed. This State-3 closure does not
+reopen general Phase 4.
+
+The semantic clarification resolves the normalized-evidence-bytes semantic
+stop only. It does not authorize executable implementation.
+
+A fresh Phase 4 implementation candidate and separately governed
+implementation-authority path remain required before executable work.
+
+Phase 5 remains unauthorized unless and until Phase 4 implementation and its
+required closure are separately completed and a Phase 5 authority path is
+established.
+
+This closure creates no collection, provider-integration, NEXUS-integration,
+ARCP, ATA, runtime-evaluation, persistence, certificate, deployment,
+production, enforcement, remediation, or cross-program authority.
+
+Historical canonical artifacts and prior review dispositions remain preserved.
+No gate implies the next.

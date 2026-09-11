@@ -1676,3 +1676,289 @@ State 3 may be established only through a separately governed canonical closure 
 `STATE_2_TO_STATE_3_REQUIRES = SEPARATELY_GOVERNED_CANONICAL_CLOSURE`
 
 No gate implies the next.
+
+## 26. Phase 4 Normalized-Evidence-Bytes Semantic Clarification
+
+This clarification is governed by State 1 of the canonical
+normalized-evidence-bytes semantic-amendment authority lifecycle.
+
+State 1 became effective only after all nineteen authority-proposal
+effective-point requirements completed, including PR #18's canonical merge and
+the separately required post-merge identity, ordered-parent, tree,
+frozen-content, local/remote convergence, and clean-worktree verification.
+
+PR #18's merge alone was not authority-establishing.
+
+This clarification is bound to:
+
+`EXPECTED_CANONICAL_BASE_COMMIT = d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`
+
+`EXPECTED_CANONICAL_BASE_TREE = 9b8f577e4df894edc26fd8b36c1921b217ba0cbe`
+
+`EXPECTED_CANONICAL_BASE_SOT_BLOB = 8130d344eced5306e4f2c8cbee00c3ef02d63237`
+
+If canonical `main` moves before the clarification effective point:
+
+`BASE_MOVED = STOP`
+
+The exact clarification boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_CLARIFICATION.md`
+
+No third canonical repository path is authorized.
+
+The exact measured object is:
+
+`NORMALIZED_EVIDENCE_BYTES_MEASURED_OBJECT = PRE_CONSTRUCTION_NORMALIZED_EVIDENCE_PROJECTION_CANONICAL_BYTES`
+
+`NORMALIZED_EVIDENCE_PROJECTION_SCHEMA_VERSION = 1.0.0`
+
+The projection is exactly one canonical mapping with a closed root key set.
+Except for optional keys governed by `optional_field_presence`, schema version
+`1.0.0` contains exactly:
+
+`projection_schema_version`,
+`projection_serialization_version`,
+`observation_id`,
+`observation_envelope_version`,
+`source_id`,
+`source_class`,
+`tenant_id`,
+`subject_id`,
+`subject_type`,
+`environment_id`,
+`scope_id`,
+`release_binding`,
+`observed_at`,
+`received_at`,
+`applicable_time`,
+`valid_from`,
+`valid_until`,
+`representation`,
+`representation_version`,
+`integrity_reference`,
+`integrity_mechanism_version`,
+`provenance_chain_reference`,
+`provenance_version`,
+`content_reference`,
+`normalized_content`,
+`normalized_content_identity`,
+`trusted_evaluation_time`,
+`freshness_policy`,
+`freshness_policy_version`,
+`eligibility_policy_version`,
+`evidence_model_version`,
+and `optional_field_presence`.
+
+`PROJECTION_SCHEMA_OPEN_EXTENSION_POINT = NONE`
+
+The `optional_field_presence` mapping is always present and contains exactly
+five boolean keys:
+
+`release_binding`, `applicable_time`, `validity_interval`,
+`trusted_evaluation_time`, and `freshness_policy`.
+
+A false presence value omits the corresponding optional root member or member
+pair. A true presence value requires it to be present. Explicit null remains
+distinct from empty and absence when canonical Phase 4 validation permits that
+state on an otherwise-eligible path.
+
+Projection schema version `1.0.0` maps each root key only to its corresponding
+already-validated canonical Phase 4 value. The mapping is exhaustive. There is
+no generic `other bindings`, `additional metadata`, provider metadata, or
+future-field extension point.
+
+For schema version `1.0.0`, provenance participation is limited to `source_id`,
+`source_class`, `provenance_chain_reference`, and `provenance_version`.
+Integrity participation is limited to `integrity_reference` and
+`integrity_mechanism_version`. External provenance-chain bodies, verifier
+sessions, detached verification artifacts, secrets, credentials, transient
+provider state, validation logs, and implementation stack data are excluded.
+
+The `normalized_content` member contains the exact already-normalized canonical
+content value. Mapping keys are ordered by canonical key bytes. Ordered
+sequences preserve already-established semantic order. No unordered collection
+receives an order from arrival order or implementation iteration. Unsupported
+structures must be resolved by earlier canonical Phase 4 semantics and are not
+silently repaired by projection serialization.
+
+The exact representation is:
+
+`NORMALIZED_EVIDENCE_PROJECTION_SERIALIZATION = DETERMINISTIC_CANONICAL_UTF8_VALUE_SERIALIZATION_V1`
+
+`NORMALIZED_EVIDENCE_PROJECTION_SERIALIZATION_VERSION = 1.0.0`
+
+The representation reuses only the accepted Phase 3
+`CANONICALIZATION_VERSION = 1.0.0` value-encoding grammar: UTF-8, NFC strings,
+deterministic JSON escaping and structure, canonical key ordering, semantic
+sequence order, explicit null, exact optional-key omission, lowercase
+booleans, deterministic integer and UTC timestamp rendering, and fail-closed
+unsupported-type behavior.
+
+The exact Phase 4 projection schema, not dataclass discovery, arbitrary object
+introspection, provider object layout, or implementation-specific membership,
+determines the serialized record.
+
+`PHASE3_CANONICALIZE_FUNCTION_INVOCATION_REQUIRED = NO`
+
+`PHASE3_RESOURCE_ACCOUNTING_REUSED_FOR_PHASE4_NORMALIZED_EVIDENCE_BYTES = NO`
+
+The measurement point is:
+
+`NORMALIZED_EVIDENCE_BYTES_MEASUREMENT_POINT = LAST_MANDATORY_PRE_CONSTRUCTION_ADMISSION_CHECK`
+
+Measurement occurs after all mandatory non-projection validation and earlier
+resource checks required for an otherwise-eligible path, after projection
+members/presence states are fixed and formability is established, but before
+an `ELIGIBLE` decision becomes final, before final evidence identity commitment,
+before completed resource accounting, and before immutable eligible evidence
+construction.
+
+Normalized content participates directly:
+
+`NORMALIZED_CONTENT_PARTICIPATES_IN_NORMALIZED_EVIDENCE_BYTES = YES`
+
+`NORMALIZED_CONTENT_IDENTITY_ONLY_IS_SUFFICIENT = NO`
+
+`NORMALIZED_EVIDENCE_BYTES_EQUALS_NORMALIZED_CONTENT_BYTES = NO`
+
+The eligibility decision does not participate:
+
+`ELIGIBILITY_DECISION_INCLUDED_IN_NORMALIZED_EVIDENCE_PROJECTION = NO`
+
+The deterministic quantity is:
+
+`NORMALIZED_EVIDENCE_BYTES = BYTE_LENGTH_OF_CANONICAL_PRE_CONSTRUCTION_NORMALIZED_EVIDENCE_PROJECTION`
+
+`NORMALIZED_EVIDENCE_BYTES_UNIT = OCTETS`
+
+Every octet emitted by the closed canonical projection is counted.
+
+The projection-measurement pass is independent of the canonical Phase 4 work
+unit quantity:
+
+`NORMALIZED_EVIDENCE_PROJECTION_MEASUREMENT_CONSUMES_PHASE4_WORK_UNITS = NO`
+
+All earlier validations and resource checks whose quantities are available
+before projection measurement retain precedence. If one has already selected a
+deterministic non-eligible or processing-failure result, projection measurement
+is not run solely to replace it.
+
+After earlier checks succeed, projection formability is established and the
+normalized-evidence-byte measurement is performed. Because that measurement
+does not consume work units, it cannot simultaneously create a new work-unit
+exceedance.
+
+`NORMALIZED_EVIDENCE_BYTES_AND_WORK_UNITS_SIMULTANEOUS_MEASUREMENT_FAILURE = NOT_APPLICABLE`
+
+The quantity may be computed through bounded streaming canonical serialization
+into a counting sink. Complete byte-buffer materialization is not required.
+Counting must stop fail-closed when the applicable maximum would be exceeded
+and must not truncate, sample, omit, repair, reorder, or compress the
+projection to fit.
+
+A normalized-evidence-byte limit violation has exactly:
+
+`FAILURE_CLASSIFICATION = PROCESSING_FAILURE`
+
+`FAILURE_RESOURCE_REFERENCE = normalized_evidence_bytes`
+
+`FAILURE_SEMANTIC_LOCATION = normalized_evidence_bytes`
+
+`FAILURE_CONSTRUCTION_STATE = STOPPED_BEFORE_EVIDENCE_CONSTRUCTION`
+
+This clarification does not select or import an exact stable failure-code
+token:
+
+`NORMALIZED_EVIDENCE_BYTES_STABLE_FAILURE_CODE = NOT_SELECTED_BY_THIS_CLARIFICATION`
+
+`PHASE3_RESOURCE_LIMIT_EXCEEDED_CODE_IMPORT = PROHIBITED`
+
+A fresh separately governed Phase 4 implementation-contract path must bind one
+stable Phase 4 code to the already-fixed classification, resource reference,
+semantic location, and construction-stop state before executable implementation
+may be accepted.
+
+The byte count is not an evidence-identity input:
+
+`NORMALIZED_EVIDENCE_BYTES_IS_EVIDENCE_IDENTITY_INPUT = NO`
+
+The final evidence identity itself is excluded from the measured projection.
+
+The relationship to the Phase 3 resource bound is:
+
+`PHASE3_MAXIMUM_CANONICAL_BYTES_TO_NORMALIZED_EVIDENCE_BYTES_RELATIONSHIP = INDEPENDENT_NOT_SUBSTITUTABLE`
+
+`PHASE3_MAXIMUM_CANONICAL_BYTES_SUBSTITUTION = PROHIBITED`
+
+`PHASE4_NORMALIZED_EVIDENCE_BYTES_LIMIT_OWNERSHIP = PHASE_4`
+
+Representation-grammar reuse does not create resource-limit equality.
+
+`DISTINCT_PHASE3_PROJECTION_BOUND_REQUIRED = NO`
+
+Any implementation-internal mechanical bound remains separately governed
+implementation detail and cannot silently change these semantics.
+
+The existing Phase 4 distinctions among absent optional, explicit null, empty,
+missing required, unsupported value, unsupported type, and unsupported version
+remain unchanged.
+
+Eligibility remains pre-conformance, with only `ELIGIBLE`, `INELIGIBLE`,
+`QUARANTINED`, `UNSUPPORTED`, and `PROCESSING_FAILURE`.
+
+The existing Phase 4 security and trust boundary remains unchanged.
+
+`DISPOSITION_A = PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+ARCP and NEXUS Phase 19 naming and semantics remain reserved upstream and are
+not defined or expanded by this clarification.
+
+Historical Phase 4 artifacts remain preserved. No prior implementation
+candidate receives retroactive acceptance. After canonical clarification, any
+future implementation candidate must be fresh against the repaired canonical
+state.
+
+Before the clarification effective point:
+
+`STATE_1 = BOUNDED_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_DOCUMENTATION_ONLY`
+
+After and only after the exact clarification is independently accepted,
+frozen, serialized, hash-frozen, materialized, staged, committed, published,
+accepted through a Draft-to-Ready pull-request sequence, explicitly authorized
+for merge, merged using the required two-parent topology, independently
+post-merge verified, synchronized locally and remotely, and proven clean:
+
+`STATE_2 = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`NORMALIZED_EVIDENCE_BYTES_CANONICAL_MEASUREMENT = BYTE_LENGTH_OF_CANONICAL_PRE_CONSTRUCTION_NORMALIZED_EVIDENCE_PROJECTION`
+
+`IMPLEMENTATION_AUTHORITY = NONE`
+
+State 3 requires separately governed canonical closure.
+
+For the clarification merge:
+
+`FROZEN_BASE = d618688cb2b54e319d73e6cb70f3a2f8e19c9c92`
+
+`MERGE_PARENT_COUNT = 2`
+
+`MERGE_PARENT_1 = FROZEN_BASE`
+
+`MERGE_PARENT_2 = VERIFIED_HEAD`
+
+`MERGE_TREE = VERIFIED_HEAD_TREE`
+
+`SQUASH_MERGE = PROHIBITED`
+
+`REBASE_MERGE = PROHIBITED`
+
+`FAST_FORWARD_SUBSTITUTION = PROHIBITED`
+
+Canonical semantic clarification does not authorize implementation,
+integration, runtime behavior, or Phase 5.
+
+No gate implies the next.

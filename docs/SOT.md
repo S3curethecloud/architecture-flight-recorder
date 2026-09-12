@@ -2132,3 +2132,169 @@ production, enforcement, remediation, or cross-program authority.
 
 Historical canonical artifacts and prior review dispositions remain preserved.
 No gate implies the next.
+
+## 28. Phase 4 First-Slice Normalized-Evidence-Bytes Implementation-Authority Proposal
+
+Phase 4 operational-evidence intake and eligibility planning remains canonically
+complete and terminally closed. The bounded normalized-evidence-bytes semantic
+amendment is in State 3 and remains consumed and closed.
+
+The current canonical foundation for this proposal is exactly:
+
+`EXPECTED_CANONICAL_BASE_COMMIT = 9aafaeab4ee16454ffb14c6ce7885f344db4d6de`
+
+`EXPECTED_CANONICAL_BASE_TREE = 63b2c0605724d32d37e802a0108550baa9d76c56`
+
+`EXPECTED_CANONICAL_BASE_SOT_BLOB = 95edd06a371763efbdf9ef618b6c9eec2794c6b0`
+
+If canonical `main` moves before the complete implementation-authority proposal
+effective point:
+
+`BASE_MOVED = STOP`
+
+`SILENT_REBASE = PROHIBITED`
+
+`SILENT_BASE_SUBSTITUTION = PROHIBITED`
+
+The accepted first implementation slice is limited to the normalized-evidence
+projection and normalized-evidence-byte admission primitive already justified
+by canonical Phase 4 planning plus the canonically closed normalized-evidence-
+bytes clarification.
+
+The proposed implementation authority is exactly:
+
+`BOUNDED_PHASE_4_FIRST_SLICE_NORMALIZED_EVIDENCE_BYTES_IMPLEMENTATION_ONLY`
+
+Before the complete authority-proposal effective point:
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = NONE`
+
+The exact authority-proposal canonical boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-4/PHASE_4_FIRST_SLICE_IMPLEMENTATION_AUTHORITY_PROPOSAL.md`
+
+No third proposal path is authorized.
+
+The exact future implementation boundary, if and only if this authority later
+reaches its complete effective point, is:
+
+1. `src/afr/eligibility/normalized_evidence_bytes.py`
+2. `tests/unit/eligibility/test_normalized_evidence_bytes.py`
+3. `tests/vectors/eligibility/normalized-evidence-bytes-v1.json`
+
+No fourth implementation file is authorized. No `__init__.py`, dependency,
+build-configuration, Phase 3 source, or Phase 3 test mutation is authorized.
+
+The stable Phase 4 normalized-evidence-byte limit-failure code proposed by this
+authority is:
+
+`NORMALIZED_EVIDENCE_BYTES_LIMIT_EXCEEDED`
+
+It binds only the already-canonical Phase 4 failure semantics:
+
+`FAILURE_CLASSIFICATION = PROCESSING_FAILURE`
+
+`FAILURE_RESOURCE_REFERENCE = normalized_evidence_bytes`
+
+`FAILURE_SEMANTIC_LOCATION = normalized_evidence_bytes`
+
+`FAILURE_CONSTRUCTION_STATE = STOPPED_BEFORE_EVIDENCE_CONSTRUCTION`
+
+Phase 3 `RESOURCE_LIMIT_EXCEEDED` is not imported.
+
+The proposed public executable surface contains exactly six symbols:
+
+1. `NORMALIZED_EVIDENCE_BYTES_LIMIT_EXCEEDED`
+2. `NormalizedEvidenceBytesRequest`
+3. `NormalizedEvidenceBytesLimitResult`
+4. `NormalizedEvidenceBytesLimitFailure`
+5. `NormalizedEvidenceBytesContractError`
+6. `evaluate_normalized_evidence_bytes_limit`
+
+The public function is exactly:
+
+`evaluate_normalized_evidence_bytes_limit(request: NormalizedEvidenceBytesRequest) -> NormalizedEvidenceBytesLimitResult`
+
+The function is pure and side-effect-free. It has no filesystem, network,
+provider, clock, randomness, environment, subprocess, plugin, persistence, or
+ambient-state dependency.
+
+The primitive consumes only already-validated Phase 4 semantic values,
+already-normalized canonical content, already-established normalized-content
+identity, exact optional-field presence state, and an already-validated
+applicable normalized-evidence-byte maximum plus its versioned Phase 4
+resource-policy version.
+
+The primitive does not perform general observation-envelope validation,
+provenance verification, integrity verification, trusted-time evaluation,
+freshness evaluation, replay/conflict processing, policy selection, content
+normalization, normalized-content identity calculation, final eligibility
+decision construction, final evidence identity commitment, completed resource
+accounting, immutable eligible-evidence construction, Phase 3 kernel
+invocation, conformance evaluation, NEXUS integration, ARCP implementation,
+ATA integration, persistence, deployment, enforcement, or remediation.
+
+The normalized-evidence projection remains schema version `1.0.0`, uses
+`DETERMINISTIC_CANONICAL_UTF8_VALUE_SERIALIZATION_V1` version `1.0.0`, is
+measured at `LAST_MANDATORY_PRE_CONSTRUCTION_ADMISSION_CHECK`, and remains
+independent of Phase 3 `maximum_canonical_bytes` and Phase 3 work-unit
+accounting.
+
+The applicable maximum is supplied by an already-validated versioned Phase 4
+resource policy. This primitive creates no new resource-policy domain rule.
+A negative direct-call maximum is rejected only as a noncanonical executable
+programming-contract representation error. Zero is not rejected by a new
+policy semantic.
+
+The complete proposal document freezes the exact request, result, failure,
+contract-error, projection, serialization, deep-snapshot, NFC-collision,
+cycle-handling, test, security, stop-condition, and activation requirements.
+
+The proposed authority activates if and only if all fifteen separately
+governed proposal gates in
+`docs/phase-4/PHASE_4_FIRST_SLICE_IMPLEMENTATION_AUTHORITY_PROPOSAL.md`
+complete successfully.
+
+Proposal preparation, review, content freeze, repository materialization,
+staging, commit, publication, draft-PR creation, acceptance review, Ready
+transition, merge authorization, or merge alone does not activate
+implementation authority.
+
+After and only after the complete authority-proposal effective point:
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = BOUNDED_PHASE_4_FIRST_SLICE_NORMALIZED_EVIDENCE_BYTES_IMPLEMENTATION_ONLY`
+
+Activation authorizes only a fresh implementation branch from the verified
+activation merge and only the exact three implementation files above.
+
+Activation does not itself implement, accept, merge, deploy, or execute the
+slice.
+
+The implementation remains subject to separate implementation-candidate
+preparation, independent review, exact testing/vector reproduction, identity
+freeze, materialization, staging, commit, publication, pull-request
+acceptance, Ready transition, explicit merge authorization, canonical merge,
+post-merge verification, local/remote convergence, clean-checkout
+verification, and separately governed terminal closure.
+
+Until that implementation lifecycle and required closure complete:
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+The controlling cross-program disposition remains:
+
+`DISPOSITION_A = PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+ARCP canonical naming and semantics remain
+`UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`. This proposal creates no
+NEXUS, ARCP, ATA, architecture-truth, provider-integration, runtime-evaluation,
+persistence, deployment, enforcement, remediation, or cross-program authority.
+
+Historical R1, R2, and R3 noncanonical implementation-contract designs remain
+rejected. Their later corrections do not create retroactive acceptance.
+The independently accepted R4 design is noncanonical custodian/review input
+until and unless this exact authority proposal reaches its separately governed
+canonical effective point.
+
+No gate implies the next.

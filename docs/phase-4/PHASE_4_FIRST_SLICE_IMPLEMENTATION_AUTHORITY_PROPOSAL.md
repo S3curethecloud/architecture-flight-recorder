@@ -1057,3 +1057,172 @@ Even after activation:
 `PHASE_5_START_AUTHORITY = NONE`
 
 No gate implies the next.
+
+## 33. Post-Merge Implementation Closure Reconciliation
+
+The exact three-file implementation authorized by this proposal was
+independently reviewed, committed, published, reviewed through PR #22,
+explicitly transitioned to Ready, explicitly authorized for merge, merged,
+independently verified, converged to canonical `main`, and cleanly checked out.
+
+Canonical implementation evidence:
+
+- implementation-authority activation merge: `c9495a2230cc6f2d6a5e9933b25d72d37ef3062d`;
+- reviewed implementation commit: `d746b380d9d7192a68110513592d38d97c1a6bde`;
+- reviewed implementation tree: `7e9a9898e38828a50d9b150465a4728b27e3fcd6`;
+- canonical implementation merge: `666f38d22ded7a7c1980894e0e4c36c40b72a82f`;
+- canonical merge tree: `7e9a9898e38828a50d9b150465a4728b27e3fcd6`;
+- canonical merge ordered parents: `c9495a2230cc6f2d6a5e9933b25d72d37ef3062d` and `d746b380d9d7192a68110513592d38d97c1a6bde`;
+- pull request: `#22`;
+- exact changed-file count: `3`;
+- exact additions: `2141`;
+- exact deletions: `0`;
+- accepted deterministic test reproduction: `59 PASS`, `OK`, exit status `0`;
+- frozen implementation content-set manifest SHA-256:
+  `e4badf9c68d1ac9a709ced81f870460f9601bb61bd99ee57420849679a8425e5`;
+- canonical acceptance:
+  `AFR_PHASE_4_FIRST_SLICE_CANONICAL_ACCEPTANCE = PASS`.
+
+Canonical file identities:
+
+1. `5c52f2655b569fbfcf5ae00980e7724b35b5c91f8f704bd5d05b65eff523267a`
+   — `src/afr/eligibility/normalized_evidence_bytes.py`
+   — Git blob `fa3cec8c94f6b456e1845c396058006476f522c8`;
+2. `54f1f11f8b95963382c2787f27f2712b72c3c54850db68c6aefaf2fbf8e70afd`
+   — `tests/unit/eligibility/test_normalized_evidence_bytes.py`
+   — Git blob `bbb616551833fd0b2a10f7d08e2ce16fd7664917`;
+3. `77ffd28e9ba37074ef85011c9e6f819741de6df9ee21c2c8ebd28205c6327892`
+   — `tests/vectors/eligibility/normalized-evidence-bytes-v1.json`
+   — Git blob `a00babe87c3c7a92952a431a4597a57b734bfcea`.
+
+The accepted test/vector reproduction was produced from reviewed
+implementation tree `7e9a9898e38828a50d9b150465a4728b27e3fcd6`. The canonical merge preserves that exact same
+tree, so the accepted reproduction is bound to byte-identical canonical
+implementation content.
+
+The activated implementation authority has been fully exercised within the
+exact three-file boundary and is pending only separately governed terminal
+closure.
+
+### Closure Effective Point
+
+Before the closure effective point:
+
+`AFR_PHASE_4_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_STATE =
+STATE_3_CONSUMED_CLOSED`
+
+`AFR_PHASE_4_FIRST_SLICE_IMPLEMENTATION_STATUS = CANONICALLY_ACCEPTED`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_4_ADDITIONAL_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_DEPLOYMENT_AUTHORITY = NONE`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+Closure becomes effective if and only if:
+
+1. the closure reconciliation remains append-only and limited exactly to
+   `docs/SOT.md` and this document;
+2. both complete closure documents are independently reviewed;
+3. every blocking closure-review finding is resolved;
+4. the accepted closure content and identities are frozen exactly;
+5. exactly the two reviewed closure documents are materialized and staged and
+   their staged objects are independently verified;
+6. the exact reviewed closure commit and remote branch preserve the canonical
+   parent, reviewed tree, exact two-document boundary, and frozen identities;
+7. the Draft closure pull request preserves the exact reviewed identity and
+   receives independent acceptance review;
+8. the closure pull request is explicitly transitioned from Draft to Ready;
+9. explicit closure merge authorization is granted for the exact Ready identity;
+10. the reviewed closure candidate is merged with the required exact
+    two-parent canonical topology;
+11. post-merge identity, ordered parents, tree, exact boundary, and content
+    verification passes;
+12. local and remote canonical `main` converge on the verified closure merge;
+13. the canonical `main` checkout, worktree, and index are independently
+    verified clean.
+
+No earlier gate implies the next. Merge alone does not satisfy the closure
+effective point.
+
+After and only after the closure effective point:
+
+`AFR_PHASE_4_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_NORMALIZED_EVIDENCE_BYTES_SEMANTIC_AMENDMENT_STATE =
+STATE_3_CONSUMED_CLOSED`
+
+`AFR_PHASE_4_FIRST_SLICE_IMPLEMENTATION_STATUS = COMPLETE`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_ADDITIONAL_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_LIVE_EVIDENCE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_4_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_4_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_4_REMEDIATION_AUTHORITY = NONE`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+This closure cannot authorize another implementation slice, branch deletion,
+runtime evaluation, live collection, provider/NEXUS/ARCP/ATA integration,
+persistence, deployment, enforcement, remediation, production access, or
+Phase 5.
+
+The controlling cross-program disposition remains:
+
+`DISPOSITION_A = PHASE_4_DOES_NOT_REQUIRE_ARCHITECTURE_TRUTH_CONTRACT_WORK`
+
+`ARCP_CANONICAL_NAME =
+UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`
+
+`ARCP_CANONICAL_SEMANTICS =
+UNRESOLVED_PENDING_NEXUS_PHASE_19_GOVERNANCE`
+
+`NEXUS_PHASE_19_CANONICAL_CAPABILITY_NAME =
+MUST_BE_VERIFIED_FROM_CANONICAL_NEXUS_STATE`
+
+`DEPENDENCY_RECOGNITION != INTEGRATION_PLANNING_AUTHORITY`
+
+`INTEGRATION_PLANNING_AUTHORITY != INTEGRATION_IMPLEMENTATION_AUTHORITY`
+
+`INTEGRATION_IMPLEMENTATION_AUTHORITY != RUNTIME_AUTHORITY`
+
+Historical canonical implementation evidence remains preserved.
+No gate implies the next.

@@ -2512,3 +2512,249 @@ MUST_BE_VERIFIED_FROM_CANONICAL_NEXUS_STATE`
 
 Historical canonical artifacts and prior review dispositions remain preserved.
 No gate implies the next.
+
+## 30. Phase 5 Evidence-Acquisition and Collection-Boundary Planning-Authority Proposal Candidate
+
+This section records a noncanonical planning-authority proposal candidate for
+the next bounded Architecture Flight Recorder planning capability.
+
+It does not start Phase 5. It does not create Phase 5 planning authority,
+implementation authority, provider-integration authority, live-collection
+authority, persistence authority, runtime authority, deployment authority,
+enforcement authority, remediation authority, or production authority.
+
+The selected noncanonical capability candidate is:
+
+`AFR_PHASE_5_CAPABILITY_CANDIDATE =
+EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING`
+
+The proposed mission is:
+
+`AFR_PHASE_5_MISSION =
+DEFINE_BOUNDED_READ_ONLY_COLLECTION_OF_ATTRIBUTABLE_OPERATIONAL_OBSERVATIONS_FOR_PHASE4_INGRESS`
+
+The proposed architectural position is:
+
+`AFR_PHASE_5_POSITION =
+BETWEEN_APPROVED_PROVIDER_ENTERPRISE_SOURCES_AND_PHASE4_SUPPLIED_OPERATIONAL_OBSERVATION`
+
+The proposed planning authority is:
+
+`AFR_PHASE_5_PLANNING_AUTHORITY =
+BOUNDED_EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING_ONLY`
+
+This authority is proposed only. It is not active.
+
+### Canonical Foundation
+
+This proposal candidate is derived from canonical `main`
+`75cb8f4339911b830b4faed09f24bc69267c7b2f` and canonical tree
+`9216178e83836c80dc593dc18ea6da805d7441e6`.
+
+The canonical predecessor state remains:
+
+`AFR_PHASE_4_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_4_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_FIRST_SLICE_IMPLEMENTATION_STATUS = COMPLETE`
+
+`AFR_PHASE_4_IMPLEMENTATION_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_4_ADDITIONAL_IMPLEMENTATION_AUTHORITY = NONE`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+The Phase 5 capability candidate was selected through separately governed
+read-only discovery, independent review, and candidate-selection review.
+Those noncanonical review results constrain this proposal candidate but do not
+themselves create canonical Phase 5 authority.
+
+### Exact Proposal Boundary
+
+The future repository proposal boundary is limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-5/PHASE_5_PLANNING_AUTHORITY_PROPOSAL.md`
+
+No third repository document is authorized by this proposal candidate.
+
+This noncanonical preparation occurs outside the AFR repository and creates no
+repository materialization authority.
+
+### Requested Planning Scope
+
+If and only if the separately governed planning-authority proposal effective
+point is satisfied, Phase 5 planning may define documentation for:
+
+- collector and source identity semantics;
+- tenant, subject, environment, and collection-scope bindings;
+- collection time and source-observation time semantics;
+- partial collection, source failure, and bounded completeness claims;
+- raw source-response preservation requirements where permitted;
+- least-privilege read-only collection identity requirements;
+- provider-neutral collector contract requirements;
+- collection request, result, and failure identity;
+- the handoff boundary to Phase 4 supplied operational observations;
+- security, privacy, audit, provenance, and supply-chain constraints.
+
+Phase 5 planning must not determine evidence eligibility. Evidence eligibility
+remains a Phase 4 boundary.
+
+### Future Planning Package
+
+If planning authority later becomes effective, planning materialization is
+proposed to be limited to exactly:
+
+1. `docs/SOT.md`
+2. `docs/phase-5/PHASE_5_PLAN.md`
+3. `docs/phase-5/PHASE_5_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_EVIDENCE_ACQUISITION_ARCHITECTURE.md`
+5. `docs/contracts/AFR_OBSERVATION_ACQUISITION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_5_EVIDENCE_ACQUISITION_TRUST_BOUNDARY.md`
+
+These are future documentation paths only. This candidate does not authorize
+their creation.
+
+### Authority Boundaries
+
+Phase 5 planning must not:
+
+- define, approve, create, modify, or supersede architecture truth;
+- define the NEXUS architecture-truth export contract;
+- define or modify ARCP semantics;
+- determine evidence eligibility;
+- select conformance outcomes;
+- grant ATA or other runtime commit authority;
+- mutate provider or enterprise-system state;
+- perform automated remediation;
+- claim collection completeness beyond the observed scope.
+
+Providers and enterprise systems remain authoritative sources for observations
+about their own bounded state.
+
+NEXUS remains authoritative for architecture truth for NEXUS-governed systems.
+
+ATA retains consequential runtime commit authority where applicable.
+
+### Stop Conditions
+
+Planning must stop and require new authority if:
+
+- upstream architecture-truth export semantics become necessary;
+- provider-specific implementation becomes necessary;
+- live collection becomes necessary;
+- credentials or secrets become necessary;
+- network access becomes necessary;
+- persistence becomes necessary;
+- Phase 4 evidence-eligibility semantics require amendment;
+- canonical Phase 1 through Phase 3 semantics require amendment;
+- the proposed six-document planning package becomes insufficient;
+- implementation or runtime behavior becomes necessary.
+
+### Planning-Authority Effective Point
+
+Phase 5 planning authority becomes effective if and only if:
+
+1. the planning-authority proposal remains limited to its exact two-document
+   repository boundary;
+2. both proposal documents are frozen by exact content hash;
+3. the complete proposal receives independent architecture, security, semantic,
+   non-drift, and authority-leakage review;
+4. every blocking finding is resolved;
+5. the exact reviewed objects are materialized, staged, and committed under
+   separately granted repository authority;
+6. the proposal branch resolves to the reviewed commit and tree;
+7. a Draft pull request preserves the exact base, head, tree, one-commit
+   identity, two-document boundary, and frozen content identities;
+8. the Draft pull request receives independent acceptance review;
+9. the pull request is explicitly transitioned from Draft to Ready;
+10. explicit merge authorization is granted for the exact Ready identity;
+11. the exact reviewed proposal is merged to canonical `main`;
+12. independent post-merge identity, ordered-parent, tree, exact-boundary, and
+    content verification passes;
+13. local and remote canonical `main` converge on the verified merge;
+14. the canonical `main` checkout, worktree, and index are verified clean.
+
+No earlier gate implies a later gate.
+
+Proposal preparation, review, freezing, materialization, staging, commit, Draft
+PR creation, review, or Ready transition cannot independently activate Phase 5
+planning authority.
+
+Merge without successful post-merge verification also cannot activate Phase 5
+planning authority.
+
+### Current Pre-Activation State
+
+`AFR_PHASE_5_PLANNING_AUTHORITY_PROPOSAL =
+DRAFT_NONCANONICAL_REVIEW_CANDIDATE`
+
+`AFR_PHASE_5_CANONICAL_CAPABILITY_DEFINITION =
+NOT_ESTABLISHED`
+
+`PHASE_5_START_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY = NONE`
+
+`AFR_PHASE_5_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_LIVE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PROVIDER_ADAPTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_REMEDIATION_AUTHORITY = NONE`
+
+### State Only After a Future Successful Effective Point
+
+Only after the complete effective point may canonical state establish:
+
+`AFR_PHASE_5_CAPABILITY =
+EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY =
+BOUNDED_EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING_ONLY`
+
+Even after such activation:
+
+`AFR_PHASE_5_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_LIVE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PROVIDER_ADAPTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
+
+No gate implies the next.

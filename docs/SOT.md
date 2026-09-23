@@ -2758,3 +2758,336 @@ Even after such activation:
 `AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
 
 No gate implies the next.
+
+## 31. Phase 5 Evidence-Acquisition and Collection-Boundary Planning Candidate
+
+This section records the noncanonical Phase 5 planning-package candidate
+prepared after the complete planning-authority proposal effective point.
+
+The complete proposal effective point established:
+
+`AFR_PHASE_5_CAPABILITY =
+EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY =
+BOUNDED_EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING_ONLY`
+
+The planning authority is documentation-only. It does not create source,
+tests, executable schemas, collectors, provider adapters, credentials,
+network access, persistence, runtime behavior, certificates, deployment,
+enforcement, remediation, or implementation authority.
+
+### Canonical Activation Baseline
+
+The planning candidate is derived from canonical `main`
+`d19e0c7b0d3b8812bb5e23d01ba01c28d2b5b589` with canonical tree
+`ee8120180c663bef3d13d6d5ada8acf6284e4421`.
+
+The planning-authority proposal commit is
+`3db11b571b27b85686ea9153123de23b167174be`.
+
+The canonical proposal merge preserves ordered parents:
+
+1. `75cb8f4339911b830b4faed09f24bc69267c7b2f`
+2. `3db11b571b27b85686ea9153123de23b167174be`
+
+The effective-point final independent review established all fourteen proposal
+conditions as `PASS`.
+
+### Exact Phase 5 Planning Package
+
+The complete planning candidate is limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-5/PHASE_5_PLAN.md`
+3. `docs/phase-5/PHASE_5_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_EVIDENCE_ACQUISITION_ARCHITECTURE.md`
+5. `docs/contracts/AFR_OBSERVATION_ACQUISITION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_5_EVIDENCE_ACQUISITION_TRUST_BOUNDARY.md`
+
+No seventh document, source file, test, vector, fixture, executable schema,
+dependency, build change, configuration, migration, generated runtime
+artifact, or provider-specific adapter is part of this candidate.
+
+This candidate is prepared outside the AFR repository. It is not canonical
+and creates no repository materialization, staging, commit, publication, or
+pull-request authority.
+
+### Phase 5 Mission and Architectural Position
+
+The Phase 5 mission is:
+
+`DEFINE_BOUNDED_READ_ONLY_COLLECTION_OF_ATTRIBUTABLE_OPERATIONAL_OBSERVATIONS_FOR_PHASE4_INGRESS`
+
+The architectural position is:
+
+`BETWEEN_APPROVED_PROVIDER_ENTERPRISE_SOURCES_AND_PHASE4_SUPPLIED_OPERATIONAL_OBSERVATION`
+
+The planned conceptual flow is:
+
+```text
+APPROVED_PROVIDER_OR_ENTERPRISE_SOURCE
+    -> BOUNDED_READ_ONLY_COLLECTION_REQUEST
+    -> ATTRIBUTABLE_COLLECTION_RESULT
+    -> SUPPLIED_OPERATIONAL_OBSERVATION
+    -> PHASE_4_EVIDENCE_INTAKE_AND_ELIGIBILITY_BOUNDARY
+```
+
+Phase 5 ends at the supplied operational observation boundary.
+
+Phase 5 does not decide whether an observation is eligible evidence and does
+not invoke or simulate the deterministic conformance kernel.
+
+### Planned Identity Model
+
+Planning defines explicit semantics for:
+
+- collector identity;
+- source identity and source class;
+- tenant, subject, environment, and collection-scope bindings;
+- collector authorization context;
+- collection-request identity;
+- collection-result identity;
+- source-response identity where applicable;
+- supplied-observation identity;
+- provider or enterprise source reference;
+- representation and version bindings.
+
+Identity cannot be inferred from ambient credentials, process identity,
+filesystem paths, hostnames, endpoints, provider accounts, regions,
+subscriptions, projects, clusters, namespaces, or deployment context.
+
+### Planned Scope and Completeness Model
+
+Planning distinguishes:
+
+- requested scope;
+- source-accepted scope;
+- observed scope;
+- successful scope;
+- failed scope;
+- unsupported scope;
+- omitted scope;
+- filtered scope;
+- paginated or segmented scope;
+- partial collection;
+- complete collection relative only to an explicitly bounded request.
+
+A collection result cannot claim completeness beyond the scope actually
+requested, accepted, observed, and successfully returned.
+
+Unknown, partial, failed, unsupported, and omitted scope remain explicit.
+
+### Planned Time Model
+
+Planning distinguishes:
+
+- request time;
+- collection start time;
+- collection completion time;
+- provider or source observation time where available;
+- source response time where meaningful;
+- result construction time;
+- handoff time to Phase 4.
+
+Missing source-native time remains missing or unknown. Phase 5 cannot invent
+trusted time, freshness, or eligibility semantics owned by Phase 4.
+
+### Planned Failure Model
+
+Planning defines explicit, non-evidentiary collection outcomes for:
+
+- authorization denial;
+- source access failure;
+- source timeout;
+- source throttling;
+- partial response;
+- pagination or segmentation failure;
+- unsupported endpoint or operation;
+- malformed source response;
+- ambiguous source identity;
+- inconsistent scope;
+- collection cancellation;
+- bounded-resource exhaustion;
+- collector internal failure.
+
+Collection failure cannot be converted into negative evidence, positive
+evidence, evidence eligibility, or conformance.
+
+### Raw Source Response Boundary
+
+Planning may define requirements for preserving source-native response
+identity and raw response bytes where permitted by security, privacy,
+contractual, and provider constraints.
+
+Planning must distinguish source-native bytes from:
+
+- redacted representations;
+- minimized representations;
+- normalized or parsed representations;
+- collector-generated metadata;
+- transformation metadata;
+- Phase 4 handoff representations.
+
+Raw-response planning creates no filesystem, object-store, database, cache,
+queue, stream, retention, or other persistence authority.
+
+### Read-Only Collection Authority Model
+
+Planning requires a future collector to use the least privilege necessary for
+the explicitly bounded read-only source operation.
+
+A future implementation must not infer read authority from general account or
+session presence and must not convert a read request into a write, mutation,
+remediation, policy change, acknowledgement, deletion, tagging, annotation,
+quarantine, deployment, or control-plane action.
+
+This planning does not create credentials or authorize live provider calls.
+
+### Phase 4 Handoff Boundary
+
+The handoff to Phase 4 must preserve:
+
+- source attribution;
+- collector attribution;
+- tenant, subject, environment, and scope bindings;
+- request and result identity;
+- source-response identity or explicit absence;
+- collection times;
+- provider/source observation time where available;
+- successful, failed, unsupported, and omitted scope;
+- partial-collection state;
+- representation and version information;
+- bounded transformation metadata;
+- raw-response reference or identity where allowed;
+- structured collection failures.
+
+Phase 4 independently determines evidence eligibility.
+
+Phase 5 must not emit `ELIGIBLE`, `INELIGIBLE`, `QUARANTINED`,
+`CONFORMANT`, `NON_CONFORMANT`, `INCONCLUSIVE`, `STALE`, or another
+Phase 4 or kernel-owned decision as a collection result.
+
+### Security, Privacy, and Audit Boundary
+
+Planning requires:
+
+- least-privilege read-only collection identity;
+- explicit tenant and subject isolation;
+- explicit source authenticity inputs;
+- collection-request attribution;
+- source-response integrity inputs;
+- secret and credential non-persistence;
+- sensitive-data minimization;
+- collection-scope minimization;
+- bounded response and pagination handling;
+- audit-safe structured failures;
+- provenance continuity into Phase 4;
+- supply-chain independence;
+- safe cancellation and bounded resource use.
+
+### Cross-Program Authority Separation
+
+NEXUS remains authoritative for approved architecture truth where applicable.
+
+Provider and enterprise systems remain authoritative for their own bounded
+source state.
+
+Phase 4 retains observation-to-evidence eligibility authority.
+
+AFR deterministic evaluation boundaries retain conformance authority.
+
+ATA retains consequential runtime commit authority where applicable.
+
+Phase 5 collection cannot elevate observation authority, architecture truth,
+evidence eligibility, conformance authority, or runtime commit authority.
+
+### Stop Conditions
+
+Planning must stop and require new authority if:
+
+- upstream architecture-truth export semantics become necessary;
+- NEXUS or ARCP semantic definition becomes necessary;
+- provider-specific implementation becomes normative;
+- live source access becomes necessary;
+- credentials or secrets become necessary;
+- network access becomes necessary;
+- persistence becomes necessary;
+- Phase 4 evidence-eligibility semantics require amendment;
+- accepted Phase 0 through Phase 4 semantics require amendment;
+- executable schemas, source, tests, dependencies, or configuration become
+  necessary;
+- the exact six-document package becomes insufficient;
+- implementation or runtime behavior becomes necessary.
+
+### Planning Candidate Review Lifecycle
+
+The six-document planning package remains noncanonical until separately
+governed lifecycle gates establish:
+
+1. exact six-document boundary review;
+2. exact-content and serialization freeze;
+3. SHA-256 freeze;
+4. independent whole-package architecture, contract, semantic, security,
+   privacy, resource, non-drift, and authority-leakage review;
+5. resolution of every blocking finding;
+6. repository materialization under separate authority;
+7. independent materialization review;
+8. exact staging and staged-object verification;
+9. exact commit and commit-object verification;
+10. publication and remote-ref verification;
+11. Draft pull-request creation and independent acceptance;
+12. explicit Draft-to-Ready transition;
+13. explicit merge authorization;
+14. exact canonical merge;
+15. independent post-merge identity, ordered-parent, tree, boundary, hash,
+    convergence, checkout, worktree, and index verification;
+16. separately governed planning closure.
+
+No earlier gate implies a later gate.
+
+### Current Candidate and Authority State
+
+`AFR_PHASE_5_PLANNING_PACKAGE_STATUS =
+NONCANONICAL_UNREVIEWED_CANDIDATE`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY =
+BOUNDED_EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING_ONLY`
+
+`AFR_PHASE_5_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_LIVE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PROVIDER_ADAPTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_PACKAGE_REPOSITORY_MATERIALIZATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_PACKAGE_STAGING_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_PACKAGE_COMMIT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_PACKAGE_PUBLICATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PLANNING_PACKAGE_PR_AUTHORITY = NONE`

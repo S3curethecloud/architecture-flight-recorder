@@ -3091,3 +3091,153 @@ BOUNDED_EVIDENCE_ACQUISITION_AND_COLLECTION_BOUNDARY_PLANNING_ONLY`
 `AFR_PHASE_5_PLANNING_PACKAGE_PUBLICATION_AUTHORITY = NONE`
 
 `AFR_PHASE_5_PLANNING_PACKAGE_PR_AUTHORITY = NONE`
+
+### Phase 5 Planning Closure Effective Point
+
+The Phase 5 evidence-acquisition and collection-boundary planning package is
+canonically accepted through PR #25 at merge commit
+`034c1c5103d0fa868f589e2c7ee801dd17820cc3`, tree
+`9de2827915baac58178853ad28caa4fae78536c7`, with ordered parents
+`d19e0c7b0d3b8812bb5e23d01ba01c28d2b5b589` and
+`c478b14bcf0f7512e402bcfca60f45d1e1ceac36`.
+
+The accepted package remains limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-5/PHASE_5_PLAN.md`
+3. `docs/phase-5/PHASE_5_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_EVIDENCE_ACQUISITION_ARCHITECTURE.md`
+5. `docs/contracts/AFR_OBSERVATION_ACQUISITION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_5_EVIDENCE_ACQUISITION_TRUST_BOUNDARY.md`
+
+The canonical package identities are:
+
+- `docs/SOT.md`:
+  Git blob `a8c81e3ce2b77385ec5c2f9165a200de92d8309c`,
+  SHA-256 `ed4c706c207794b4f8e6c818f4338a94aca8fc2e680cb0d09da7f19e0ddf740f`;
+- `docs/phase-5/PHASE_5_PLAN.md`:
+  Git blob `d186b9664d287860b046a161a8a59f97e964969a`,
+  SHA-256 `53392f870c9486d453e2ff7717c97707e07991f1999a2f683ac8b482fd6494a7`;
+- `docs/phase-5/PHASE_5_ACCEPTANCE_CRITERIA.md`:
+  Git blob `441db1a6067af740ddf399b6cb61deface076b0b`,
+  SHA-256 `e08ac23ad479b46887baab54b289983196fcea3547f995fe3a68260ce6868d12`;
+- `docs/architecture/AFR_EVIDENCE_ACQUISITION_ARCHITECTURE.md`:
+  Git blob `aac799d0ead2da3800c9336a9d458bec824f1794`,
+  SHA-256 `781632a5c600c638dd327733e24d797f9621cbe158ec11c0d793fd41bffcb82e`;
+- `docs/contracts/AFR_OBSERVATION_ACQUISITION_CONTRACT.md`:
+  Git blob `07236ea44126e06066625d331c5b8f67f2b9ab97`,
+  SHA-256 `4564da35179d72d9497186f786ea7153dfca7d6fead7dcb8131c3b218f3b22a4`;
+- `docs/security/AFR_PHASE_5_EVIDENCE_ACQUISITION_TRUST_BOUNDARY.md`:
+  Git blob `10dcc012d58cec073a5e092f31fd9f485396ca2b`,
+  SHA-256 `ea1a5cafede059914a8be13cd0859510aded0d30596d4a2c681eb830a6d875f2`.
+
+Independent post-merge review verified the canonical merge identity, ordered
+parents, tree, exact six-document boundary, all six canonical content
+identities, remote PR state, and clean local and remote canonical convergence.
+
+Historical review-harness failures encountered during canonical convergence
+and closure-architecture review were separately reconciled as non-substantive
+control-harness defects. They created no canonical content change, remote
+repository mutation, implementation authority, or runtime authority.
+
+Before the planning-closure effective point:
+
+`AFR_PHASE_5_PLANNING_STATUS =
+CANONICALLY_ACCEPTED_CLOSURE_PENDING`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY = CONSUMED_PENDING_CLOSURE`
+
+`AFR_PHASE_5_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_LIVE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PROVIDER_ADAPTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_REMEDIATION_AUTHORITY = NONE`
+
+The planning closure becomes effective if and only if:
+
+1. the closure remains append-only and limited exactly to `docs/SOT.md` and
+   `docs/phase-5/PHASE_5_ACCEPTANCE_CRITERIA.md`;
+2. both complete closure documents pass independent content and architecture
+   review and are frozen by exact content identity;
+3. every blocking closure finding is resolved;
+4. exactly the two reviewed closure documents are materialized and staged and
+   their staged objects are independently verified;
+5. the exact closure commit preserves the canonical parent, exact two-document
+   boundary, tree, and frozen content identities;
+6. the remote closure branch preserves the reviewed commit and tree;
+7. a Draft closure pull request into `main` preserves the reviewed identity;
+8. the closure pull request receives independent acceptance review;
+9. the closure pull request is explicitly transitioned from Draft to Ready;
+10. explicit merge authorization is granted for the exact Ready identity;
+11. the reviewed closure is merged to canonical `main`;
+12. post-merge identity, ordered parents, tree, exact boundary, and frozen
+    content identities are independently verified;
+13. local and remote canonical `main` converge on the verified closure merge
+    and the canonical checkout, worktree, and index are clean; and
+14. implementation and all live collection, provider-adapter, credential,
+    network, persistence, NEXUS, ARCP, ATA, runtime, certificate, deployment,
+    enforcement, and remediation authorities remain `NONE`.
+
+No earlier gate implies or authorizes a later gate.
+
+After and only after the planning-closure effective point:
+
+`AFR_PHASE_5_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_5_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`AFR_PHASE_5_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_LIVE_COLLECTION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PROVIDER_ADAPTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_5_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_5_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_5_CERTIFICATE_AUTHORITY = NONE`
+
+`AFR_PHASE_5_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_5_REMEDIATION_AUTHORITY = NONE`
+
+Phase 5 planning closure creates no implementation, executable-schema,
+source, test, fixture, dependency, configuration, live collection,
+provider-adapter, credential, network, persistence, NEXUS, ARCP, ATA,
+runtime-evaluation, certificate, deployment, enforcement, remediation,
+production-access, or subsequent-phase authority.

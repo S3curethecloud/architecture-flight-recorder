@@ -3241,3 +3241,513 @@ source, test, fixture, dependency, configuration, live collection,
 provider-adapter, credential, network, persistence, NEXUS, ARCP, ATA,
 runtime-evaluation, certificate, deployment, enforcement, remediation,
 production-access, or subsequent-phase authority.
+
+## 32. Phase 6 Conformance-Findings and Certificate-Boundary Planning-Authority Proposal Candidate
+
+Phase 5 evidence-acquisition and collection-boundary planning is terminally
+closed.
+
+The canonical predecessor base for this detached Phase 6 proposal candidate is:
+
+- canonical `main`:
+  `b565178339afc46faa5660324e078aa668cdfff3`;
+- canonical tree:
+  `d71f06db506cf6c9e4a1226d291dc55500f2cfa4`;
+- Phase 5 planning status: `COMPLETE`;
+- Phase 5 planning authority: `CONSUMED_CLOSED`;
+- Phase 5 implementation authority: `NONE`;
+- Phase 5 live collection authority: `NONE`;
+- Phase 5 provider-adapter implementation authority: `NONE`;
+- Phase 5 runtime authority: `NONE`.
+
+The reconciled semantic source of authority for this candidate is:
+
+`SEMANTIC_SOURCE_OF_AUTHORITY =
+ACCEPTED_PHASE_6_SUCCESSOR_BOUNDARY_REVIEW_R1_PLUS_CANONICAL_PHASE_0_THROUGH_PHASE_5_PREDECESSOR_SEMANTICS`
+
+The malformed detached R1 bytes are not a semantic golden source.
+
+The failed R1R1 whitespace-stripped equality test is not a valid semantic
+acceptance predicate.
+
+The accepted noncanonical Phase 6 capability candidate is:
+
+`AFR_PHASE_6_CAPABILITY_CANDIDATE =
+CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING`
+
+The proposed mission is:
+
+`AFR_PHASE_6_MISSION =
+DEFINE_IMMUTABLE_TIME_BOUND_CONFORMANCE_FINDING_AND_INTEGRITY_BOUND_CERTIFICATE_REPRESENTATION_SEMANTICS_FROM_COMPLETED_AFR_EVALUATIONS`
+
+The proposed architectural position is:
+
+`AFR_PHASE_6_POSITION =
+BETWEEN_COMPLETED_DETERMINISTIC_EVALUATION_RESULTS_AND_FUTURE_DELIVERY_AND_INTEGRATION_CONSUMERS`
+
+These statements remain noncanonical review evidence.
+
+They do not establish Phase 6 planning authority or Phase 6 canonical
+architecture.
+
+### Canonical Successor Basis
+
+The canonical AFR reference architecture defines a Findings and Certificate
+Plane downstream of deterministic evaluation and upstream of Delivery and
+Integration.
+
+Its accepted conceptual responsibilities include:
+
+- preserving immutable conformance findings;
+- recording evidence gaps and limitations;
+- associating drift with authoritative claim references;
+- preserving evaluation identity and timing;
+- preparing integrity-bound certificate representations;
+- supporting expiry, supersession, and future revocation;
+- preventing a certificate from being interpreted as execution authority.
+
+Canonical Phase 0 through Phase 5 semantics remain immutable predecessor
+inputs.
+
+Phase 6 may not reopen, reinterpret, weaken, or replace those semantics.
+
+### Architecture-Truth and NEXUS Boundary
+
+NEXUS remains authoritative for approved architecture truth for
+NEXUS-governed systems.
+
+`NEXUS_ARCHITECTURE_TRUTH_AUTHORITY = PRESERVED`
+
+Phase 6 does not define, activate, or implement a NEXUS-to-AFR export
+contract.
+
+Phase 6 may preserve architecture-truth and claim references already bound
+into a completed AFR evaluation result.
+
+Phase 6 cannot:
+
+- originate NEXUS architecture truth;
+- approve NEXUS architecture truth;
+- repair missing NEXUS semantics;
+- mutate NEXUS state;
+- supersede NEXUS decisions;
+- infer approval from object presence;
+- create NEXUS or ARCP integration authority.
+
+Architecture-Truth Intake remains deferred.
+
+`ARCHITECTURE_TRUTH_INTAKE = DEFERRED`
+
+### Proposed Exact Authority-Proposal Boundary
+
+The future repository proposal change is proposed to remain limited exactly
+to:
+
+1. `docs/SOT.md`
+2. `docs/phase-6/PHASE_6_PLANNING_AUTHORITY_PROPOSAL.md`
+
+`PROPOSAL_FILE_COUNT = 2`
+
+No third repository document is proposed.
+
+This R1R2 candidate is prepared outside the AFR repository only.
+
+### Proposed Requested Planning Authority
+
+The proposal would request:
+
+`AFR_PHASE_6_PLANNING_AUTHORITY =
+BOUNDED_CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING_ONLY`
+
+The requested authority is documentation-only.
+
+It would permit planning semantics and architecture for transforming an
+already completed immutable deterministic AFR evaluation into bounded finding
+semantics and a future integrity-bound certificate representation.
+
+It would not authorize implementation, persistence, certificate generation,
+signing, issuance, revocation execution, key operations, runtime evaluation,
+or integration.
+
+### Proposed Future Six-Document Planning Package
+
+If and only if a Phase 6 planning-authority proposal later reaches its complete
+effective point, the proposed future planning package is limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-6/PHASE_6_PLAN.md`
+3. `docs/phase-6/PHASE_6_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_FINDINGS_AND_CERTIFICATE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_CONFORMANCE_FINDING_AND_CERTIFICATE_CONTRACT.md`
+6. `docs/security/AFR_PHASE_6_FINDINGS_AND_CERTIFICATE_TRUST_BOUNDARY.md`
+
+`FUTURE_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+These are prospective documentation paths only.
+
+This detached candidate does not authorize their creation.
+
+### Proposed Input Boundary
+
+Phase 6 planning would consume only already-established completed-evaluation
+semantics, including where applicable:
+
+- evaluation identity;
+- evaluation context;
+- tenant and subject identity;
+- environment, release, deployment, and scope bindings;
+- truth-snapshot reference;
+- authoritative claim references;
+- claim-level results;
+- aggregate result;
+- evidence-set reference;
+- eligibility-decision references;
+- evidence gaps;
+- contradictions;
+- deterministic rationale;
+- limitations;
+- evaluation-definition version;
+- policy version;
+- evaluator version;
+- canonicalization and fingerprint versions;
+- evaluation time;
+- validity deadline;
+- evaluation fingerprint;
+- supersession state;
+- provenance direction.
+
+`AFR_EVIDENCE_ELIGIBILITY_AUTHORITY = PRESERVED`
+
+`AFR_DETERMINISTIC_EVALUATION_AUTHORITY = PRESERVED`
+
+Phase 6 cannot recompute evidence eligibility.
+
+Phase 6 cannot select a different conformance outcome.
+
+Phase 6 cannot repair an incomplete evaluation.
+
+Phase 6 cannot expand the evaluated scope.
+
+### Proposed Finding Boundary
+
+Planning may define bounded semantics for an immutable conformance finding
+that preserves:
+
+- finding identity;
+- completed evaluation or result identity;
+- authoritative claim reference;
+- canonical outcome;
+- deterministic rationale;
+- supporting and contradicting evidence references;
+- evidence gaps;
+- limitations;
+- tenant and subject;
+- environment, release, deployment, and scope where applicable;
+- evaluation and finding times;
+- validity deadline;
+- evaluation fingerprint;
+- finding integrity identity;
+- materiality where applicable;
+- status;
+- supersession relationships;
+- provenance.
+
+A finding is not architecture truth.
+
+A finding is not an architecture decision.
+
+A finding is not remediation authorization.
+
+A finding is not deployment authority.
+
+A finding is not runtime authority.
+
+### Proposed Drift and Staleness Boundary
+
+Planning may define deterministic representations for architecture drift and
+staleness only when derived from accepted completed-evaluation semantics.
+
+Drift remains bound to the authoritative claim reference and bounded
+evaluation result.
+
+Staleness cannot be converted into current conformance.
+
+A finding cannot silently widen tenant, subject, environment, release,
+deployment, scope, time, evidence, or architecture authority.
+
+### Proposed Certificate-Representation Boundary
+
+`CERTIFICATE_REPRESENTATION_PLANNING = IN_SCOPE`
+
+Planning may define a future integrity-bound representation of a completed
+bounded evaluation.
+
+A future certificate representation may conceptually bind:
+
+- certificate identity;
+- completed evaluation identity;
+- claim-level and aggregate-result references;
+- tenant and subject;
+- environment, release, deployment, and scope where applicable;
+- truth-snapshot and architecture-claim references;
+- evidence-set and evaluation fingerprints;
+- evaluation-definition, policy, evaluator, canonicalization, and fingerprint
+  versions;
+- evaluation time;
+- certificate applicability and validity interval;
+- limitations;
+- supersession state;
+- future issuer identity;
+- future integrity or signature metadata;
+- future expiry;
+- future revocation relationship;
+- representation and verification versions.
+
+Certificate eligibility must remain subordinate to an approved policy.
+
+A certificate representation cannot exceed the evaluated claims, evidence
+scope, result scope, validity window, or recorded limitations.
+
+`CERTIFICATE_GENERATION = OUT_OF_SCOPE`
+
+`CERTIFICATE_SIGNING = OUT_OF_SCOPE`
+
+`CERTIFICATE_ISSUANCE = OUT_OF_SCOPE`
+
+`CERTIFICATE_REVOCATION_EXECUTION = OUT_OF_SCOPE`
+
+`KEY_GENERATION = OUT_OF_SCOPE`
+
+`KEY_CUSTODY = OUT_OF_SCOPE`
+
+`KMS_HSM = OUT_OF_SCOPE`
+
+A valid future signature could establish integrity and issuer attribution only.
+
+It could not prove universal architecture correctness.
+
+### Proposed Trust Boundaries
+
+Phase 6 planning must preserve the one-way boundary:
+
+```text
+COMPLETED_DETERMINISTIC_EVALUATION_RESULT
+    -> FINDINGS_AND_CERTIFICATE_BOUNDARY
+    -> IMMUTABLE_FINDING_SEMANTICS
+    -> FUTURE_INTEGRITY_BOUND_CERTIFICATE_REPRESENTATION
+    -> FUTURE_SEPARATELY_AUTHORIZED_DELIVERY_AND_INTEGRATION
+```
+
+Planning must preserve:
+
+- evaluator-to-finding authority separation;
+- finding-to-certificate representation traceability;
+- issuer and evaluator identity separation;
+- certificate issuer and certificate consumer separation;
+- tenant and subject isolation;
+- environment, release, deployment, scope, and time non-expansion;
+- immutable historical results;
+- supersession without mutation;
+- expiry without historical deletion;
+- future revocation without rewriting prior evaluation truth;
+- result and certificate replay resistance;
+- cross-tenant reuse rejection;
+- complete limitation preservation;
+- complete provenance direction;
+- downstream consumer non-mutation.
+
+`ATA_RUNTIME_COMMIT_AUTHORITY = PRESERVED`
+
+### Downstream Boundary
+
+Delivery and Integration remains a future separately governed capability.
+
+`DELIVERY_AND_INTEGRATION = DEFERRED`
+
+Phase 6 does not create consumer APIs, gateways, events, webhooks, feeds, or
+integration behavior for:
+
+- NEXUS;
+- ARCP;
+- ATA;
+- PAA;
+- Humanize;
+- CI/CD or release systems;
+- audit or assurance systems;
+- providers or enterprise platforms.
+
+A downstream consumer cannot modify an authoritative AFR result.
+
+### Reconciled Out-of-Scope Registry
+
+`NEXUS_INTEGRATION = OUT_OF_SCOPE`
+
+`ARCP_INTEGRATION = OUT_OF_SCOPE`
+
+`ATA_INTEGRATION = OUT_OF_SCOPE`
+
+`PAA_INTEGRATION = OUT_OF_SCOPE`
+
+`HUMANIZE_INTEGRATION = OUT_OF_SCOPE`
+
+`IMPLEMENTATION = OUT_OF_SCOPE`
+
+`PERSISTENCE = OUT_OF_SCOPE`
+
+`NETWORK = OUT_OF_SCOPE`
+
+`RUNTIME_EVALUATION = OUT_OF_SCOPE`
+
+`DEPLOYMENT = OUT_OF_SCOPE`
+
+`ENFORCEMENT = OUT_OF_SCOPE`
+
+`REMEDIATION = OUT_OF_SCOPE`
+
+### Proposed Stop Conditions
+
+Phase 6 planning must stop and require new authority if:
+
+- accepted Phase 0 through Phase 5 semantics require amendment;
+- a completed evaluation must be recomputed, repaired, or reinterpreted;
+- canonical conformance outcomes require amendment;
+- evidence-eligibility semantics require amendment;
+- architecture-truth semantics require amendment;
+- NEXUS export or NEXUS integration semantics become necessary;
+- ARCP semantics become necessary;
+- provider-specific behavior becomes normative;
+- live provider access or evidence collection becomes necessary;
+- runtime kernel invocation becomes necessary;
+- persistence becomes necessary;
+- actual certificate generation becomes necessary;
+- certificate signing or issuance becomes necessary;
+- key generation or key custody becomes necessary;
+- HSM, KMS, trust-anchor, or live certificate verification behavior becomes
+  necessary;
+- downstream API, event, delivery, or integration design becomes necessary;
+- credentials, secrets, or network access become necessary;
+- executable schemas, source, tests, dependencies, configuration, migrations,
+  or build artifacts become necessary;
+- the exact six-document planning package becomes insufficient;
+- implementation, deployment, runtime, enforcement, remediation, or
+  production behavior becomes necessary.
+
+### Complete Pre-Activation Authority State
+
+Before a Phase 6 planning-authority proposal reaches its complete effective
+point:
+
+`AFR_PHASE_6_PLANNING_AUTHORITY_PROPOSAL =
+DRAFT_NONCANONICAL_REVIEW_CANDIDATE`
+
+`AFR_PHASE_6_CANONICAL_CAPABILITY_DEFINITION =
+NOT_ESTABLISHED`
+
+`PHASE_6_START_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PLANNING_AUTHORITY = NONE`
+
+`AFR_PHASE_6_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_FINDING_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_GENERATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_SIGNING_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_ISSUANCE_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_REVOCATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KEY_GENERATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KEY_CUSTODY_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KMS_HSM_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_6_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PAA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_HUMANIZE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_DELIVERY_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CONSUMER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_6_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_6_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+### Proposed Fourteen-Condition Effective Point
+
+`PROPOSAL_EFFECTIVE_POINT_CONDITION_COUNT = 14`
+
+Phase 6 planning authority would become effective if and only if:
+
+1. the authority proposal remains limited exactly to `docs/SOT.md` and
+   `docs/phase-6/PHASE_6_PLANNING_AUTHORITY_PROPOSAL.md`;
+2. both complete proposal documents are frozen by exact content identity;
+3. the complete proposal receives independent architecture, contract,
+   semantic, security, certificate-boundary, NEXUS non-duplication,
+   downstream non-drift, and authority-leakage review;
+4. every blocking proposal finding is resolved;
+5. exactly the two reviewed proposal documents are materialized and staged
+   under separately granted repository authority and their staged objects are
+   independently verified;
+6. the exact proposal commit preserves the canonical base, exact two-document
+   boundary, tree, and frozen content identities;
+7. the remote proposal branch preserves the reviewed commit and tree;
+8. a Draft pull request into `main` preserves the reviewed base, head, tree,
+   one-commit identity, exact two-document boundary, and frozen content
+   identities;
+9. the Draft pull request receives independent acceptance review;
+10. the pull request is explicitly transitioned from Draft to Ready;
+11. explicit merge authorization is granted for the exact Ready identity;
+12. the exact reviewed proposal is merged to canonical `main` and independent
+    post-merge identity, ordered-parent, tree, exact-boundary, and frozen
+    content verification passes;
+13. local and remote canonical `main` converge on the verified merge and the
+    canonical checkout, worktree, and index are independently verified clean;
+14. implementation, persistence, certificate-generation, signing, issuance,
+    revocation, key, credential, network, provider, NEXUS, ARCP, ATA, PAA,
+    Humanize, delivery, consumer-integration, runtime-evaluation, deployment,
+    enforcement, remediation, production, and subsequent-phase authorities
+    remain `NONE`.
+
+No earlier gate implies or authorizes a later gate.
+
+### Proposed State After Activation
+
+After and only after the complete effective point:
+
+`AFR_PHASE_6_CAPABILITY =
+CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING`
+
+`AFR_PHASE_6_PLANNING_AUTHORITY =
+BOUNDED_CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING_ONLY`
+
+All implementation and runtime-adjacent authorities remain `NONE`.
+
+Activation would authorize only preparation of the exact future six-document
+Phase 6 planning package.
+
+It would not authorize implementation or a subsequent phase.

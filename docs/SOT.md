@@ -3751,3 +3751,173 @@ Activation would authorize only preparation of the exact future six-document
 Phase 6 planning package.
 
 It would not authorize implementation or a subsequent phase.
+
+## 33. Phase 6 Conformance-Findings and Certificate-Boundary Planning Package Candidate R1R1
+
+The Phase 6 planning-authority proposal has reached its complete effective
+point.
+
+`AFR_PHASE_6_CANONICAL_CAPABILITY_DEFINITION = ESTABLISHED`
+
+`AFR_PHASE_6_CAPABILITY =
+CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING`
+
+`AFR_PHASE_6_PLANNING_AUTHORITY =
+BOUNDED_CONFORMANCE_FINDINGS_AND_CERTIFICATE_BOUNDARY_PLANNING_ONLY`
+
+The authority is planning and documentation authority only.
+
+This planning-package candidate is limited exactly to six documentation paths:
+
+1. `docs/SOT.md`
+2. `docs/phase-6/PHASE_6_PLAN.md`
+3. `docs/phase-6/PHASE_6_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_FINDINGS_AND_CERTIFICATE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_CONFORMANCE_FINDING_AND_CERTIFICATE_CONTRACT.md`
+6. `docs/security/AFR_PHASE_6_FINDINGS_AND_CERTIFICATE_TRUST_BOUNDARY.md`
+
+`PHASE_6_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+The Phase 6 mission is:
+
+`DEFINE_IMMUTABLE_TIME_BOUND_CONFORMANCE_FINDING_AND_INTEGRITY_BOUND_CERTIFICATE_REPRESENTATION_SEMANTICS_FROM_COMPLETED_AFR_EVALUATIONS`
+
+Phase 6 consumes only already-completed deterministic AFR evaluation semantics.
+
+Phase 6 does not recompute evidence eligibility.
+
+Phase 6 does not select or modify an authoritative evaluation outcome.
+
+The canonical conformance-outcome vocabulary remains:
+
+- `CONFORMANT`;
+- `NON_CONFORMANT`;
+- `INCONCLUSIVE`;
+- `STALE`.
+
+A missing required input, unresolved evidence gap, contradiction, invalid
+authority binding, expired result, or other fail-closed condition cannot be
+converted into `CONFORMANT`.
+
+A conformance finding is an immutable representation derived from an accepted
+completed evaluation.
+
+A finding is not architecture truth.
+
+A finding is not an architecture decision.
+
+A finding is not remediation authority.
+
+A finding is not deployment authority.
+
+A finding is not runtime authority.
+
+A future certificate representation is an integrity-bound representation of
+bounded completed-evaluation semantics.
+
+Certificate eligibility remains subordinate to approved deterministic policy.
+
+A certificate representation cannot exceed the evaluated claims, evidence
+scope, result scope, tenant, subject, environment, release, deployment, scope,
+validity window, or recorded limitations of its source evaluation.
+
+Certificate representation planning does not authorize certificate generation,
+signing, issuance, revocation execution, key generation, key custody, PKI,
+KMS, HSM, trust-anchor management, or deployment.
+
+A future signature may establish integrity and issuer attribution only.
+
+A future signature cannot establish universal architecture correctness and
+cannot expand the authority of the underlying AFR result.
+
+NEXUS remains authoritative for approved architecture truth.
+
+Phase 6 cannot originate, approve, repair, mutate, supersede, or infer NEXUS
+architecture truth.
+
+ATA consequential runtime authority remains preserved.
+
+Delivery and Integration remains deferred.
+
+A model may assist with non-authoritative drafting or explanation but cannot:
+
+- determine authoritative conformance outcomes;
+- determine authoritative certificate eligibility;
+- fabricate or suppress evidence;
+- repair missing required evidence;
+- calculate or replace authoritative fingerprints outside an approved
+  deterministic mechanism;
+- widen tenant, subject, environment, release, deployment, scope, or time;
+- grant architecture, remediation, deployment, runtime, or integration
+  authority.
+
+Phase 6 planning must preserve immutable historical results, explicit evidence
+gaps, contradictions, limitations, provenance, validity, supersession, future
+revocation relationships, replay resistance, and cross-tenant isolation.
+
+The conceptual one-way boundary is:
+
+```text
+COMPLETED_DETERMINISTIC_EVALUATION_RESULT
+    -> FINDINGS_AND_CERTIFICATE_BOUNDARY
+    -> IMMUTABLE_CONFORMANCE_FINDING
+    -> FUTURE_INTEGRITY_BOUND_CERTIFICATE_REPRESENTATION
+    -> FUTURE_SEPARATELY_AUTHORIZED_DELIVERY_AND_INTEGRATION
+```
+
+The planning package creates no implementation authority.
+
+`AFR_PHASE_6_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_FINDING_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_GENERATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_SIGNING_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_ISSUANCE_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CERTIFICATE_REVOCATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KEY_GENERATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KEY_CUSTODY_AUTHORITY = NONE`
+
+`AFR_PHASE_6_KMS_HSM_AUTHORITY = NONE`
+
+`AFR_PHASE_6_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PAA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_HUMANIZE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_DELIVERY_AUTHORITY = NONE`
+
+`AFR_PHASE_6_CONSUMER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_6_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_6_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_6_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_6_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+This detached Candidate R1R1 is noncanonical until separately reviewed, frozen,
+materialized, committed, published, merged, and reconciled under later explicit
+authorities.
+
+No planning-package preparation gate implies repository materialization or
+implementation authority.

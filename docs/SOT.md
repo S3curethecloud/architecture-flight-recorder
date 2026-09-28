@@ -3921,3 +3921,415 @@ authorities.
 
 No planning-package preparation gate implies repository materialization or
 implementation authority.
+
+## 34. Phase 7 Delivery and Integration Boundary Planning-Authority Proposal Candidate
+
+Phase 6 conformance-findings and certificate-boundary planning is complete and remains the immutable predecessor planning boundary.
+
+The canonical predecessor base for this Phase 7 planning-authority proposal package is:
+
+- canonical `main`:
+  `05ba1c6da06d3dcba8f65b9cdbeba97b80a98141`;
+- accepted canonical merge tree:
+  `354a20dc58a68ff528acaae4ec74b8e5e36ae055`;
+- canonical `docs/SOT.md` blob:
+  `e3f4659402a2cae588c4272d8c2e965fbfefdf8c`;
+- Phase 6 planning status: `COMPLETE`;
+- Phase 6 planning package: `CANONICAL`;
+- Phase 6 implementation authority: `NONE`.
+
+The independently accepted successor-scope proposal is bound by:
+
+`ACCEPTED_SUCCESSOR_SCOPE_PROPOSAL_SHA256 = f1ab36cea4d906a0618d769771ac4de0e21bdaf573314d957b66009c9adef287`
+
+The independently accepted Phase 7 designation record is bound by:
+
+`ACCEPTED_PHASE_7_DESIGNATION_RECORD_SHA256 = 3a42b3ae9e3e72279c3f2795fe1bfbbb3c5c7e5ac89e5a260dde1088a20819f9`
+
+The independently accepted detached Phase 7 planning-authority proposal is bound by:
+
+`ACCEPTED_PHASE_7_PLANNING_AUTHORITY_PROPOSAL_SHA256 = 42f42b87d221b49c90654027dfcf24973b4a7b171b5e26386c53e9919ba8c6e9`
+
+The accepted Phase 7 designation and capability are:
+
+`AFR_PHASE_NUMBER = 7`
+
+`AFR_PHASE_DESIGNATION = AFR_PHASE_7`
+
+`AFR_PHASE_7_CAPABILITY = DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING`
+
+These statements remain proposal-package candidate evidence until the complete planning-authority proposal effective point succeeds.
+
+They do not establish Phase 7 planning authority, canonical Phase 7 planning architecture, repository materialization authority, implementation authority, delivery authority, runtime authority, or downstream integration authority.
+
+### Canonical Successor Basis
+
+The canonical AFR reference architecture defines a Delivery and Integration Plane downstream of authoritative AFR findings and approved outputs.
+
+The canonical Consumer Gateway concept provides tenant-aware, authorized, read-only access to approved outputs.
+
+Canonical Phase 6 semantics explicitly defer Delivery and Integration to future separately authorized work.
+
+Therefore:
+
+`DEPENDENCY_RECOGNITION != PLANNING_AUTHORITY`
+
+`PLANNING_AUTHORITY != IMPLEMENTATION_AUTHORITY`
+
+`IMPLEMENTATION_AUTHORITY != DELIVERY_AUTHORITY`
+
+`DELIVERY_AUTHORITY != RUNTIME_AUTHORITY`
+
+Phase 7 planning may not elevate architectural recognition into executable authority.
+
+### Proposed Exact Authority-Proposal Boundary
+
+The future repository planning-authority proposal change is proposed to remain limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-7/PHASE_7_PLANNING_AUTHORITY_PROPOSAL.md`
+
+`PROPOSAL_FILE_COUNT = 2`
+
+No third repository document is proposed.
+
+This package candidate is prepared outside the AFR repository only.
+
+The Phase 7 proposal document must remain byte-identical to the independently accepted detached proposal:
+
+`PHASE_7_PLANNING_AUTHORITY_PROPOSAL_REQUIRED_SHA256 = 42f42b87d221b49c90654027dfcf24973b4a7b171b5e26386c53e9919ba8c6e9`
+
+### Proposed Requested Planning Authority
+
+The proposal would request only:
+
+`AFR_PHASE_7_PLANNING_AUTHORITY = BOUNDED_DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING_ONLY`
+
+The requested authority is documentation-only.
+
+If and only if the complete proposal effective point succeeds, it would permit bounded planning semantics for tenant-aware, identity-bound, authorized, read-only delivery of already-approved AFR outputs to bounded consumers.
+
+It would not authorize implementation, delivery execution, a consumer gateway, API, event, queue, webhook, feed, network access, credentials, provider integration, cross-program integration, persistence, cache, runtime action, deployment, enforcement, remediation, production access, or a subsequent phase.
+
+### Proposed Future Six-Document Planning Package
+
+If and only if the Phase 7 planning-authority proposal later reaches its complete effective point, the proposed future planning package is limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-7/PHASE_7_PLAN.md`
+3. `docs/phase-7/PHASE_7_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_DELIVERY_AND_INTEGRATION_ARCHITECTURE.md`
+5. `docs/contracts/AFR_DELIVERY_AND_INTEGRATION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_7_DELIVERY_AND_INTEGRATION_TRUST_BOUNDARY.md`
+
+`FUTURE_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+These are prospective documentation paths only.
+
+This proposal package does not authorize their creation, repository materialization, staging, commit, publication, pull-request creation, merge, or implementation.
+
+### Proposed Delivery and Integration Planning Mission
+
+The bounded Phase 7 planning mission is:
+
+`PLAN_TENANT_AWARE_AUTHORIZED_READ_ONLY_DELIVERY_OF_APPROVED_AFR_OUTPUTS_TO_BOUNDED_CONSUMERS_WITHOUT_MUTATING_AFR_RESULTS_OR_DOWNSTREAM_SYSTEMS`
+
+Phase 7 planning would begin only after authoritative AFR evaluation, finding construction, and any independently valid predecessor certificate-representation semantics.
+
+Phase 7 cannot redefine:
+
+- how architecture truth is approved;
+- how operational observations become eligible evidence;
+- how deterministic conformance outcomes are computed;
+- how immutable findings are derived;
+- how predecessor certificate-representation semantics are bounded.
+
+### Proposed Approved-Output Boundary
+
+Phase 7 planning may define how a future delivery boundary references already-approved AFR outputs.
+
+A future delivery surface must fail closed when required output identity, integrity, tenant, subject, scope, authorization, policy, provenance, validity, or freshness context is absent or invalid.
+
+Phase 7 cannot:
+
+- create or replace a conformance outcome;
+- upgrade `NON_CONFORMANT`, `INCONCLUSIVE`, or `STALE` to `CONFORMANT`;
+- fabricate, suppress, or reinterpret evidence;
+- modify an evaluation trace or fingerprint;
+- manufacture certificate eligibility;
+- sign, issue, revoke, or otherwise elevate certificate representations;
+- reinterpret predecessor limitations as authorization.
+
+### Proposed Read-Only Consumer Boundary
+
+Every future consumer interaction must resolve an attributable identity bound to tenant, subject or approved-output identity, consumer identity, consumer role, requested action, authorized scope, policy version, applicable time where required, and audit correlation identity.
+
+A consumer cannot expand its own authorization or inherit another authority domain merely because it can read an AFR output.
+
+The planned logical Consumer Gateway boundary is read-only with respect to authoritative AFR state and downstream systems.
+
+`READ_ACCESS != WRITE_AUTHORITY`
+
+`OUTPUT_VISIBILITY != OUTPUT_MUTATION_AUTHORITY`
+
+Planning may define documentation-only semantics for projection, filtering, pagination, integrity metadata, authorization-aware response behavior, and explicitly authorized redaction.
+
+Planning may not create an implicit write path, remediation callback, deployment action, policy mutation, architecture mutation, provider mutation, or runtime commit.
+
+### Tenant, Subject, Scope, Security, and Audit Boundary
+
+Phase 7 planning must preserve strict tenant isolation.
+
+Cross-tenant output exposure is prohibited.
+
+Cross-subject substitution is prohibited unless explicitly authorized by a future canonical contract.
+
+Scope expansion is prohibited.
+
+A projection cannot omit a limitation when that omission would materially strengthen or misrepresent the authoritative result.
+
+Planning must preserve requirements for least-privilege consumer identities, deny-by-default authorization, data minimization, sensitive-field projection controls, immutable audit correlation, provenance, access-decision evidence, replay resistance where applicable, and consumer-specific authorization boundaries.
+
+Planning creates no credential, secret, key, network connection, persistence layer, cache, audit sink, queue, event bus, webhook, feed, API endpoint, or runtime service.
+
+### Cross-Program and Downstream Non-Mutation Boundary
+
+Existing authority domains remain preserved:
+
+`NEXUS_ARCHITECTURE_TRUTH_AUTHORITY = PRESERVED`
+
+`AFR_EVIDENCE_ELIGIBILITY_AUTHORITY = PRESERVED`
+
+`AFR_DETERMINISTIC_EVALUATION_AUTHORITY = PRESERVED`
+
+`AFR_PHASE_6_FINDING_AND_CERTIFICATE_SEMANTICS = PRESERVED`
+
+`ATA_RUNTIME_COMMIT_AUTHORITY = PRESERVED`
+
+Potential bounded consumer classes may include PAA, Humanize, CI/CD or release governance, ATA, audit and assurance systems, and human reviewers.
+
+Naming a consumer class does not authorize integration with that consumer.
+
+Downstream consumers cannot change authoritative AFR results.
+
+Remediation or architecture-change proposals must return through separately governed human, PAA, NEXUS, and enterprise-system processes.
+
+`DELIVERY != REMEDIATION`
+
+`DELIVERY != DEPLOYMENT`
+
+`DELIVERY != ENFORCEMENT`
+
+### Model Exclusion
+
+A model, agent, or generative component cannot be authoritative for consumer authorization, tenant or subject identity binding, output eligibility, conformance outcome, integrity verification, policy-version selection, required-limitation suppression, permission expansion, delivery entitlement, runtime commit, deployment, enforcement, or remediation authority.
+
+Models may later assist with bounded explanation or presentation only under separately authorized contracts that preserve authoritative structured data.
+
+### Reconciled Prohibited Scope
+
+`IMPLEMENTATION = OUT_OF_SCOPE`
+
+`DELIVERY_EXECUTION = OUT_OF_SCOPE`
+
+`CONSUMER_GATEWAY_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`API_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`EVENT_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`QUEUE_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`WEBHOOK_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`FEED_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`NETWORK_ACCESS = OUT_OF_SCOPE`
+
+`CREDENTIAL_USE = OUT_OF_SCOPE`
+
+`PROVIDER_INTEGRATION = OUT_OF_SCOPE`
+
+`NEXUS_INTEGRATION = OUT_OF_SCOPE`
+
+`ARCP_INTEGRATION = OUT_OF_SCOPE`
+
+`ATA_INTEGRATION = OUT_OF_SCOPE`
+
+`PAA_INTEGRATION = OUT_OF_SCOPE`
+
+`HUMANIZE_INTEGRATION = OUT_OF_SCOPE`
+
+`CICD_INTEGRATION = OUT_OF_SCOPE`
+
+`RELEASE_GOVERNANCE_INTEGRATION = OUT_OF_SCOPE`
+
+`PERSISTENCE = OUT_OF_SCOPE`
+
+`CACHE_IMPLEMENTATION = OUT_OF_SCOPE`
+
+`CERTIFICATE_GENERATION = OUT_OF_SCOPE`
+
+`CERTIFICATE_SIGNING = OUT_OF_SCOPE`
+
+`CERTIFICATE_ISSUANCE = OUT_OF_SCOPE`
+
+`CERTIFICATE_REVOCATION_EXECUTION = OUT_OF_SCOPE`
+
+`KEY_OPERATIONS = OUT_OF_SCOPE`
+
+`RUNTIME_EVALUATION = OUT_OF_SCOPE`
+
+`RUNTIME_ACTION = OUT_OF_SCOPE`
+
+`DEPLOYMENT = OUT_OF_SCOPE`
+
+`ENFORCEMENT = OUT_OF_SCOPE`
+
+`REMEDIATION = OUT_OF_SCOPE`
+
+`PRODUCTION_ACCESS = OUT_OF_SCOPE`
+
+`PHASE_8 = OUT_OF_SCOPE`
+
+### Proposed Stop Conditions
+
+Phase 7 planning must stop and require new authority if:
+
+- accepted Phase 0 through Phase 6 semantics require amendment;
+- a new authority domain is required;
+- a concrete consumer integration must be activated;
+- credentials or network access are required;
+- persistence, cache, queue, event, webhook, feed, or API implementation is required;
+- a consumer needs write or mutation authority;
+- a delivery representation would weaken or hide authoritative limitations;
+- tenant, subject, scope, or authorization semantics cannot be deterministically bounded;
+- a model would need authoritative decision power;
+- runtime, deployment, enforcement, remediation, or production behavior becomes necessary;
+- the exact six-document planning package becomes insufficient;
+- Phase 8 or another successor capability needs definition.
+
+Stopping does not authorize an alternative implementation or broader plan.
+
+### Complete Pre-Activation Authority State
+
+Before the Phase 7 planning-authority proposal reaches its complete effective point:
+
+`AFR_PHASE_7_PLANNING_AUTHORITY_PROPOSAL = DRAFT_NONCANONICAL_REVIEW_CANDIDATE`
+
+`AFR_PHASE_7_CANONICAL_CAPABILITY_DEFINITION = NOT_ESTABLISHED`
+
+`PHASE_7_START_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PLANNING_AUTHORITY = NONE`
+
+`AFR_PHASE_7_REPOSITORY_MATERIALIZATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_DELIVERY_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CONSUMER_GATEWAY_AUTHORITY = NONE`
+
+`AFR_PHASE_7_API_AUTHORITY = NONE`
+
+`AFR_PHASE_7_EVENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_QUEUE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_WEBHOOK_AUTHORITY = NONE`
+
+`AFR_PHASE_7_FEED_AUTHORITY = NONE`
+
+`AFR_PHASE_7_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PAA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_HUMANIZE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CICD_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RELEASE_GOVERNANCE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CACHE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CERTIFICATE_GENERATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CERTIFICATE_SIGNING_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CERTIFICATE_ISSUANCE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CERTIFICATE_REVOCATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_KEY_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_7_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+### Proposed Fourteen-Condition Effective Point
+
+`PROPOSAL_EFFECTIVE_POINT_CONDITION_COUNT = 14`
+
+Phase 7 planning authority would become effective if and only if:
+
+1. the authority proposal remains limited exactly to `docs/SOT.md` and `docs/phase-7/PHASE_7_PLANNING_AUTHORITY_PROPOSAL.md`;
+2. both complete proposal documents are frozen by exact content identity;
+3. the complete proposal receives independent architecture, contract, identity, authorization, tenant-isolation, security, read-only-consumer, downstream non-drift, model-exclusion, and authority-leakage review;
+4. every blocking proposal finding is resolved;
+5. exactly the two reviewed proposal documents are materialized and staged under separately granted repository authority and their staged objects are independently verified;
+6. the exact proposal commit preserves the canonical base, exact two-document boundary, tree, and frozen content identities;
+7. the remote proposal branch preserves the reviewed commit and tree;
+8. a Draft pull request into `main` preserves the reviewed base, head, tree, one-commit identity, exact two-document boundary, and frozen content identities;
+9. the Draft pull request receives independent acceptance review;
+10. the pull request is explicitly transitioned from Draft to Ready;
+11. explicit merge authorization is granted for the exact Ready identity;
+12. the exact reviewed proposal is merged to canonical `main` and independent post-merge identity, ordered-parent, tree, exact-boundary, and frozen-content verification passes;
+13. local and remote canonical `main` converge on the verified merge and the canonical checkout, worktree, and index are independently verified clean;
+14. implementation, delivery, consumer-gateway, API, event, queue, webhook, feed, network, credential, provider, NEXUS, ARCP, ATA, PAA, Humanize, CI/CD, release-governance, persistence, cache, certificate, key, runtime, deployment, enforcement, remediation, production, and subsequent-phase authorities remain `NONE`.
+
+No earlier gate implies or authorizes a later gate.
+
+Merge without successful post-merge verification cannot activate Phase 7 planning authority.
+
+### Proposed State After Activation
+
+After and only after the complete effective point:
+
+`AFR_PHASE_7_CAPABILITY = DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING`
+
+`AFR_PHASE_7_PLANNING_AUTHORITY = BOUNDED_DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING_ONLY`
+
+All implementation and runtime-adjacent authorities remain `NONE`.
+
+Activation would authorize only the separately governed preparation of the exact future six-document Phase 7 planning package.
+
+It would not authorize implementation, live delivery, downstream integration, or a subsequent phase.
+
+### Non-Activation Statement
+
+This detached two-document proposal-package candidate does not create, approve, materialize in the AFR repository, stage, commit, publish, merge, activate, or execute Phase 7 planning.
+
+It creates no implementation, delivery, consumer-gateway, API, event, queue, webhook, feed, network, credential, provider, NEXUS, ARCP, ATA, PAA, Humanize, CI/CD, release-governance, persistence, cache, certificate-generation, signing, issuance, revocation, key, runtime-evaluation, runtime, deployment, enforcement, remediation, production, or subsequent-phase authority.
+
+`AFR_PHASE_7_PLANNING_AUTHORITY = NONE_PENDING_COMPLETE_SEPARATE_PROPOSAL_LIFECYCLE`

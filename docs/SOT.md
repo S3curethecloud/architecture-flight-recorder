@@ -4333,3 +4333,137 @@ This detached two-document proposal-package candidate does not create, approve, 
 It creates no implementation, delivery, consumer-gateway, API, event, queue, webhook, feed, network, credential, provider, NEXUS, ARCP, ATA, PAA, Humanize, CI/CD, release-governance, persistence, cache, certificate-generation, signing, issuance, revocation, key, runtime-evaluation, runtime, deployment, enforcement, remediation, production, or subsequent-phase authority.
 
 `AFR_PHASE_7_PLANNING_AUTHORITY = NONE_PENDING_COMPLETE_SEPARATE_PROPOSAL_LIFECYCLE`
+
+## 35. Phase 7 Delivery and Integration Boundary Planning Package Candidate R1
+
+The Phase 7 planning-authority proposal has completed its full canonical activation effective point.
+
+Canonical activation evidence:
+
+- canonical `main`: `ea48c34edd9b0684a620fe0ee012a567cde1f445`;
+- canonical tree: `78a573501ee86de69528b1d029823363a4caea3e`;
+- proposal commit: `95e68ce58bff8f4709c9a207286785c498e78c0b`;
+- proposal PR: `#29`;
+- exact two-document proposal boundary accepted;
+- local `main`, `origin/main`, and remote canonical `main` converged;
+- canonical checkout, index, and worktree independently verified clean;
+- all 14 proposal effective-point conditions passed simultaneously.
+
+Current authority is therefore:
+
+`AFR_PHASE_7_CAPABILITY = DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING`
+
+`AFR_PHASE_7_PLANNING_AUTHORITY = BOUNDED_DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING_ONLY`
+
+`AFR_PHASE_7_PLANNING_AUTHORITY_EFFECTIVE = YES`
+
+Phase 7 planning is documentation-only.
+
+The exact detached planning-package candidate boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-7/PHASE_7_PLAN.md`
+3. `docs/phase-7/PHASE_7_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_DELIVERY_AND_INTEGRATION_ARCHITECTURE.md`
+5. `docs/contracts/AFR_DELIVERY_AND_INTEGRATION_CONTRACT.md`
+6. `docs/security/AFR_PHASE_7_DELIVERY_AND_INTEGRATION_TRUST_BOUNDARY.md`
+
+`PHASE_7_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+The bounded Phase 7 planning mission is:
+
+`PLAN_TENANT_AWARE_AUTHORIZED_READ_ONLY_DELIVERY_OF_APPROVED_AFR_OUTPUTS_TO_BOUNDED_CONSUMERS_WITHOUT_MUTATING_AFR_RESULTS_OR_DOWNSTREAM_SYSTEMS`
+
+The package plans only the boundary by which already-approved AFR outputs may later be exposed to bounded consumers.
+
+It preserves all predecessor semantics and authority domains, including:
+
+`NEXUS_ARCHITECTURE_TRUTH_AUTHORITY = PRESERVED`
+
+`AFR_EVIDENCE_ELIGIBILITY_AUTHORITY = PRESERVED`
+
+`AFR_DETERMINISTIC_EVALUATION_AUTHORITY = PRESERVED`
+
+`AFR_PHASE_6_FINDING_AND_CERTIFICATE_SEMANTICS = PRESERVED`
+
+`ATA_RUNTIME_COMMIT_AUTHORITY = PRESERVED`
+
+Planning must preserve exact source semantics. A delivery projection cannot strengthen a conformance outcome, suppress a material limitation, widen scope, invent authority, fabricate evidence, or mutate an authoritative AFR object.
+
+The planned consumer boundary is deny-by-default, tenant-aware, subject-bound, scope-bound, identity-bound, policy-version-bound, auditable, and read-only.
+
+Potential consumer classes may be documented, but naming a consumer does not authorize integration with it.
+
+`READ_ACCESS != WRITE_AUTHORITY`
+
+`OUTPUT_VISIBILITY != OUTPUT_MUTATION_AUTHORITY`
+
+`DELIVERY != REMEDIATION`
+
+`DELIVERY != DEPLOYMENT`
+
+`DELIVERY != ENFORCEMENT`
+
+Models and agents remain non-authoritative for consumer authorization, tenant or subject binding, output eligibility, conformance outcome, integrity verification, entitlement, scope expansion, runtime commit, deployment, enforcement, or remediation.
+
+The planning package creates no implementation, API, gateway, event, queue, webhook, feed, network, credential, persistence, cache, provider, cross-program integration, runtime, deployment, enforcement, remediation, production, or Phase 8 authority.
+
+Current non-planning authority remains:
+
+`AFR_PHASE_7_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_DELIVERY_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CONSUMER_GATEWAY_AUTHORITY = NONE`
+
+`AFR_PHASE_7_API_AUTHORITY = NONE`
+
+`AFR_PHASE_7_EVENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_QUEUE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_WEBHOOK_AUTHORITY = NONE`
+
+`AFR_PHASE_7_FEED_AUTHORITY = NONE`
+
+`AFR_PHASE_7_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PROVIDER_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_NEXUS_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ARCP_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ATA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PAA_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_HUMANIZE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CICD_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RELEASE_GOVERNANCE_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_CACHE_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RUNTIME_EVALUATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_7_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_7_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_7_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+`PHASE_8_AUTHORITY = NONE`
+
+This detached package is a non-canonical planning candidate until it completes its own independent whole-package review, exact-content freeze, separately governed repository lifecycle, canonical merge, post-merge verification, canonical convergence, and separately governed closure lifecycle.
+
+No preparation, review, materialization, staging, commit, push, pull request, readiness transition, or merge alone establishes Phase 7 planning completion.

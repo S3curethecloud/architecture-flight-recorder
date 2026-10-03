@@ -4593,3 +4593,170 @@ Closure does not create implementation authority.
 `PHASE_8_AUTHORITY = NONE`
 
 This record is documentation-only. It creates no source, executable schema, test, fixture, dependency, configuration, credential, network, provider integration, persistence, runtime execution, delivery execution, deployment, enforcement, remediation, production access, or subsequent-phase authority.
+
+## 37. Phase 8 Read-Only Consumer Gateway First-Slice Planning-Authority Proposal Candidate
+
+Phase 7 Delivery and Integration Boundary planning is complete and remains the immutable predecessor planning boundary.
+
+The canonical predecessor base for this Phase 8 planning-authority proposal package is:
+
+- canonical `main`: `2db41d133bde9420ee21a2ad6b6225239dc4205c`;
+- accepted canonical merge tree: `463046a862f1c11aa9cc0b960b5d2e132eff0514`;
+- canonical `docs/SOT.md` SHA-256: `1172be2d7d4197096391e7c7cae1c862d1d331cf1de663f6f18e8274b979d708`;
+- Phase 7 planning status: `COMPLETE`;
+- Phase 7 planning authority: `CONSUMED_CLOSED`;
+- Phase 7 reopen authority: `NONE`.
+
+The independently accepted Phase 8 successor-scope proposal is bound by:
+
+`ACCEPTED_PHASE_8_SUCCESSOR_SCOPE_PROPOSAL_SHA256 = c9222fc6402a8cc8049d5842a42b3ad2bcb9eccba3127db6ac58fbc8053bf3b2`
+
+The independently accepted Phase 8 designation record is bound by:
+
+`ACCEPTED_PHASE_8_DESIGNATION_RECORD_SHA256 = 267a38d0d253c15d252a3659ca1f1046577c29e55662818b5dc2aa197b214f1b`
+
+The independently accepted detached Phase 8 planning-authority proposal is bound by:
+
+`ACCEPTED_PHASE_8_PLANNING_AUTHORITY_PROPOSAL_SHA256 = 97d7ce155c4b914c9a3af3d2dbd229d77e10737b05b05717dd6da73e093d921b`
+
+The accepted successor-governance designation is:
+
+`AFR_PHASE_NUMBER = 8`
+
+`AFR_PHASE_DESIGNATION = AFR_PHASE_8`
+
+`AFR_PHASE_8_CAPABILITY = READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING`
+
+These statements remain planning-authority proposal-package candidate evidence until the complete Phase 8 proposal effective point succeeds.
+
+They do not establish canonical Phase 8 planning architecture, implementation authority, runtime authority, repository materialization authority, or production authority.
+
+### Proposed Exact Planning-Authority Proposal Boundary
+
+The future repository planning-authority proposal remains limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-8/PHASE_8_PLANNING_AUTHORITY_PROPOSAL.md`
+
+`PROPOSAL_FILE_COUNT = 2`
+
+No third repository document is part of this proposal boundary.
+
+The Phase 8 planning-authority proposal document must remain byte-identical to the independently accepted detached proposal:
+
+`PHASE_8_PLANNING_AUTHORITY_PROPOSAL_REQUIRED_SHA256 = 97d7ce155c4b914c9a3af3d2dbd229d77e10737b05b05717dd6da73e093d921b`
+
+### Proposed Requested Planning Authority
+
+The proposal requests only:
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = BOUNDED_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING_ONLY`
+
+The requested authority is documentation-only.
+
+If and only if the complete Phase 8 proposal effective point succeeds, it would permit bounded planning for the first pure, local, side-effect-free, read-only Consumer Gateway slice.
+
+Planning authority does not imply implementation authority.
+
+Implementation authority does not imply runtime or delivery authority.
+
+### Proposed First-Slice Planning Mission
+
+The bounded Phase 8 planning mission is:
+
+`DEFINE_MINIMAL_SIDE_EFFECT_FREE_TENANT_AWARE_AUTHORIZATION_BOUND_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_WITHOUT_LIVE_INTEGRATION_OR_DOWNSTREAM_MUTATION`
+
+Its architectural position is:
+
+`BETWEEN_COMPLETED_PHASE_7_DELIVERY_AND_INTEGRATION_BOUNDARY_PLANNING_AND_ANY_FUTURE_CONCRETE_DELIVERY_INTEGRATION_RUNTIME_OR_CONSUMER_ADAPTER`
+
+Planning may define:
+
+- the exact first-slice input, output, and schema boundary;
+- tenant, subject, consumer identity, scope, policy version, and authorization-decision inputs;
+- deterministic authorization-aware read-only projection semantics;
+- integrity-envelope and source-identity preservation requirements;
+- fail-closed behavior for missing, invalid, stale, or unauthorized context;
+- deny-by-default tenant isolation and scope narrowing;
+- pure local reference semantics and acceptance-test requirements.
+
+Planning may not authorize:
+
+- authoritative AFR mutation;
+- downstream mutation;
+- HTTP or other network API activation;
+- queue, event, webhook, feed, or stream activation;
+- credentials, secrets, keys, tokens, or service identities;
+- persistence, cache, or delivery stores;
+- concrete external consumer adapters;
+- runtime delivery;
+- deployment;
+- enforcement;
+- remediation;
+- production access.
+
+### Proposed Future Six-Document Planning Package
+
+If and only if the Phase 8 planning-authority proposal later reaches its complete effective point, the prospective planning package remains limited exactly to:
+
+1. `docs/SOT.md`
+2. `docs/phase-8/PHASE_8_PLAN.md`
+3. `docs/phase-8/PHASE_8_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_CONTRACT.md`
+6. `docs/security/AFR_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_TRUST_BOUNDARY.md`
+
+`FUTURE_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+These are prospective documentation paths only.
+
+The current proposal package does not authorize their creation, repository materialization, staging, commit, publication, pull-request creation, merge, or implementation.
+
+### Stop Conditions
+
+Phase 8 planning must stop if any of the following becomes necessary:
+
+- network access;
+- credential, secret, key, token, or service-identity use;
+- persistence or cache;
+- external integration;
+- write or downstream mutation;
+- remediation, deployment, or enforcement;
+- model or agent authority over authorization eligibility or scope expansion;
+- amendment of canonical predecessor semantics;
+- expansion beyond the exact six-document planning boundary.
+
+### Proposal Effective Point
+
+Phase 8 planning authority becomes effective if and only if all separately governed proposal-lifecycle gates complete successfully, including:
+
+1. the exact future repository proposal remains limited to the two-document boundary;
+2. both complete proposal documents are frozen by exact content identity;
+3. the exact two-document package receives independent adversarial acceptance review;
+4. all blocking findings are resolved;
+5. exactly the reviewed two documents are materialized under separately granted repository authority;
+6. the exact materialized objects are independently verified;
+7. exactly those two documents are staged under separately granted staging authority;
+8. staged content, modes, tree effect, and exact boundary are independently verified;
+9. an exact proposal commit is separately authorized and created;
+10. the proposal branch is published under separately granted push authority;
+11. a Draft pull request preserves the reviewed base, head, tree, one-commit identity, exact two-document boundary, and frozen content identities;
+12. the Draft pull request receives independent acceptance review;
+13. the pull request is explicitly transitioned from Draft to Ready;
+14. explicit merge authorization is granted for the exact Ready identity;
+15. the exact reviewed proposal is merged to canonical `main`;
+16. post-merge identity, ordered-parent, tree, exact-boundary, frozen-content, local/remote convergence, and clean-checkout verification all pass.
+
+Before that complete effective point:
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = NONE`
+
+`AFR_PHASE_8_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_8_AUTHORITY = NONE`
+
+Merge without successful post-merge canonical verification cannot activate Phase 8 planning authority.
+
+Any later Phase 8 implementation-authority proposal requires a separate authority path.

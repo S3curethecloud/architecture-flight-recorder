@@ -4877,3 +4877,148 @@ implementation authority.
 `AFR_PHASE_8_REMEDIATION_AUTHORITY = NONE`
 
 `AFR_PHASE_8_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+## 39. Phase 8 Documentation-Only Closure Reconciliation Candidate R1
+
+The Phase 8 Read-Only Consumer Gateway First-Slice planning package has completed
+canonical planning acceptance and post-merge canonical convergence.
+
+Accepted planning-package evidence is exactly:
+
+- planning-package base: `ce080591fb65824aeb50f881b053e382c2b7fcf9`;
+- planning-package commit: `92b3be0a93231c7bb160559deef9df386a6d560e`;
+- canonical merge: `62c3259f841b50e33e524327888fea05356b79b5`;
+- canonical tree: `a4a4d6eb8b54fa21a6a6996009d79d2c61ee9343`;
+- pull request: `#33`;
+- exact six-document package identity: `PASS`;
+- exact six-path canonical merge boundary: `PASS`;
+- post-merge canonical convergence acceptance receipt SHA-256:
+  `06f18b869a44f46684dbe0d1503a25782285ff0a97246ed75811e3287939b459`;
+- canonical closure review receipt SHA-256:
+  `b110d08c1e536041beeb652b1a4335f3d4252fed0ed50806a40d9fd85ab64b37`;
+- closure preparation specification SHA-256:
+  `f0d08673809babf56a9223ffe1e5a7dbaa9cd0d6e43194beff5990d932cd6c36`;
+- closure scope manifest SHA-256:
+  `043b2a95e65b8631a6841ba5214f4a1a207b2e903cfcaa2c18c1c4d53b032e80`;
+- closure preparation authorization receipt SHA-256:
+  `9aa75b4164c57601817baea4234cb1c2ae174e10f69ed458bd48cf2180cfd930`;
+- canonical `main`, local `origin/main`, and remote `main` convergence: `PASS`;
+- canonical checkout, worktree, and index cleanliness: `PASS`.
+
+The accepted Phase 8 terminal planning-closure boundary is derived from canonical
+AFR closure practice and is limited exactly to append-only documentation changes
+in:
+
+1. `docs/SOT.md`
+2. `docs/phase-8/PHASE_8_ACCEPTANCE_CRITERIA.md`
+
+No third repository path is part of this closure.
+
+The following Phase 8 planning-package documents remain byte-identical to their
+accepted canonical planning identities and are not closure-edit targets:
+
+- `docs/phase-8/PHASE_8_PLAN.md`
+  SHA-256 `78f68f98d9a62055dc9d55fb7526ab1ddab5b843443bbeee4696a56eaf1a0081`;
+- `docs/architecture/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_ARCHITECTURE.md`
+  SHA-256 `ca23b0d8b553befda0d178743c5d5abf85ad6ad8d707fdcb6a556325812171ca`;
+- `docs/contracts/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_CONTRACT.md`
+  SHA-256 `6aab9336886c18b8138a1821fd999c02a61dc676dfc9974741da838ac013d13a`;
+- `docs/security/AFR_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_TRUST_BOUNDARY.md`
+  SHA-256 `649c56fd0bfbf2c5f3e6b7b001110f60f00c1c6867cf4436f6f2d0411edebf36`.
+
+This closure may record and close only the already accepted Phase 8 planning
+state.
+
+It may not change the accepted Phase 8 planning architecture, authorization
+binding, tenant or subject isolation semantics, scope semantics, deterministic
+projection semantics, source-truth preservation semantics, integrity or
+provenance semantics, fail-closed behavior, model exclusion, predecessor
+semantics, or any implementation boundary.
+
+Before every closure-effective-point condition succeeds, Phase 8 remains:
+
+`AFR_PHASE_8_PLANNING_STATUS = PLANNING_ACCEPTED_CLOSURE_PENDING`
+
+and the accepted planning authority remains bounded to documentation-only
+planning:
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = BOUNDED_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING_ONLY`
+
+No implementation or runtime-adjacent authority exists before closure.
+
+The closure becomes effective only after the exact two-document candidate:
+
+1. receives independent content acceptance;
+2. is frozen by exact complete-preimage identity;
+3. is materialized in the repository only under separately granted authority;
+4. is independently verified as append-only and exactly two-document bounded;
+5. is staged only under separately granted authority;
+6. is independently verified in the index;
+7. is committed only under separately granted authority;
+8. is pushed only under separately granted authority;
+9. is represented by an exact Draft pull request;
+10. receives independent pull-request acceptance;
+11. receives explicit Draft-to-Ready authorization and transition;
+12. receives explicit merge authorization;
+13. is merged to canonical `main`;
+14. passes post-merge identity, ordered-parent, tree, exact-boundary, and frozen
+    content verification;
+15. converges local and remote canonical `main`; and
+16. leaves the canonical checkout, worktree, and index clean.
+
+No earlier event establishes terminal Phase 8 closure.
+
+Candidate preparation, content review, exact-content freeze, repository
+materialization, staging, commit, push, Draft pull-request creation, independent
+pull-request acceptance, Ready transition, or merge alone is insufficient.
+
+After and only after every closure-effective-point condition passes:
+
+`AFR_PHASE_8_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+The Phase 8 capability remains a historical canonical planning record:
+
+`AFR_PHASE_8_CAPABILITY = READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING`
+
+Closure creates no implementation authority.
+
+`AFR_PHASE_8_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CONSUMER_GATEWAY_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_API_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EVENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_QUEUE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_WEBHOOK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_FEED_AUTHORITY = NONE`
+
+`AFR_PHASE_8_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EXTERNAL_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_8_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+Terminal planning closure does not itself activate a successor phase,
+implementation slice, Consumer Gateway runtime, API, transport, provider,
+network, credential, storage, deployment, enforcement, remediation, production
+surface, or external integration.
+
+Any such successor capability requires a separately governed authority path.

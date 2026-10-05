@@ -4760,3 +4760,120 @@ Before that complete effective point:
 Merge without successful post-merge canonical verification cannot activate Phase 8 planning authority.
 
 Any later Phase 8 implementation-authority proposal requires a separate authority path.
+
+
+## 38. Phase 8 Read-Only Consumer Gateway First-Slice Planning Package Candidate R1
+
+The Phase 8 planning-authority effective point is complete.
+
+The planning capability is:
+
+`AFR_PHASE_8_CAPABILITY = READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING`
+
+The effective planning authority is:
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = BOUNDED_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING_ONLY`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY_EFFECTIVE = YES`
+
+The Phase 8 planning mission is:
+
+`AFR_PHASE_8_MISSION = DEFINE_MINIMAL_SIDE_EFFECT_FREE_TENANT_AWARE_AUTHORIZATION_BOUND_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_WITHOUT_LIVE_INTEGRATION_OR_DOWNSTREAM_MUTATION`
+
+The exact planning package contains six documents:
+
+1. `docs/SOT.md`
+2. `docs/phase-8/PHASE_8_PLAN.md`
+3. `docs/phase-8/PHASE_8_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_ARCHITECTURE.md`
+5. `docs/contracts/AFR_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_CONTRACT.md`
+6. `docs/security/AFR_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_TRUST_BOUNDARY.md`
+
+`PHASE_8_PLANNING_PACKAGE_FILE_COUNT = 6`
+
+The planned first slice is a pure-local, deterministic, side-effect-free,
+tenant-aware, authorization-bound read-only projection over an already-approved
+AFR source object.
+
+The planned input boundary binds:
+
+- authoritative source identity;
+- tenant identity;
+- subject identity;
+- attributable consumer identity;
+- requested scope;
+- policy identifier and version;
+- explicit authorization-decision identity and decision;
+- applicable validity, freshness, integrity, and provenance context.
+
+The planned output is limited to:
+
+- an allowed bounded read-only projection;
+- an explicit denial; or
+- a fail-closed failure.
+
+The projection must preserve source identity, authoritative outcome, material
+findings and limitations, applicable scope, policy/version binding, provenance,
+integrity, validity, freshness, expiry, and supersession semantics.
+
+Tenant isolation is deny-by-default.
+
+Scope narrowing is permitted only when source meaning remains truthful.
+
+Scope expansion and privilege expansion are prohibited.
+
+A model or agent is non-authoritative for entitlement, authorization,
+tenant/subject binding, policy selection, scope expansion, source eligibility,
+integrity verification, conformance outcome, limitation suppression, or
+consequential action.
+
+The planned first slice performs no authoritative AFR mutation, downstream
+mutation, network access, credential use, persistence, cache, external
+integration, runtime delivery, deployment, enforcement, remediation, or
+production access.
+
+Preparation of this candidate establishes neither planning acceptance nor
+implementation authority.
+
+
+## Authority State
+
+`AFR_PHASE_8_CAPABILITY = READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = BOUNDED_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_PLANNING_ONLY`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY_EFFECTIVE = YES`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY_CHARACTER = DOCUMENTATION_ONLY`
+
+`AFR_PHASE_8_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CONSUMER_GATEWAY_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_API_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EVENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_QUEUE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_WEBHOOK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_FEED_AUTHORITY = NONE`
+
+`AFR_PHASE_8_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EXTERNAL_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_8_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PRODUCTION_ACCESS_AUTHORITY = NONE`

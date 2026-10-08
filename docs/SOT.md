@@ -5022,3 +5022,202 @@ network, credential, storage, deployment, enforcement, remediation, production
 surface, or external integration.
 
 Any such successor capability requires a separately governed authority path.
+## 40. Phase 8 Read-Only Consumer Gateway First-Slice Implementation-Authority Proposal Candidate R1R2
+
+Phase 8 Read-Only Consumer Gateway first-slice planning remains terminally
+closed.
+
+The canonical foundation for this implementation-authority proposal is exactly:
+
+`EXPECTED_CANONICAL_BASE_COMMIT = 09ae20b4cae4d125f52e1a9a11f2ee1c3c559fe7`
+
+`EXPECTED_CANONICAL_BASE_TREE = 9582cbe7f93281b18aa09dbe80d04dcb51d3db8d`
+
+`EXPECTED_CANONICAL_BASE_SOT_BLOB = 27a8fbd86e6675013eb147c3a9e5036192688abd`
+
+The independently accepted detached corrected-replacement proposal identity is:
+
+`ACCEPTED_R1R2_PROPOSAL_CANDIDATE_SHA256 = 2f8ffeeb9311fcbb3b86e0d577b1658889c0b65d2b89c1964d34a9860cad7aad`
+
+`ACCEPTED_R1R2_PROPOSAL_CANDIDATE_BYTES = 46394`
+
+`ACCEPTED_R1R2_PROPOSAL_CANDIDATE_LINES = 1414`
+
+The corrected independent acceptance receipt is:
+
+`R1R2_INDEPENDENT_ACCEPTANCE_CORRECTED_REPLACEMENT_RECEIPT_SHA256 = 514b945c929220371799ce2c44e847de07ca267997144fae848f99b6c7c5ec50`
+
+The earlier R1R2 acceptance review remains historical NONPASS evidence only:
+
+`SOURCE_R1R2_REVIEW_RESULT = NONPASS_FINAL`
+
+`SOURCE_R1R2_REVIEW_RETROACTIVE_PASS = NO`
+
+Its reconciled harness defect is bound by:
+
+`R1R2_ACCEPTANCE_NONPASS_RECONCILIATION_RECEIPT_SHA256 = 91ba746c2052703391750dfd5c0f1916faea98a33dea03a5b741d621644f2d5c`
+
+The corrected replacement acceptance does not reopen or rewrite rejected R1,
+R1R1, or the historical source R1R2 review.
+
+If canonical `main` moves before the complete implementation-authority proposal
+effective point:
+
+`BASE_MOVED = STOP`
+
+`SILENT_REBASE = PROHIBITED`
+
+`SILENT_BASE_SUBSTITUTION = PROHIBITED`
+
+Phase 8 planning remains:
+
+`AFR_PHASE_8_PLANNING_STATUS = COMPLETE`
+
+`AFR_PHASE_8_PLANNING_AUTHORITY = CONSUMED_CLOSED`
+
+`PHASE_8_REOPEN_AUTHORITY = NONE`
+
+Before the complete proposal effective point:
+
+`AFR_PHASE_8_IMPLEMENTATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CONSUMER_GATEWAY_IMPLEMENTATION_AUTHORITY = NONE`
+
+The proposed implementation authority is exactly:
+
+`BOUNDED_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_ONLY`
+
+The exact implementation-authority proposal repository boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-8/PHASE_8_FIRST_SLICE_IMPLEMENTATION_AUTHORITY_PROPOSAL.md`
+
+No third proposal repository path is authorized.
+
+The exact future implementation boundary, if and only if the complete proposal
+effective point is later established, is:
+
+1. `src/afr/consumer_gateway/read_only_projection.py`
+2. `tests/unit/consumer_gateway/test_read_only_projection.py`
+3. `tests/vectors/consumer_gateway/read_only_projection-v1.json`
+
+No fourth implementation file is authorized.
+
+`FUTURE_INIT_FILE = NONE`
+
+`FUTURE_DEPENDENCY_CHANGE = NONE`
+
+`FUTURE_BUILD_CONFIG_CHANGE = NONE`
+
+The proposed implementation slice remains pure-local, deterministic,
+side-effect-free, tenant-aware, subject-aware, authorization-bound, and
+read-only.
+
+Its complete executable contract is frozen by
+`docs/phase-8/PHASE_8_FIRST_SLICE_IMPLEMENTATION_AUTHORITY_PROPOSAL.md`,
+including:
+
+- exact public API and call signature;
+- exact typed authorization-context and request schemas;
+- exact result and integrity-envelope schemas;
+- exact stable result and failure-code domains;
+- exact authorization-decision semantics;
+- deterministic scope representation and subset comparison;
+- deterministic test-vector schema;
+- deterministic resource bounds;
+- deep-snapshot immutability and cycle handling;
+- exact source import boundary;
+- exact failure precedence;
+- exact eleven-entry fail-closed `failure_code -> failure_field` mapping;
+- deterministic projected-content non-leakage; and
+- atomic generic and Consumer Gateway-specific post-activation authority
+  binding.
+
+The proposal creates no network, credential, persistence, external-integration,
+runtime, deployment, enforcement, remediation, production-access, model,
+agent, downstream-mutation, or Phase 9 authority.
+
+The proposal activates only if all fifteen separately governed gates complete
+successfully:
+
+1. exact accepted proposal content freeze;
+2. separately authorized two-document repository materialization;
+3. independent exact-boundary and semantic acceptance;
+4. separately authorized staging;
+5. independent index verification;
+6. separately authorized commit;
+7. separately authorized push;
+8. exact Draft pull request;
+9. independent pull-request acceptance;
+10. explicit Draft-to-Ready authorization and transition;
+11. explicit merge authorization;
+12. merge to canonical `main`;
+13. post-merge commit, ordered-parent, tree, exact-boundary, and content
+    verification;
+14. local and remote canonical `main` convergence; and
+15. clean canonical checkout, worktree, and index verification.
+
+No earlier gate creates Phase 8 implementation authority.
+
+Proposal candidate preparation, repository-preimage preparation, content
+freeze, repository materialization, staging, commit, push, Draft pull-request
+creation, independent pull-request acceptance, Ready transition, merge
+authorization, or merge alone is insufficient.
+
+After and only after the complete proposal effective point, these two bindings
+become effective atomically:
+
+`AFR_PHASE_8_IMPLEMENTATION_AUTHORITY = BOUNDED_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_ONLY`
+
+`AFR_PHASE_8_CONSUMER_GATEWAY_IMPLEMENTATION_AUTHORITY = BOUNDED_PHASE_8_READ_ONLY_CONSUMER_GATEWAY_FIRST_SLICE_IMPLEMENTATION_ONLY`
+
+They are two names for the same bounded activation state and must never
+disagree.
+
+All other Phase 8 runtime-adjacent authorities remain absent:
+
+`AFR_PHASE_8_API_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EVENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_QUEUE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_WEBHOOK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_FEED_AUTHORITY = NONE`
+
+`AFR_PHASE_8_NETWORK_AUTHORITY = NONE`
+
+`AFR_PHASE_8_CREDENTIAL_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PERSISTENCE_AUTHORITY = NONE`
+
+`AFR_PHASE_8_EXTERNAL_INTEGRATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_RUNTIME_AUTHORITY = NONE`
+
+`AFR_PHASE_8_DEPLOYMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_ENFORCEMENT_AUTHORITY = NONE`
+
+`AFR_PHASE_8_REMEDIATION_AUTHORITY = NONE`
+
+`AFR_PHASE_8_PRODUCTION_ACCESS_AUTHORITY = NONE`
+
+`PHASE_9_AUTHORITY = NONE`
+
+`PHASE_9_PLANNING_AUTHORITY = NONE`
+
+Activation authorizes only a separately governed implementation candidate using
+the exact three future implementation files.
+
+Activation does not itself create, stage, commit, push, merge, deploy, execute,
+or accept that implementation.
+
+The implementation remains subject to a separate governed implementation
+lifecycle and later terminal implementation closure.
+
+Historical Phase 8 planning and closure artifacts remain immutable predecessor
+records.
+
+No gate implies the next.

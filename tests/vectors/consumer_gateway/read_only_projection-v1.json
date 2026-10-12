@@ -1,0 +1,142 @@
+{
+  "version": "read_only_projection-v1",
+  "cases": [
+    {
+      "name": "allowed_same_tenant_authorized",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-a",
+        "authorized": true,
+        "resource": {
+          "record_id": "record-001",
+          "classification": "internal",
+          "attributes": {
+            "region": "us-west",
+            "active": true
+          }
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_ALLOWED",
+        "tenant_id": "tenant-a",
+        "projection": {
+          "record_id": "record-001",
+          "classification": "internal",
+          "attributes": {
+            "region": "us-west",
+            "active": true
+          }
+        },
+        "reason": null
+      }
+    },
+    {
+      "name": "denied_explicit_authorization_false",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-a",
+        "authorized": false,
+        "resource": {
+          "record_id": "record-002"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_DENIED",
+        "tenant_id": "tenant-a",
+        "projection": null,
+        "reason": "AUTHORIZATION_DENIED"
+      }
+    },
+    {
+      "name": "denied_subject_resource_tenant_mismatch",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-b",
+        "authorization_tenant_id": "tenant-a",
+        "authorized": true,
+        "resource": {
+          "record_id": "record-003"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_DENIED",
+        "tenant_id": "tenant-b",
+        "projection": null,
+        "reason": "TENANT_BINDING_MISMATCH"
+      }
+    },
+    {
+      "name": "denied_authorization_tenant_mismatch",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-b",
+        "authorized": true,
+        "resource": {
+          "record_id": "record-004"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_DENIED",
+        "tenant_id": "tenant-a",
+        "projection": null,
+        "reason": "TENANT_BINDING_MISMATCH"
+      }
+    },
+    {
+      "name": "fail_closed_missing_required_field",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-a",
+        "resource": {
+          "record_id": "record-005"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_FAIL_CLOSED",
+        "tenant_id": null,
+        "projection": null,
+        "reason": "MISSING_REQUIRED_FIELD"
+      }
+    },
+    {
+      "name": "fail_closed_invalid_authorization_type",
+      "request": {
+        "subject_tenant_id": "tenant-a",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-a",
+        "authorized": "true",
+        "resource": {
+          "record_id": "record-006"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_FAIL_CLOSED",
+        "tenant_id": null,
+        "projection": null,
+        "reason": "INVALID_AUTHORIZATION_DECISION"
+      }
+    },
+    {
+      "name": "fail_closed_empty_tenant_binding",
+      "request": {
+        "subject_tenant_id": "",
+        "resource_tenant_id": "tenant-a",
+        "authorization_tenant_id": "tenant-a",
+        "authorized": true,
+        "resource": {
+          "record_id": "record-007"
+        }
+      },
+      "expected": {
+        "result": "READ_ONLY_PROJECTION_FAIL_CLOSED",
+        "tenant_id": null,
+        "projection": null,
+        "reason": "INVALID_TENANT_BINDING"
+      }
+    }
+  ]
+}

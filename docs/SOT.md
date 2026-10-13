@@ -5221,3 +5221,47 @@ Historical Phase 8 planning and closure artifacts remain immutable predecessor
 records.
 
 No gate implies the next.
+
+## Phase 9 — NEXUS Architecture-Truth Compatibility and Consumer-Contract Qualification — Detached Planning Candidate R1
+
+Candidate posture: `DETACHED_PLANNING_CANDIDATE_R1_NON_CANONICAL`
+
+Canonical AFR predecessor: `323b23d51ec7b4027b00adbb59ea716607ce455e`
+
+Frozen NEXUS reference main: `a59327a5d829399048e64c37967b7bc4cb057739`
+
+Frozen NEXUS contract target: `docs/architecture/NEXUS_TO_AFR_ARCHITECTURE_TRUTH_CONSUMER_CONTRACT.md`
+
+Frozen NEXUS contract SHA-256: `a6abb49d5536de89d21131abf7d2d717a242f33b1e4c4f9d8966bd48dc465246`
+
+Phase 8 first-slice implementation remains canonically closed. Phase 9 does not reopen Phase 8.
+
+Phase 9 qualifies AFR against current NEXUS architecture-truth semantics and plans deterministic, read-only, fail-closed consumption without activating integration.
+
+The current NEXUS contract target exists but is explicitly non-canonical. AFR MUST NOT treat it as canonical until NEXUS separately completes contract canonicalization, merge, reconciliation, and closure.
+
+AFR V1 roadmap:
+- Phase 9 — NEXUS architecture-truth compatibility and consumer-contract qualification.
+- Phase 10 — architecture-truth and operational-evidence binding.
+- Phase 11 — continuous conformance evaluation runtime.
+- Phase 12 — drift, findings, and conformance certificates.
+- Phase 13 — operational delivery and downstream consumer integration.
+- Phase 14 — production hardening, E2E acceptance, and final NEXUS/ARCP compatibility certification.
+
+`AFR_V1_PROJECTED_TOTAL_PHASE_COUNT = 14`
+`AFR_V1_COMPLETION_TARGET = PHASE_14`
+
+Phase 9 preserves:
+`NEXUS_ARCHITECTURE_TRUTH != AFR_CONFORMANCE_RESULT`
+`AFR_FINDING != ARCHITECTURE_RISK`
+`AFR_CONFORMANCE != NEXUS_ARCHITECTURE_ACCEPTANCE`
+`AFR_READ_AUTHORITY != NEXUS_MUTATION_AUTHORITY`
+`ARCP_CONTRACT_VALIDATION_EQUALS_AFR_OPERATIONAL_CONFORMANCE = FALSE`
+`ARCP_CONSUMER_COMPATIBILITY_EQUALS_AFR_EVIDENCE_ELIGIBILITY = FALSE`
+
+`PHASE_9_PLANNING_CANDIDATE_STATUS = DETACHED_NON_CANONICAL`
+`PHASE_9_IMPLEMENTATION_AUTHORITY = NONE`
+`PHASE_9_RUNTIME_AUTHORITY = NONE`
+`AFR_NEXUS_INTEGRATION_AUTHORITY = NONE`
+`NEXUS_CONTRACT_CANONICALIZATION_AUTHORITY = NONE`
+`PHASE_8_REOPEN_AUTHORITY = NONE`

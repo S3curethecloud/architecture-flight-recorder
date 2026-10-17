@@ -5265,3 +5265,39 @@ Phase 9 preserves:
 `AFR_NEXUS_INTEGRATION_AUTHORITY = NONE`
 `NEXUS_CONTRACT_CANONICALIZATION_AUTHORITY = NONE`
 `PHASE_8_REOPEN_AUTHORITY = NONE`
+
+## 41. Phase 10 Truth and Operational Evidence Binding Planning Candidate R1R2 Corrected Replacement
+
+Phase 9 is canonically complete and terminally closed at AFR main
+`b18281502501f41928f0585cf72ff4715f2c5414`, tree `f4c61f45a0dae6a4d8ac3d59c1718e6567d7d386`.
+Its closure record is bound by SHA-256
+`7db297f661daca9a2e8e2b9473c7f315ee6a25db09d02d440e440a8ca5446de7`. Phase 9 is not reopened by this candidate.
+
+Phase 10 is **planning and contract preparation only**. This detached candidate
+binds the qualified NEXUS architecture-truth identity to a proposed deterministic
+operational-evidence admissibility and truth-binding model. It performs no
+operational-evidence ingestion, produces no AFR finding or conformance effect,
+creates no implementation or runtime authority, and creates no NEXUS mutation or
+Phase 11 authority.
+
+Qualified NEXUS dependency identity:
+
+- NEXUS main OID: `ef1c048ef3c6daaca2f6f1d35fd52341227843b5`;
+- consumer contract ID: `NEXUS_TO_AFR_ARCHITECTURE_TRUTH_CONSUMER_CONTRACT_V1`;
+- consumer contract SHA-256: `a6abb49d5536de89d21131abf7d2d717a242f33b1e4c4f9d8966bd48dc465246`;
+- AFR consumption mode: read-only.
+
+Phase 10 preserves these non-equivalences:
+
+`NEXUS_ARCHITECTURE_TRUTH != AFR_CONFORMANCE_RESULT`  
+`AFR_FINDING != NEXUS_ARCHITECTURE_RISK`  
+`AFR_CONFORMANCE != NEXUS_ARCHITECTURE_ACCEPTANCE`  
+`AFR_READ_AUTHORITY != NEXUS_MUTATION_AUTHORITY`  
+`AFR_ACCEPTED_CONFORMANCE_EVIDENCE != PHASE17_RISK_INTERPRETATION`
+
+The remaining five documents in this detached six-document candidate define the
+planning sequence, acceptance criteria, binding architecture, admissibility and
+truth-binding contract, and trust boundary. Canonical repository materialization,
+staging, commit, push, pull request creation, implementation, runtime collection,
+evidence ingestion, findings, conformance judgment, NEXUS mutation, and Phase 11
+entry remain unauthorized pending separately governed successor gates.

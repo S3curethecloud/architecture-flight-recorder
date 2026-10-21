@@ -5301,3 +5301,85 @@ truth-binding contract, and trust boundary. Canonical repository materialization
 staging, commit, push, pull request creation, implementation, runtime collection,
 evidence ingestion, findings, conformance judgment, NEXUS mutation, and Phase 11
 entry remain unauthorized pending separately governed successor gates.
+
+## 42. Phase 11 Continuous Conformance Evaluation Runtime Planning Candidate R1
+
+Phase 10 Truth and Operational Evidence Binding is terminally closed at canonical
+AFR main `14a75d02aa7dfa7c254a56bcf66030937ef9e48c`, tree
+`b39815ce431f6502ce4cb7b7a645a1ebbb428d7e`, with Phase 10 closure record
+SHA-256 `4e983e35256030c33ce4bbc3f3e41e2417c39cdc02234c5fe4ef1032bb001383`.
+Phase 10 is not reopened by this candidate.
+
+Phase 11 roadmap capability:
+
+`AFR_PHASE_11_CAPABILITY = CONTINUOUS_CONFORMANCE_EVALUATION_RUNTIME`
+
+This detached candidate is planning and contract preparation only. It defines a
+future deterministic runtime boundary for repeated bounded AFR conformance
+evaluations over qualified architecture truth and admitted operational evidence.
+It does not execute an evaluation, ingest operational evidence, query a provider,
+create runtime state, deploy a service, emit a finding, issue a certificate,
+mutate NEXUS, or enter Phase 12.
+
+Qualified predecessor and dependency bindings:
+
+`PHASE_11_CANONICAL_PREDECESSOR_MAIN = 14a75d02aa7dfa7c254a56bcf66030937ef9e48c`
+
+`PHASE_11_CANONICAL_PREDECESSOR_TREE = b39815ce431f6502ce4cb7b7a645a1ebbb428d7e`
+
+`PHASE_11_PREDECESSOR_CLOSURE_SHA256 = 4e983e35256030c33ce4bbc3f3e41e2417c39cdc02234c5fe4ef1032bb001383`
+
+`PHASE_11_QUALIFIED_NEXUS_ANCHOR = ef1c048ef3c6daaca2f6f1d35fd52341227843b5`
+
+`PHASE_11_NEXUS_CONTRACT_ID = NEXUS_TO_AFR_ARCHITECTURE_TRUTH_CONSUMER_CONTRACT_V1`
+
+`PHASE_11_NEXUS_CONTRACT_SHA256 = a6abb49d5536de89d21131abf7d2d717a242f33b1e4c4f9d8966bd48dc465246`
+
+Phase 11 preserves:
+
+`NEXUS_ARCHITECTURE_TRUTH != AFR_CONFORMANCE_RESULT`
+
+`AFR_FINDING != NEXUS_ARCHITECTURE_RISK`
+
+`AFR_CONFORMANCE != NEXUS_ARCHITECTURE_ACCEPTANCE`
+
+`AFR_READ_AUTHORITY != NEXUS_MUTATION_AUTHORITY`
+
+`ADMISSIBILITY != CONFORMANCE`
+
+`PLANNING_AUTHORITY != RUNTIME_EXECUTION_AUTHORITY`
+
+`PHASE_11_EVALUATION_RESULT != PHASE_12_FINDING_OR_CERTIFICATE`
+
+The exact detached planning-package boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-11/PHASE_11_PLAN.md`
+3. `docs/phase-11/PHASE_11_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_CONTINUOUS_CONFORMANCE_EVALUATION_RUNTIME_ARCHITECTURE.md`
+5. `docs/contracts/AFR_CONTINUOUS_CONFORMANCE_EVALUATION_RUNTIME_CONTRACT.md`
+6. `docs/security/AFR_PHASE_11_CONTINUOUS_CONFORMANCE_EVALUATION_RUNTIME_TRUST_BOUNDARY.md`
+
+No seventh planning document is authorized by this candidate.
+
+`PHASE_11_PLANNING_CANDIDATE_STATUS = DETACHED_NON_CANONICAL`
+
+`PHASE_11_IMPLEMENTATION_AUTHORITY = NONE`
+
+`PHASE_11_RUNTIME_AUTHORITY = NONE`
+
+`PHASE_11_CONFORMANCE_EVALUATION_EXECUTION_AUTHORITY = NONE`
+
+`PHASE_11_OPERATIONAL_EVIDENCE_INGESTION_AUTHORITY = NONE`
+
+`PHASE_11_PROVIDER_READ_AUTHORITY = NONE`
+
+`PHASE_11_FINDINGS_EFFECT = NONE`
+
+`PHASE_11_CERTIFICATE_EFFECT = NONE`
+
+`PHASE_12_ENTRY_AUTHORITY = NONE`
+
+`NEXUS_REPOSITORY_MUTATION_AUTHORITY = NONE`
+
+No gate implies the next.

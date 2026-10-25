@@ -5383,3 +5383,111 @@ No seventh planning document is authorized by this candidate.
 `NEXUS_REPOSITORY_MUTATION_AUTHORITY = NONE`
 
 No gate implies the next.
+## 43. Phase 12 Drift, Findings, Conformance Certificates, and Command Center Planning Candidate R1
+
+Phase 11 Continuous Conformance Evaluation Runtime is terminally closed at canonical
+AFR main `6e3789ff6f972bfffb5ea04031b874b419730dc2`, tree
+`8ca430c260f9171424d0329ed28ca128e76fbfc3`, with Phase 11 closure record
+SHA-256 `95ac664def50bb0e785ea7df7ddded1f6c91c28ec5f406fbb99ecdb7a667a3bb`.
+Phase 11 is not reopened by this candidate.
+
+The canonical AFR V1 roadmap remains:
+
+- Phase 12 - drift, findings, and conformance certificates;
+- Phase 13 - operational delivery and downstream consumer integration;
+- Phase 14 - production hardening, E2E acceptance, and final NEXUS/ARCP compatibility certification.
+
+`AFR_V1_PROJECTED_TOTAL_PHASE_COUNT = 14`
+
+`AFR_V1_COMPLETION_TARGET = PHASE_14`
+
+Phase 12 roadmap capability:
+
+`AFR_PHASE_12_CAPABILITY = DRIFT_FINDINGS_AND_CONFORMANCE_CERTIFICATES`
+
+The independently accepted Phase 12 entry review also permits bounded planning for
+a durable, read-oriented AFR Command Center as the human-facing conformance
+operations and investigation surface for Phase 12 outputs.
+
+`AFR_PHASE_12_COMMAND_CENTER_ROLE = READ_ORIENTED_CONFORMANCE_OPERATIONS_AND_INVESTIGATION_SURFACE`
+
+The Command Center does not become architecture authority, evaluation authority,
+provider mutation authority, remediation authority, certificate issuance authority,
+or consequential runtime commit authority.
+
+The durable Command Center planning model requires:
+
+- one stable provider-neutral shell;
+- versioned read-model contracts;
+- a versioned extension contract;
+- an explicit capability registry;
+- explicit adapter boundaries;
+- evidence and provenance visibility;
+- explicit authority-state presentation;
+- fail-closed unknown and unavailable states;
+- additive successor-phase evolution;
+- no routine shell rebuild in Phase 13 or Phase 14.
+
+Phase 13 may add operational-delivery and downstream-consumer adapters over the
+stable Phase 12 shell. Phase 14 may add security, reliability, performance,
+observability, E2E, and compatibility hardening. Neither phase may silently
+reinterpret accepted Phase 12 finding, drift, certificate, evidence, or authority
+semantics.
+
+The exact detached Phase 12 planning-package boundary is:
+
+1. `docs/SOT.md`
+2. `docs/phase-12/PHASE_12_PLAN.md`
+3. `docs/phase-12/PHASE_12_ACCEPTANCE_CRITERIA.md`
+4. `docs/architecture/AFR_PHASE_12_DRIFT_FINDINGS_CERTIFICATES_AND_COMMAND_CENTER_ARCHITECTURE.md`
+5. `docs/contracts/AFR_PHASE_12_FINDING_DRIFT_AND_CERTIFICATE_CONTRACT.md`
+6. `docs/contracts/AFR_COMMAND_CENTER_READ_MODEL_AND_EXTENSION_CONTRACT.md`
+7. `docs/security/AFR_PHASE_12_COMMAND_CENTER_AND_CONFORMANCE_TRUST_BOUNDARY.md`
+
+No eighth planning document is authorized by this candidate.
+
+Phase 12 preserves:
+
+`NEXUS_ARCHITECTURE_TRUTH != AFR_CONFORMANCE_RESULT`
+
+`AFR_FINDING != NEXUS_ARCHITECTURE_RISK`
+
+`AFR_CONFORMANCE != NEXUS_ARCHITECTURE_ACCEPTANCE`
+
+`AFR_READ_AUTHORITY != NEXUS_MUTATION_AUTHORITY`
+
+`PHASE_11_EVALUATION_RESULT != PHASE_12_FINDING_OR_CERTIFICATE`
+
+`COMMAND_CENTER_PRESENTATION != EXECUTION_AUTHORITY`
+
+`COMMAND_CENTER_VISIBILITY != PROVIDER_MUTATION_AUTHORITY`
+
+`CERTIFICATE_DISPLAY != CERTIFICATE_ISSUANCE_AUTHORITY`
+
+`PHASE_13_INTEGRATION != PHASE_12_FINDING_REINTERPRETATION`
+
+`PHASE_14_HARDENING != PHASE_12_SEMANTIC_REDEFINITION`
+
+`PHASE_12_PLANNING_CANDIDATE_STATUS = DETACHED_NON_CANONICAL`
+
+`PHASE_12_IMPLEMENTATION_AUTHORITY = NONE`
+
+`PHASE_12_RUNTIME_AUTHORITY = NONE`
+
+`PHASE_12_FINDING_ISSUANCE_RUNTIME_AUTHORITY = NONE`
+
+`PHASE_12_CERTIFICATE_ISSUANCE_RUNTIME_AUTHORITY = NONE`
+
+`PHASE_12_COMMAND_CENTER_IMPLEMENTATION_AUTHORITY = NONE`
+
+`PHASE_12_COMMAND_CENTER_RUNTIME_AUTHORITY = NONE`
+
+`PHASE_12_COMMAND_CENTER_DEPLOYMENT_AUTHORITY = NONE`
+
+`PHASE_12_COMMAND_CENTER_PRODUCTION_AUTHORITY = NONE`
+
+`PHASE_13_ENTRY_AUTHORITY = NONE`
+
+`PHASE_14_ENTRY_AUTHORITY = NONE`
+
+No gate implies the next.

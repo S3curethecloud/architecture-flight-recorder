@@ -1,0 +1,67 @@
+{
+  "case": {
+    "architecture_truth_reference_id": "truth.phase12.synthetic.001",
+    "canonicalization_version": "1.0.0",
+    "environment_id": "env.synthetic",
+    "evaluated_at": "2026-10-27T20:00:00Z",
+    "evaluation_contract_version": "1.0.0",
+    "evidence_binding_or_set_id": "evidence.synthetic.set.001",
+    "expected_canonical_utf8": "{\"architecture_truth_reference_id\":\"truth.phase12.synthetic.001\",\"canonicalization_version\":\"1.0.0\",\"environment_id\":\"env.synthetic\",\"evaluated_at\":\"2026-10-27T20:00:00Z\",\"evaluation_contract_version\":\"1.0.0\",\"evidence_binding_or_set_id\":\"evidence.synthetic.set.001\",\"fingerprint_version\":\"1.0.0\",\"foundation_contract_version\":\"1.0.0\",\"limitations\":[\"limitation.synthetic-only\"],\"provenance\":{\"collector_id\":\"collector.synthetic\",\"integrity_reference\":\"sha256.synthetic.integrity.001\",\"observed_at\":\"2026-10-27T19:59:00Z\",\"source_id\":\"source.synthetic\"},\"release_id\":\"release.synthetic.001\",\"source_evaluation_cycle_id\":\"cycle.synthetic.001\",\"source_evaluation_result_id\":\"result.synthetic.001\",\"source_evaluation_status\":\"ACCEPTED\",\"subject_id\":\"subject.synthetic.001\",\"subject_type\":\"architecture\",\"tenant_id\":\"tenant.synthetic\",\"trusted_time_context_id\":\"time.synthetic.001\",\"unresolved_conditions\":[\"condition.external-issuance-not-authorized\"],\"valid_from\":\"2026-10-27T20:00:00Z\",\"valid_until\":\"2026-10-28T20:00:00Z\"}",
+    "expected_fingerprint_digest_hex": "99b8ab0a5021d13523e9d66148e7a48d0904ce0e253f58f10d6c88d59c9bf901",
+    "fingerprint_version": "1.0.0",
+    "foundation_contract_version": "1.0.0",
+    "input_byte_length": 512,
+    "limitations": [
+      "limitation.synthetic-only"
+    ],
+    "name": "valid-synthetic-shared-evidence-foundation",
+    "provenance_collector_id": "collector.synthetic",
+    "provenance_integrity_reference": "sha256.synthetic.integrity.001",
+    "provenance_observed_at": "2026-10-27T19:59:00Z",
+    "provenance_source_id": "source.synthetic",
+    "release_id": "release.synthetic.001",
+    "resource_limits": {
+      "maximum_canonical_bytes": 8192,
+      "maximum_collection_items": 256,
+      "maximum_input_bytes": 8192,
+      "maximum_nesting_depth": 16,
+      "maximum_work_units": 32768
+    },
+    "source_evaluation_cycle_id": "cycle.synthetic.001",
+    "source_evaluation_result_id": "result.synthetic.001",
+    "source_evaluation_status": "ACCEPTED",
+    "subject_id": "subject.synthetic.001",
+    "subject_type": "architecture",
+    "tenant_id": "tenant.synthetic",
+    "trusted_time_context_id": "time.synthetic.001",
+    "unresolved_conditions": [
+      "condition.external-issuance-not-authorized"
+    ],
+    "valid_from": "2026-10-27T20:00:00Z",
+    "valid_until": "2026-10-28T20:00:00Z"
+  },
+  "negative_cases": [
+    {
+      "expected_failure_code": "TENANT_BINDING_MISMATCH",
+      "name": "tenant-mismatch",
+      "override": {
+        "tenant_id": "tenant.other"
+      }
+    },
+    {
+      "expected_failure_code": "SUBJECT_BINDING_MISMATCH",
+      "name": "subject-mismatch",
+      "override": {
+        "subject_id": "subject.other"
+      }
+    },
+    {
+      "expected_failure_code": "INVALID_IDENTIFIER",
+      "name": "source-not-accepted",
+      "override": {
+        "source_evaluation_status": "REJECTED"
+      }
+    }
+  ],
+  "vector_version": "1.0.0"
+}

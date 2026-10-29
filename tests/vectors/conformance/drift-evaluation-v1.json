@@ -1,0 +1,70 @@
+{
+  "cases": [
+    {
+      "evidence_available": true,
+      "evidence_conclusive": true,
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "evidence_value": "expected.synthetic.v1",
+      "expected_state": "SUPPORTED",
+      "expected_value": "expected.synthetic.v1",
+      "freshness_bound_seconds": 3600,
+      "name": "supported-fresh-conclusive",
+      "trusted_evaluation_time": "2026-10-28T20:00:00Z"
+    },
+    {
+      "evidence_available": true,
+      "evidence_conclusive": true,
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "evidence_value": "observed.synthetic.other",
+      "expected_state": "CONTRADICTED",
+      "expected_value": "expected.synthetic.v1",
+      "freshness_bound_seconds": 3600,
+      "name": "contradicted-fresh-conclusive",
+      "trusted_evaluation_time": "2026-10-28T20:00:00Z"
+    },
+    {
+      "evidence_available": true,
+      "evidence_conclusive": false,
+      "evidence_observed_at": "2026-10-28T17:00:00Z",
+      "evidence_value": "ambiguous.synthetic.value",
+      "expected_state": "STALE",
+      "expected_value": "expected.synthetic.v1",
+      "freshness_bound_seconds": 3600,
+      "name": "stale-available-evidence",
+      "trusted_evaluation_time": "2026-10-28T20:00:00Z"
+    },
+    {
+      "evidence_available": true,
+      "evidence_conclusive": false,
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "evidence_value": "ambiguous.synthetic.value",
+      "expected_state": "INCONCLUSIVE",
+      "expected_value": "expected.synthetic.v1",
+      "freshness_bound_seconds": 3600,
+      "name": "inconclusive-fresh-evidence",
+      "trusted_evaluation_time": "2026-10-28T20:00:00Z"
+    },
+    {
+      "evidence_available": false,
+      "evidence_conclusive": false,
+      "evidence_observed_at": null,
+      "evidence_value": null,
+      "expected_state": "EVIDENCE_UNAVAILABLE",
+      "expected_value": "expected.synthetic.v1",
+      "freshness_bound_seconds": 3600,
+      "name": "evidence-unavailable",
+      "trusted_evaluation_time": "2026-10-28T20:00:00Z"
+    }
+  ],
+  "failure_cases": [
+    {
+      "expected_failure_code": "INVALID_VERSION",
+      "name": "invalid-contract-version"
+    },
+    {
+      "expected_failure_code": "INVALID_TIMESTAMP",
+      "name": "naive-trusted-evaluation-time"
+    }
+  ],
+  "vector_version": "1.0.0"
+}

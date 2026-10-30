@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "id": "supported",
+      "expected_state": "SUPPORTED",
+      "evidence_available": true,
+      "evidence_conclusive": true,
+      "evidence_value": "expected.synthetic.v1",
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "freshness_bound_seconds": 3600
+    },
+    {
+      "id": "contradicted",
+      "expected_state": "CONTRADICTED",
+      "evidence_available": true,
+      "evidence_conclusive": true,
+      "evidence_value": "different.synthetic.v1",
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "freshness_bound_seconds": 3600
+    },
+    {
+      "id": "stale",
+      "expected_state": "STALE",
+      "evidence_available": true,
+      "evidence_conclusive": true,
+      "evidence_value": "expected.synthetic.v1",
+      "evidence_observed_at": "2026-10-28T17:00:00Z",
+      "freshness_bound_seconds": 3600
+    },
+    {
+      "id": "inconclusive",
+      "expected_state": "INCONCLUSIVE",
+      "evidence_available": true,
+      "evidence_conclusive": false,
+      "evidence_value": "expected.synthetic.v1",
+      "evidence_observed_at": "2026-10-28T19:59:00Z",
+      "freshness_bound_seconds": 3600
+    },
+    {
+      "id": "evidence-unavailable",
+      "expected_state": "EVIDENCE_UNAVAILABLE",
+      "evidence_available": false,
+      "evidence_conclusive": false,
+      "evidence_value": null,
+      "evidence_observed_at": null,
+      "freshness_bound_seconds": 3600
+    }
+  ]
+}

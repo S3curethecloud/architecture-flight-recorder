@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "cases": [
+    {
+      "id": "supported-single",
+      "finding_states": ["SUPPORTED"],
+      "expected_outcome": "PASS",
+      "valid_from": "2026-10-28T20:00:00Z",
+      "valid_until": "2026-10-29T18:00:00Z"
+    },
+    {
+      "id": "supported-contradicted-set",
+      "finding_states": ["SUPPORTED", "CONTRADICTED"],
+      "expected_outcome": "PASS",
+      "valid_from": "2026-10-28T20:00:00Z",
+      "valid_until": "2026-10-29T18:00:00Z"
+    },
+    {
+      "id": "stale-required-state",
+      "finding_states": ["STALE"],
+      "expected_outcome": "FAIL",
+      "valid_from": "2026-10-28T20:00:00Z",
+      "valid_until": "2026-10-29T18:00:00Z"
+    },
+    {
+      "id": "expired-certificate-window",
+      "finding_states": ["SUPPORTED"],
+      "expected_outcome": "FAIL",
+      "valid_from": "2026-10-28T20:00:00Z",
+      "valid_until": "2026-10-28T20:00:00Z"
+    }
+  ]
+}

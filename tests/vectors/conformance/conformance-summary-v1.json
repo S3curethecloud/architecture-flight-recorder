@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "formula_id": "afr.score.all-findings-supported-basis-points",
+  "formula_version": "1.0.0",
+  "scale": "basis_points_10000",
+  "cases": [
+    {
+      "id": "supported-only",
+      "finding_states": ["SUPPORTED"],
+      "supported_count": 1,
+      "contradicted_count": 0,
+      "score_available": true,
+      "score_basis_points": 10000
+    },
+    {
+      "id": "supported-and-contradicted",
+      "finding_states": ["SUPPORTED", "CONTRADICTED"],
+      "supported_count": 1,
+      "contradicted_count": 1,
+      "score_available": true,
+      "score_basis_points": 5000
+    },
+    {
+      "id": "stale-makes-score-unavailable",
+      "finding_states": ["SUPPORTED", "STALE"],
+      "supported_count": 1,
+      "contradicted_count": 0,
+      "score_available": false,
+      "score_basis_points": null
+    },
+    {
+      "id": "inconclusive-makes-score-unavailable",
+      "finding_states": ["SUPPORTED", "INCONCLUSIVE"],
+      "supported_count": 1,
+      "contradicted_count": 0,
+      "score_available": false,
+      "score_basis_points": null
+    },
+    {
+      "id": "evidence-unavailable-makes-score-unavailable",
+      "finding_states": ["SUPPORTED", "EVIDENCE_UNAVAILABLE"],
+      "supported_count": 1,
+      "contradicted_count": 0,
+      "score_available": false,
+      "score_basis_points": null
+    }
+  ]
+}

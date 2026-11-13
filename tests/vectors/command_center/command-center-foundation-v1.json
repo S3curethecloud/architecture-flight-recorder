@@ -1,0 +1,104 @@
+{
+  "schema": "AFR_COMMAND_CENTER_FOUNDATION_R1_VECTOR_V1",
+  "read_model_contract_version": "1.0.0",
+  "foundation_surface_id": "executive_status",
+  "stable_surface_ids": [
+    "executive_status",
+    "live_findings",
+    "architecture_drift",
+    "evidence_health",
+    "evaluation_runs",
+    "conformance_certificates",
+    "system_scope",
+    "critical_alerts",
+    "flight_recorder_timeline",
+    "governance_audit"
+  ],
+  "freshness_states": [
+    "CURRENT",
+    "STALE",
+    "UNKNOWN",
+    "UNAVAILABLE"
+  ],
+  "availability_states": [
+    "AVAILABLE",
+    "PARTIAL",
+    "STALE",
+    "UNAVAILABLE",
+    "UNCONFIGURED",
+    "UNAUTHORIZED",
+    "INCONCLUSIVE",
+    "BLOCKED"
+  ],
+  "authority_state": [
+    "PRESENTATION_ACCEPTED",
+    "IMPLEMENTATION_NOT_AUTHORIZED",
+    "RUNTIME_NOT_QUALIFIED",
+    "PROVIDER_ACCESS_NOT_AUTHORIZED",
+    "CERTIFICATE_ISSUANCE_NOT_AUTHORIZED",
+    "REMEDIATION_NOT_AUTHORIZED"
+  ],
+  "capability": {
+    "capability_id": "afr.command-center.executive-status",
+    "read_write_posture": "READ_ONLY",
+    "adapter_class": "DECLARATIVE_ONLY",
+    "lifecycle_state": "FOUNDATION_R1_CANDIDATE"
+  },
+  "executive_cases": [
+    {
+      "id": "all_supported",
+      "eligible": 4,
+      "supported": 4,
+      "contradicted": 0,
+      "stale": 0,
+      "inconclusive": 0,
+      "evidence_unavailable": 0,
+      "score_present": true,
+      "score_basis_points": 10000
+    },
+    {
+      "id": "mixed_supported_contradicted",
+      "eligible": 4,
+      "supported": 3,
+      "contradicted": 1,
+      "stale": 0,
+      "inconclusive": 0,
+      "evidence_unavailable": 0,
+      "score_present": true,
+      "score_basis_points": 7500
+    },
+    {
+      "id": "stale_fails_score_closed",
+      "eligible": 4,
+      "supported": 3,
+      "contradicted": 0,
+      "stale": 1,
+      "inconclusive": 0,
+      "evidence_unavailable": 0,
+      "score_present": false,
+      "score_basis_points": null
+    },
+    {
+      "id": "inconclusive_fails_score_closed",
+      "eligible": 2,
+      "supported": 1,
+      "contradicted": 0,
+      "stale": 0,
+      "inconclusive": 1,
+      "evidence_unavailable": 0,
+      "score_present": false,
+      "score_basis_points": null
+    },
+    {
+      "id": "evidence_unavailable_fails_score_closed",
+      "eligible": 2,
+      "supported": 1,
+      "contradicted": 0,
+      "stale": 0,
+      "inconclusive": 0,
+      "evidence_unavailable": 1,
+      "score_present": false,
+      "score_basis_points": null
+    }
+  ]
+}

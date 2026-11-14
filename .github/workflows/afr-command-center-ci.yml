@@ -9,10 +9,14 @@ on:
       - synchronize
       - reopened
       - ready_for_review
+    paths:
+      - "src/afr/command_center/**"
+      - "tests/unit/command_center/**"
+      - "tests/vectors/command_center/**"
   workflow_dispatch:
     inputs:
       target_sha:
-        description: Exact immutable commit SHA to qualify
+        description: Exact immutable candidate commit SHA to qualify
         required: true
         default: 59933f2dc254977267855bbb6668bbdb9c9d00b9
         type: string
@@ -33,27 +37,114 @@ jobs:
       PYTHONDONTWRITEBYTECODE: "1"
       PYTHONPATH: src
       TARGET_SHA: ${{ github.event.pull_request.head.sha || inputs.target_sha }}
+      EXPECTED_PHASE12_TARGET_SHA: 59933f2dc254977267855bbb6668bbdb9c9d00b9
+      EXPECTED_PHASE12_MERGE_BASE: 117e2b2c814ad997668b04228d0235824ef111c7
 
     steps:
-      - name: Validate target SHA shape
+      - name: Validate target SHA shape and Phase 12 identity
         shell: bash
         run: |
           set -euo pipefail
           [[ "$TARGET_SHA" =~ ^[0-9a-f]{40}$ ]]
+          test "$TARGET_SHA" = "$EXPECTED_PHASE12_TARGET_SHA"
+          echo "QUALIFICATION_TARGET_SHA=$TARGET_SHA"
 
-      - name: Checkout exact target
+      - name: Checkout canonical main dependency base
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: ${{ env.TARGET_SHA }}
-          fetch-depth: 1
+          ref: main
+          fetch-depth: 0
           persist-credentials: false
 
-      - name: Verify exact checkout identity
+      - name: Materialize exact accepted seven-path candidate overlay
         shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD)" = "$TARGET_SHA"
+
+          BASE_SHA="$(git rev-parse HEAD)"
           test -z "$(git status --porcelain=v1 -uall)"
+
+          git fetch --no-tags origin "$TARGET_SHA"
+          git cat-file -e "${TARGET_SHA}^{commit}"
+
+          MERGE_BASE="$(git merge-base "$BASE_SHA" "$TARGET_SHA")"
+          test "$MERGE_BASE" = "$EXPECTED_PHASE12_MERGE_BASE"
+
+          cat > /tmp/afr-expected-paths.txt <<'EOF_PATHS'
+          src/afr/command_center/capability_registry.py
+          src/afr/command_center/read_model.py
+          src/afr/command_center/shell.py
+          tests/unit/command_center/test_capability_registry.py
+          tests/unit/command_center/test_read_model.py
+          tests/unit/command_center/test_shell.py
+          tests/vectors/command_center/command-center-foundation-v1.json
+          EOF_PATHS
+
+          git diff --name-only "$MERGE_BASE" "$TARGET_SHA" | LC_ALL=C sort > /tmp/afr-actual-paths.txt
+          LC_ALL=C sort -o /tmp/afr-expected-paths.txt /tmp/afr-expected-paths.txt
+          diff -u /tmp/afr-expected-paths.txt /tmp/afr-actual-paths.txt
+
+          git diff --binary --full-index "$MERGE_BASE" "$TARGET_SHA" -- \
+            src/afr/command_center/capability_registry.py \
+            src/afr/command_center/read_model.py \
+            src/afr/command_center/shell.py \
+            tests/unit/command_center/test_capability_registry.py \
+            tests/unit/command_center/test_read_model.py \
+            tests/unit/command_center/test_shell.py \
+            tests/vectors/command_center/command-center-foundation-v1.json \
+            > /tmp/afr-command-center-candidate.patch
+
+          test -s /tmp/afr-command-center-candidate.patch
+          git apply --index /tmp/afr-command-center-candidate.patch
+
+          git diff --cached --name-only | LC_ALL=C sort > /tmp/afr-overlay-paths.txt
+          diff -u /tmp/afr-expected-paths.txt /tmp/afr-overlay-paths.txt
+
+          echo "CANONICAL_BASE_SHA=$BASE_SHA"
+          echo "CANDIDATE_MERGE_BASE=$MERGE_BASE"
+          echo "QUALIFICATION_TARGET_SHA=$TARGET_SHA"
+
+      - name: Verify exact accepted blob identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s  %s\n' \
+            cb0e7930b43fae1e82cd456a40a3b15b90ff4c95d5af666e16ef08ecc8b18c51 \
+            src/afr/command_center/read_model.py \
+            d0452d750d785a76cc6abf57021ef6fbf948b8cc566216110116a3548871e7cd \
+            src/afr/command_center/capability_registry.py \
+            ce37876b0045ee65bdefd21774ba6206ad8344867eb8d53fc3f013adfd210d76 \
+            src/afr/command_center/shell.py \
+            b10d6d6165d49f4021999d0660c307025b967dee6e259bf4d70cc7a1771030a9 \
+            tests/unit/command_center/test_read_model.py \
+            e08c8f4e808e51b97a049f16c699c6c64a8904ab072447cd150103cf63f57254 \
+            tests/unit/command_center/test_capability_registry.py \
+            6efcf0a70a70eeb2f22ba3ecd581778b4f1228259633958317479c5e43ffcd44 \
+            tests/unit/command_center/test_shell.py \
+            33795e3de59c851b5bb33111b6cfa2331493a3ef5f3ec3196afd2c9e1e4b61a6 \
+            tests/vectors/command_center/command-center-foundation-v1.json |
+          sha256sum -c -
+
+      - name: Verify canonical dependency overlay
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYVERIFY'
+          import importlib.util
+          required = (
+              "afr.conformance.conformance_summary",
+              "afr.conformance.finding_derivation",
+              "afr.kernel.canonicalization",
+              "afr.kernel.contracts",
+              "afr.kernel.fingerprints",
+              "afr.command_center.read_model",
+              "afr.command_center.capability_registry",
+              "afr.command_center.shell",
+          )
+          missing = [name for name in required if importlib.util.find_spec(name) is None]
+          if missing:
+              raise SystemExit("missing-overlay-modules:" + ",".join(missing))
+          PYVERIFY
 
       - name: Set up Python 3.12
         uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0

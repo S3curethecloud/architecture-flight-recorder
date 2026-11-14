@@ -1,0 +1,96 @@
+name: AFR Command Center CI
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+  workflow_dispatch:
+    inputs:
+      target_sha:
+        description: Exact immutable commit SHA to qualify
+        required: true
+        default: 59933f2dc254977267855bbb6668bbdb9c9d00b9
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: afr-command-center-ci-${{ github.event.pull_request.number || inputs.target_sha }}
+  cancel-in-progress: true
+
+jobs:
+  command-center:
+    name: Command Center exact-head qualification
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+      PYTHONPATH: src
+      TARGET_SHA: ${{ github.event.pull_request.head.sha || inputs.target_sha }}
+
+    steps:
+      - name: Validate target SHA shape
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$TARGET_SHA" =~ ^[0-9a-f]{40}$ ]]
+
+      - name: Checkout exact target
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: ${{ env.TARGET_SHA }}
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Verify exact checkout identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$TARGET_SHA"
+          test -z "$(git status --porcelain=v1 -uall)"
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0
+        with:
+          python-version: "3.12"
+          check-latest: false
+
+      - name: Verify Python baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYVERIFY'
+          import sys
+          if sys.version_info[:2] != (3, 12):
+              raise SystemExit(f"python-baseline-mismatch: {sys.version.split()[0]}")
+          PYVERIFY
+
+      - name: Install exact pytest baseline
+        shell: bash
+        run: python -m pip install --disable-pip-version-check pytest==8.4.2
+
+      - name: Verify pytest baseline
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PYVERIFY'
+          import importlib.metadata as md
+          actual = md.version("pytest")
+          expected = "8.4.2"
+          if actual != expected:
+              raise SystemExit(f"pytest-baseline-mismatch: expected={expected} actual={actual}")
+          PYVERIFY
+
+      - name: Command Center qualification
+        shell: bash
+        run: python -m pytest -q -p no:cacheprovider tests/unit/command_center
+
+      - name: Phase 12 regression qualification
+        shell: bash
+        run: python -m pytest -q -p no:cacheprovider tests
